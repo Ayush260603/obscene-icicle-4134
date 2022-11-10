@@ -14,6 +14,7 @@ hr {
 }
 
 div {
+    border: 1px solid transparent;
     color: white;
 }
 
@@ -48,6 +49,7 @@ a {
 }
 .problem{
     display:none;
+    color: black;
     position:absolute;
     border: 3px solid yellow;
     width: 40vw;
@@ -64,6 +66,10 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.3);
     transform: scale(0.9);
     transition: scale(0.1) 350ms ease-in-out;
+}
+.problem:hover{
+   transform: scale(1.001);
+    z-index: 1.001;
 }
 /* loginslider  */
 .loginform {
@@ -150,6 +156,7 @@ header {
     padding: 5px;
     display: flex;
     justify-content: space-around;
+    border: 1px solid black;
     align-items: center;
     background: rgba(0, 0, 0, 0.9);
 }
@@ -231,22 +238,10 @@ header>div:nth-child(2) {
     background: rgb(131, 58, 180);
     transform: scale(1.1);
     z-index: 1.1;
+    cursor: pointer;
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 16%, rgba(255, 187, 0, 0.8774860285911239) 100%);
 
 }
-#loginbut {
-    border: 1px solid white;
-    background: transparent;
-    color: white;
-    padding: 5px 30px;
-    margin: 5px 10px;
-}
-#loginbut:hover {
-    background: white;
-    color: rgb(255, 255, 255);
-    border: 1px solid blueviolet;
-}
-
 /* gradient button end */
 /* footerstart */
 footer{
@@ -304,7 +299,7 @@ body{
     background-size: cover;
 }
 .signup{
-    height: 90vh;
+    height: 93vh;
     display: flex;
     justify-content:space-around;
     background-color: rgba(0,0,0,0.7);
@@ -349,6 +344,27 @@ body{
     border-radius: 10px;
 }
 div[type="Login"]{
+    display: none;
+    background-color: rgba(0,0,0,0.8);
+}
+div[type="SignIn"]{
     display: static;
     background-color: rgba(0,0,0,0.8);
+}
+form>select{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 20px;
+}
+.signupnow {
+    border: 1px solid white;
+    background-color:rgba(0,0,0,0.5);
+    color: white;
+    padding: 5px 30px;
+    margin: 5px 10px;
+}
+.signupnow:hover {
+    background: white;
+    color: rgb(0, 0, 0);
+    border: 1px solid blueviolet;
 }

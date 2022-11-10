@@ -2,14 +2,26 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open-Sans', sans-serif;
     font-size: 18px;
     scroll-behavior: smooth;
 }
-section{
-    margin-left:50px;
+
+section {
+    margin-left: 50px;
     margin-right: 50px;
 }
+
+.white {
+    background-color: white;
+    color: black;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
 hr {
     margin: 15px;
     color: rgb(69, 67, 67);
@@ -17,24 +29,26 @@ hr {
 }
 
 div {
-    border: 1px solid green;
+    border: 1px solid transparent;
     color: white;
 }
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 .flex {
     display: flex;
-}.flexalign{
+}
+
+.flexalign {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 /* preloader */
-#preloader{
+#preloader {
     background: black url("Images/preloader.gif") no-repeat center center;
     background-size: 20%;
     height: 100vh;
@@ -42,6 +56,7 @@ a {
     position: fixed;
     z-index: 100000;
 }
+
 /* Section headings */
 .sectionHeads {
     font-size: 40px;
@@ -50,17 +65,20 @@ a {
     margin-top: 50px;
 
 }
-.problem{
-    display:none;
-    position:absolute;
+
+.problem {
+    display: none;
+    position: fixed;
+    z-index: 999999999;
+    color: black;
     border: 3px solid yellow;
     width: 40vw;
     height: 60vh;
     text-align: center;
     margin: 10% 30%;
     padding: 20px;
-    background: rgb(255,255,255);
-    background: linear-gradient(331deg, rgba(255,255,255,0.8494748241093313) 0%, rgba(255,255,255,0.19681375968356096) 25%, rgba(255,255,255,0.8074580173866421) 50%, rgba(255,255,255,0.19961488013174022) 75%, rgba(255,255,255,0.8886905103838411) 100%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(331deg, rgba(255, 255, 255, 0.8494748241093313) 0%, rgba(255, 255, 255, 0.19681375968356096) 25%, rgba(255, 255, 255, 0.8074580173866421) 50%, rgba(255, 255, 255, 0.19961488013174022) 75%, rgba(255, 255, 255, 0.8886905103838411) 100%);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -69,9 +87,37 @@ a {
     transform: scale(0.9);
     transition: scale(0.1) 350ms ease-in-out;
 }
+
 /* loginslider  */
 .loginform {
     margin: 20px 20px
+}
+
+/* loginslider  */
+#avatarhead {
+    font-size: 50px;
+    margin: 10px auto;
+}
+
+.UserDetails {
+    text-align: center;
+}
+
+.UserDetails>div {
+    text-align: left;
+    margin: 20px;
+}
+
+#avatar {
+    width: 50%;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.avatarx {
+    color: coral;
+    font-size: 22px;
+    margin-left: 15px;
 }
 
 .logininput {
@@ -96,6 +142,26 @@ a {
     box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
 }
 
+.fgradbutton {
+    margin: 10px auto;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    background: rgb(57, 162, 168);
+    background: linear-gradient(90deg, rgba(57, 162, 168, 1) 0%, rgba(63, 94, 251, 1) 29%, rgba(82, 85, 226, 1) 58%, rgba(243, 0, 255, 1) 100%);
+}
+
+.fgradbutton:hover {
+    background: rgb(131, 58, 180);
+    transform: scale(1.1);
+    z-index: 1.1;
+    cursor: pointer;
+    background: rgb(63, 94, 251);
+    background: linear-gradient(90deg, rgba(63, 94, 251, 1) 2%, rgba(243, 0, 255, 1) 27%, rgba(57, 162, 168, 1) 72%, rgba(82, 85, 226, 1) 95%);
+}
+
 label {
     margin-left: 20px;
 }
@@ -112,7 +178,7 @@ label {
 
     gap: 2px;
     display: flex;
-    z-index: 1000;
+    z-index: 10000;
     position: fixed;
     inset: 0 0 0 70%;
     flex-direction: column;
@@ -130,7 +196,7 @@ label {
     border: 0px;
     width: 2rem;
     aspect-ratio: 1;
-    z-index: 9999;
+    z-index: 9999999;
     top: 1rem;
     background: transparent;
     right: 2rem;
@@ -149,8 +215,10 @@ html {
 }
 
 header {
+    border: 1px solid black;
     position: sticky;
     top: 0;
+    z-index: 9999;
     padding: 5px;
     display: flex;
     justify-content: space-around;
@@ -180,9 +248,13 @@ header>div:nth-child(2) {
 #ServNav:Hover .Servsul {
     display: block;
 }
-.jobsul:hover,.Compsul:hover,.Servsul:hover{
+
+.jobsul:hover,
+.Compsul:hover,
+.Servsul:hover {
     display: block;
 }
+
 .jobsul>li,
 .Compsul>li,
 .Servsul>li {
@@ -190,7 +262,10 @@ header>div:nth-child(2) {
     padding: 10px;
     border-bottom: 1px grey;
 }
-.jobsul,.Compsul,.Servsul{
+
+.jobsul,
+.Compsul,
+.Servsul {
     margin-top: 17px;
     display: none;
     position: absolute;
@@ -200,11 +275,16 @@ header>div:nth-child(2) {
     color: rgb(255, 224, 239);
     border-right: 1px solid white;
 }
-#JobsNav ul{
+
+#JobsNav ul {
     right: 520px;
-}#CompNav ul{
+}
+
+#CompNav ul {
     right: 410px;
-}#ServNav ul{
+}
+
+#ServNav ul {
     right: 300px;
 }
 
@@ -232,8 +312,27 @@ header>div:nth-child(2) {
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 81%, rgba(255, 187, 0, 1) 100%);
 }
 
+.fgradbutton {
+    margin: 5px auto;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    background: rgb(57, 162, 168);
+    background: linear-gradient(90deg, rgba(57, 162, 168, 1) 0%, rgba(63, 94, 251, 1) 29%, rgba(82, 85, 226, 1) 58%, rgba(243, 0, 255, 1) 100%);
+}
+
+.fgradbutton:hover {
+    background: rgb(131, 58, 180);
+    transform: scale(1.1);
+    z-index: 1.1;
+    cursor: pointer;
+    background: rgb(63, 94, 251);
+    background: linear-gradient(90deg, rgba(63, 94, 251, 1) 2%, rgba(243, 0, 255, 1) 27%, rgba(57, 162, 168, 1) 72%, rgba(82, 85, 226, 1) 95%);
+}
+
 #loginbut {
-    border: 1px solid white;
     background: transparent;
     color: white;
     padding: 5px 30px;
@@ -244,116 +343,132 @@ header>div:nth-child(2) {
     background: rgb(131, 58, 180);
     transform: scale(1.1);
     z-index: 1.1;
+    cursor: pointer;
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 16%, rgba(255, 187, 0, 0.8774860285911239) 100%);
 
 }
 
 #loginbut:hover {
     background: white;
+    cursor: pointer;
     color: black;
     border: 1px solid black;
 }
 
 /* gradient button end */
 /* footerstart */
-footer{
+footer {
     background-color: rgb(255, 255, 255);
     margin-top: 20px;
     margin-bottom: 0px;
     width: 100%;
     color: black;
-    }
-.logofooter>div{
+}
+
+.logofooter>div {
     margin: auto;
     padding: 20px;
     width: 170px;
 }
-.footer2nd{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-}
-.footer1st{
+
+.footer2nd {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-footer li{
+
+.footer1st {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer li {
     font-size: 15px;
     margin: 5px;
     list-style: none;
     color: rgb(71, 71, 71);
 }
-.apply{
+
+.apply {
     border-radius: 7px;
-    border:1px solid grey;
+    border: 1px solid grey;
     margin: 0px;
     padding: 15px;
     align-items: center;
     width: 250px;
 }
-.apply>div{
+
+.apply>div {
     width: 100%;
 }
-.apply>div:nth-child(2){
+
+.apply>div:nth-child(2) {
     padding: 0px;
     width: 250px
 }
-#footer-comp{
+
+#footer-comp {
     display: flex;
     justify-content: space-between;
-    
+
 }
+
 /* footerend */
-.PersonInfo{
-    width: 400px;
-    height: 600px;
+.Avatar {
+    background-image: url("Images/avatar.png");
+    background-size: contain;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top:100px;
-    right: 100px;
+    top: 140px;
+    z-index: 999;
+    right: 250px;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(255, 46, 46, 1);
+    -moz-box-shadow: 0px 0px 21px 0px rgba(255, 46, 46, 1);
+    box-shadow: 0px 0px 21px 0px rgba(255, 46, 46, 1);
 }
-.PlacemeApp{
+
+.insidePI {
+    margin-top: 110px;
+    background-color: white;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    padding-top: 100px;
+    padding: 50px;
+    color: black;
+}
+
+.PersonInfo {
     width: 400px;
-    height: 400px;
+    height: auto;
     position: absolute;
-    top:730px;
+    top: 100px;
     right: 100px;
 }
 
-.band{
-    background-image:url("https://static.naukimg.com/s/5/105/i/dashboardbg.png") ;
-    background-size: contain;
-    height: 200px;
-}
-.container{
-    width: 55vw;
-    height: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-.container>div{
-    width: 100%;
-    height: 90%;
-    margin:10px auto;
-}
-.container>div:nth-child(2){
-    height: 70%;
-}
-#flexing{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+.PlacemeApp {
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    width: 385px;
     padding: 10px;
+    height: auto;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 950px;
+    right: 100px;
 }
-#flexing>div{
-width: 90%;
+
+#placemeimg {
+    position: absolute;
+    top: 820px;
+    right: 100px;
+    z-index: 99
 }
-.recruiters{
-    width: 55vw;
-}
-.recruiters>div{
-    margin: 10px;
-    height: 100px;
-}
+
 /* big search box  start  */
 .searchbox {
     width: 50%;
@@ -377,7 +492,7 @@ width: 90%;
 }
 
 .searchinput {
-    width: 70%;
+    width: 80%;
     border: 0px;
     border-right: 1px solid grey;
     font-size: 18px;
@@ -390,4 +505,131 @@ width: 90%;
 }
 
 /* big seatch box end */
+.headsters {
+    font-size: 25px;
+    margin: 5px auto;
+    font-weight: bolder;
+}
 
+
+
+.band {
+    background-image: url("Images/bg3.jpg");
+    background-size: contain;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.container1 {
+    width: 55vw;
+    height: auto;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.container1>div {
+    width: 100%;
+    height: 90%;
+    margin: 10px auto;
+}
+
+.JobcardFirstDiv {
+    width: 70%;
+}
+
+#JobLine {
+    font-size: 14px;
+}
+
+#flexing {
+    width: 55vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+#flexing>div {
+    width: 90%;
+    height: 150px;
+    padding: 15px;
+}
+
+#flexing>div {
+    width: 45%;
+    height: 150px;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+#flexing>div>div {
+    width: 90%;
+    height: 78px;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: rgb(199, 197, 197);
+}
+
+.recruiters {
+    width: 55vw;
+}
+
+.recruiters>div {
+    margin: 10px;
+    height: auto;
+    display: flex;
+
+}
+
+
+/* hello */
+.cardimage {
+    width: 200px;
+    height: 200px;
+    text-align: right;
+
+}
+
+#Jobname {
+    font-size: 25px;
+}
+
+#favButton {
+    padding: 8px 15px;
+    border: 0px;
+    color: white;
+    border-radius: 50px;
+    background-color: rgb(70, 27, 199);
+}
+
+#favButton:hover {
+    background-color: rgb(32, 3, 122);
+}
+
+#headingJobs {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bolder;
+    left: 110px;
+    top: 280px;
+    color: transparent;
+    background: rgb(74, 39, 255);
+    background: linear-gradient(117deg, rgba(74, 39, 255, 1) 0%, rgba(233, 208, 255, 1) 28%, rgba(255, 124, 30, 1) 75%, rgba(255, 0, 65, 1) 100%);
+    -webkit-background-clip: text;
+}
+.logout{
+    position: absolute;
+    top: 1230px;
+    right: 210px;
+    z-index: 9999999999;
+}
+#logoutbut{
+padding: 10px 70px;
+background: rgb(255,0,0);
+background: linear-gradient(55deg, rgba(255,0,0,1) 0%, rgba(255,130,68,1) 25%, rgba(255,0,0,1) 51%, rgba(255,2,7,1) 52%, rgba(255,63,186,1) 75%, rgba(255,0,0,1) 100%);
+}
+#logoutbut:hover{
+    -webkit-box-shadow:0px 0px 51px 3px rgba(255,255,255,0.9);
+-moz-box-shadow: 0px 0px 51px 3px rgba(255,255,255,0.9);
+box-shadow: 0px 0px 51px 3px rgba(255,255,255,0.9);
+}

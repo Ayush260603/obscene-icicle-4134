@@ -1,156 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlaceMe|Job</title>
+    <title>PlaceMe|JobDetails</title>
     <link rel="stylesheet" href="./CSS/view.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100;1,200;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    
-</head>
-<body>
-        <!-- preloader -->
-        <div id="preloader"></div>
-        <!-- alertdiv -->
-        <div class="problem">
-            <img width="40%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
-            <h1 style="font-size:30px">Woops! You Entered Wrong Credentials</h1>
-            <h2>Please Sign In</h2>
-            <button class="gradbutton" id="close">Close </button>
-        </div>
-        <!-- login slider -->
-        <div class="loginslider">
-            <nav id="primary-header">
-                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
-                        class="sr-only">💠</span></button>
-                <nav>
-                    <ul id="primary-header" data-visible="false" class="primary-navigation">
-                        <div class="loginform">
-                            <h1 style="font-size:30px">Login</h1>
-                            <form>
-                                <label for="">Username / Email ID </label><br>
-                                <input class="logininput" id="username" type="text" placeholder="Enter Username"
-                                    required><br>
-                                <label for="">Password</label><br>
-                                <input class="logininput" id="Password" type="text" placeholder="Enter Password"
-                                    required><br>
-                                <input class="googlebutton" type="submit" value="Login">
-                                <p style="font-size: 10px;text-align: center;">Use OTP to login</p>
-                                <hr>
-                                <h2 style="text-align: center;">OR</h2>
-                                <hr>
-                                <button class="googlebutton"><img width="5%"
-                                        src="https://static.naukimg.com/s/7/104/assets/images/google-icon.9273ac87.svg"
-                                        alt="">Continue with Google</button>
-                            </form>
-                        </div>
-                    </ul>
-                </nav>
-            </nav>
-        </div>
-        <!-- navigation bar -->
-        <header>
-            <div id="logoholder">
-                <img id="logo" src="CSS/Images/logo.jpg" alt="Place Me">
-            </div>
-            <div class="home">
-                <a href="#search-sec">
-                    <div id="JobsNav">Jobs
-                        <ul class="jobsul">
-                            <li>Recommended jobs</li>
-                            <li>Jobs from recruiters</li>
-                            <li>Jobs from alerts</li>
-                            <li>Application status</li>
-                            <li>Saved jobs</li>
-                        </ul>
-                    </div>
-                </a>
-                <a href="#top-companies">
-                    <div id="CompNav">Companies
-                        <ul class="Compsul">
-                            <li><b>Explore Collections</b></li>
-                            <li>Top companies</li>
-                            <li> IT companies</li>
-                            <li> Fintech companies</li>
-                            <li> Sponsored companies</li>
-                            <li> Featured companies</li>
-                        </ul>
-                    </div>
-                </a>
-                <a href="#services">
-                    <div id="ServNav">Services
-                        <ul class="Servsul">
-                            <li><b>Learn & upskill</b></li>
-                            <li>Data Science courses</li>
-                            <li>Technology courses</li>
-                            <li>Management courses</li>
-                            <li>Finance courses</li>
-                            <li> Design courses</li>
-                            <li>Healthcare courses</li>
-                            <li>Degree programs</li>
-                        </ul>
-                    </div>
-                </a>
-                <div class="gradbutton" id="loginbut" style="padding: 5px 25px;">Login</div>
-                <div class="gradbutton" id="registerbut" style="padding: 5px 25px;">Register</div>    
-            </div>
-        </header>
-    
-<section>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100;1,200;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
 
-</section>
-<footer>
-    <div class="footer1st">
-        <div class="logofooter">
-            <div><img width="80%" src="CSS/Images/Logo.png" alt=""></div>
-            <div><img width="50%" src="CSS/Images/connectwithus.jpg" alt=""></div>
-        </div>
-        <div class="flex">
-            <div><ul>
-                <li>About us</li>
-                <li>Careers</li>
-                <li>Employer home</li>
-               <li> Sitemap</li>
-            </ul>
-            </div>
-            <div>
-                <ul>
-                   <li> Help center</li>
-                   <li> Summons/Notices</li>
-                   <li> Grievances</li>
-                    <li>Report issue</li>
+</head>
+
+<body>
+    <!-- preloader -->
+    <div id="preloader"></div>
+    <!-- alertdiv -->
+    <div class="problem">
+        <img width="40%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
+        <h1 style="font-size:30px">Woops! You Entered Wrong Credentials</h1>
+        <h2>Please Sign In</h2>
+        <button class="gradbutton" id="close">Close </button>
+    </div>
+    <!-- login slider -->
+    <div class="loginslider">
+        <nav id="primary-header">
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
+                    class="sr-only">💠</span></button>
+            <nav>
+                <ul id="primary-header" data-visible="false" class="primary-navigation">
+                    <div class="UserDetails">
+                        <h1 id="avatarhead">Hello User!</h1>
+                        <img id="avatar" src="css/Images/avatar1.jpg">
+                        <div>
+                            <h4>Name:</h4>
+                            <h1  class="avatarx" id="avatarname">sadv</h1>
+                            <h4>Email:</h4>
+                            <h1 class="avatarx"  id="avataremail">sva</h1>
+                            <h4>Status:</h4>
+                            <h1  class="avatarx" id="avatarstatus">Not Working</h1>
+                            <h4>Gender:</h4>
+                            <h1  class="avatarx" id="avatargender">Male</h1>
+                            
+                        </div>
+                       
+                    </div>
                 </ul>
-               
+            </nav>
+        </nav>
+    </div>
+    <!-- navigation bar -->
+    <header>
+        <div id="logoholder">
+            <a href="login.html"><img id="logo" src="CSS/Images/logo.jpg" alt="Place Me"></a>
+            
+        </div>
+        <div class="home">
+            <a href="#search-sec">
+                <div id="JobsNav">Jobs
+                    <ul class="jobsul">
+                        <li>Recommended jobs</li>
+                        <li>Jobs from recruiters</li>
+                        <li>Jobs from alerts</li>
+                        <li>Application status</li>
+                        <li>Saved jobs</li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#top-companies">
+                <div id="CompNav">Companies
+                    <ul class="Compsul">
+                        <li><b>Explore Collections</b></li>
+                        <li>Top companies</li>
+                        <li> IT companies</li>
+                        <li> Fintech companies</li>
+                        <li> Sponsored companies</li>
+                        <li> Featured companies</li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#services">
+                <div id="ServNav">Services
+                    <ul class="Servsul">
+                        <li><b>Learn & upskill</b></li>
+                        <li>Data Science courses</li>
+                        <li>Technology courses</li>
+                        <li>Management courses</li>
+                        <li>Finance courses</li>
+                        <li> Design courses</li>
+                        <li>Healthcare courses</li>
+                        <li>Degree programs</li>
+                    </ul>
+                </div>
+            </a>
+            <div class="gradbutton" id="loginbut" style="padding: 5px 25px;">Login</div>
+            <div class="gradbutton" id="registerbut" style="padding: 5px 25px;">Register</div>
+        </div>
+    </header>
+
+    <section>
+        <!-- recommended bar -->
+        <div class="recom-bar">
+            <div class="flexalign">
+                <h1 style=" font-size:30px;color: rgb(19, 226, 164);">Job Details :</h1>
             </div>
-            <div><ul>
-                <li>Privacy policy</li>
-                <li>Terms & conditions</li>
-                <li>Fraud alert</li>
-                <li>Trust & safety<</li>
-            </ul>
+            <div class="flexalign">
+                <h2 style="color: maroon;">Search For Similar jobs </h2><span>⚫</span><button
+                    class="gradbutton">Search</button>
+            </div>
         </div>
+        <div id="rightpart">
+            
+            <div id="back-button">
+               <a href="jobs.html"> <button class="backbutton"> ⬅️Go back </button></a>
+            </div>
+            <div id="mobile">
+                <div>
+                    <h1>Reviews</h1>
+                    <ol>
+                        <li>Shravan<br>⭐⭐⭐⭐⭐</li>
+                        <li>Ankit Kumar<br>⭐⭐⭐</li>
+                        <li>Vijay Singh<br>⭐</li>
+                        <li>Queen Victoria<br>⭐⭐⭐⭐</li>
+                        <li>Shah Rukh Khan<br>⭐</li>
+                        <li>Alex Johnson<br>⭐⭐⭐⭐⭐</li>
+                        <li>Tanmay Bhatt<br>⭐⭐⭐</li>
+                        <li>Andrew Tate<br>⭐</li>
+                        <li>Hitler <br>⭐⭐⭐⭐</li>
+                        <li>Franklin D. Roosevelt<br>⭐</li>
+                    </ol>
+                </div>
+                
+            </div>
+            <div style="margin:20px auto" id="perks">
+                <img width="100%" src="CSS/Images/logo.jpg" alt="">
+            </div >
+            
+            <div id="perks">
+                <img width="100%" src="css/Images/benefits.jpg" alt="">
+            </div>
+            <div id="app">
+                <h1>Get Our App! <br>Scan the QR code</h1>
+                <img width="60%" src="https://www.investopedia.com/thmb/hJrIBjjMBGfx0oa_bHAgZ9AWyn0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/qr-code-bc94057f452f4806af70fd34540f72ad.png" alt="">
+            </div>
+          
         </div>
-        <div class="apply">
+        <div id="leftpart">
+            <div class="JobScontainer">
+                <!-- Append Job data here -->
+                <div class="JobCard flexalign">
+                    <div class="JobcardFirstDiv">
+                        <h1 id="Jobname">Jobtitle </h1>
+                        <h5 id="JobDate">date</h5>
+                        <p id="Jobcategory">Category</p>
+                        <p id="JobLine">Phrase/Line</p>
+                        <h5 id="JobRating">Rating</h5>
+                        <h5 id="Salary">Salary</h5>
+                        <button id="favButton">Add to Favorite</button>
+                        <button id="viewButton">Add to Favorite</button>
+                    </div>
+                    <div>
+                        <img class="cardimage" src="http://loremflickr.com/640/480/technics" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="extra-text">
+                <div class="text-container">
+                    <p>
+                    <h1>Job description</h1>
+                    <p>
+
+                        Environ Group is a dynamic & performance oriented organization and are the Pioneers of
+                        comprehensive energy solutions in India. We are one of the fastest growing EPC solution
+                        providers in Telecom & well established name in Smart Meter Pan India initiative. Head quartered
+                        in Kolkata, Environ has its operations and a significant growth path across different
+                        geographies & market segments with a vision to enable a clean and connected future.
+                    </p>
+
+                    <p> Our Milestones: 200,000+installations over a decade</p>
+
+                    <h5>3,500+telecom sites under management</h5>
+
+                    <h5> 500+Water treatment plants under management</h5>
+
+                    <h5>350,000+ Smart meters under process</h5>
+
+                    <h5>200+ retail stores of the largest retail chain of the country under management.</h5>
+
+
+
+
+                    <h6>We are looking for a candidate who will be responsible for coordinating and monitoring the
+                        overall progress of all the digital initiatives, cloud Technology, IT security, including
+                        ensuring cross-department coordination, vendor on-boarding and implementation scheduling,
+                        controlling deadlines and preparation of update reports for the senior management.
+                    </h6>
+
+                    <h1>Key Accountabilities: -</h1>
+
+                    <p>
+                        Accepts, prioritizes, and categorizes change requests.
+                        optimizing cost wrt cloud uses, process automation, IT infra.
+                        Daily system monitoring, verifying and reviewing all hardware, server resources, systems and key
+                        processes etc.
+                        Regular security monitoring to identify possible disturbance.
+                        User level awareness plan wrt IT security & Latest Applications.
+                        Investigating and troubleshoot all issues related to IT infrastructure for internal teams or
+                        clients.
+                        Manage and establish priorities for maintenance, design, development and analysis of entire
+                        infrastructure systems inclusive of LANs, WANs, internet, security and wireless implementations.
+                        Conducts function and department specific analysis to identify key areas of intervention
+                        Drives user adoption of different digital platforms and technologies by conducting
+                        Work closely with project process owners to plan and develop scope, deliverables, required
+                        resources, work plan and budget for all the digital initiatives.
+                        Ensure that required assistance is provided to the process owners to translate project
+                        objectives into functional targets
+                        Ensure scoping takes into place both financial and technical considerations, including IT system
+                        coherence.
+                        Ensure coordination between cross-project activities to avoid duplication of efforts.
+                        Develop program assessment protocols and project tracking template to monitor the progress of
+                        all initiatives
+                        Ensure adherence to timelines in line with the scope and deliverables of each project.
+                        Provide accurate and timely reporting to the senior management in regards to the program status
+                        across the project lifecycle
+                        Develop and report an escalation matrix in order to ensure timely reporting of any issues
+                        Perform root cause analysis of various delays/deviations and arrive on corrective action for the
+                        same
+                    </p>
+                    <h1>Skills & Competencies:</h1>
+
+
+                    <p> Good knowledge of budgeting and resource allocation procedures
+                        Ability to deal positively with stakeholders across different levels
+                        Strong communication skills</p>
+
+                    <h1> Key Performance Indicators:</h1>
+
+
+                    <h6> % Adherence to timelines</h6>
+                    <h6> % Missed Milestones</h6>
+                    <h6> % of Projects competed on time</h6>
+                    <h6> % Budget Spent</h6>
+                    <h6> Cost Variance (Planned Budget vs actual Budget)</h6>
+                    <h6> %adherence to SLAs</h6>
+
+                    <h1>Required Qualification:</h1>
+
+                    <h5>
+                        Graduation/Master - (B.E./B.Tech)/( M.E/M. Tech)
+
+                    </h5>
+
+                    <h5>Mandatory Skills:</h5>
+                    <p>
+                        Digital, Change Impact Analysis, Project Planning and scheduling, Project Monitoring and
+                        governance, Risk Assessment, large scale transformation projects, Cloud Technology, IT Security,
+                        digital initiatives, cross-department coordination, vendor on-boarding, vendor evaluation.
+                    </p>
+
+                    <h5> Additional Skills:</h5>
+
+                    <p>Communication Skills, Executive-Level Reporting, innovation management, monitoring, coordination.
+                    </p>
+
+                    <h4>Experience:</h4>
+
+                    <ul>
+
+                        <li> 8+ Years of experience in managing transformation projects, IT Security, Cloud Technology.
+                        </li>
+                        <li> Good Hands on Azure/Aws Platform. Relevant Cloud Certifications required.</li>
+                        <li> Familiarity with change management principles and vendor evaluation process.</li>
+                        <li> Good Hands on Azure/Aws Platform. Relevant Cloud Certifications required.</li>
+                    </ul>
+
+                    <p>
+                        RoleIT Infrastructure Services -
+                    </p>
+                    <p>Other Industry TypeIT Services & Consulting</p>
+                    <p>Functional AreaIT & Information Security</p>
+                    <p>Employment TypeFull Time, Permanent</p>
+                    <p>Role CategoryIT Infrastructure Services</p>
+                    <p>Education</p>
+                    <p>UG :B.Tech/B.E. in Any Specialization</p>
+                </div>
+                <div class="text-container">
+                    <h1>About Company</h1>
+                    <h5>
+                        Company Info Environ Group is a dynamic & performance oriented organization and are the Pioneers
+                        of comprehensive energy solutions in India. We are one of the fastest growing EPC solution
+                        providers in Telecom & well established name in Smart Meter Pan India initiative. Head quartered
+                        in Kolkata, Environ has its operations and a significant growth path across different
+                        geographies & market segments with a vision to enable a clean and connected future. Our
+                        Milestones: 200,000+installations over a decade3,500+telecom sites under management500+Water
+                        treatment plants under management350,000+ Smart meter under process200+ retail stores of the
+                        largest retail chain of the country under management We are available on
+                        https://environenergy.in
+                    </h5>
+                    <h3> Company Info</h3>
+                    <p>AddressAsyst Park, 3rd Floor, Plot GN 37/1, Block GN, Sector V,, KOLKATA, West Bengal, India
+                    </p>
+                </div>
+                <div class="black-text-container">
+                    <h1> Beware of imposters!</h1>
+                    <p>Naukri.com does not promise a job or an interview in exchange of money. Fraudsters may ask you to
+                        pay in the pretext of registration fee, Refundable Fee…Read More
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+    </section>
+    <footer>
+        <div class="footer1st">
+            <div class="logofooter">
+                <div><img width="80%" src="CSS/Images/Logo.png" alt=""></div>
+                <div><img width="50%" src="CSS/Images/connectwithus.jpg" alt=""></div>
+            </div>
+            <div class="flex">
+                <div>
+                    <ul>
+                        <li>About us</li>
+                        <li>Careers</li>
+                        <li>Employer home</li>
+                        <li> Sitemap</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li> Help center</li>
+                        <li> Summons/Notices</li>
+                        <li> Grievances</li>
+                        <li>Report issue</li>
+                    </ul>
+
+                </div>
+                <div>
+                    <ul>
+                        <li>Privacy policy</li>
+                        <li>Terms & conditions</li>
+                        <li>Fraud alert</li>
+                        <li>Trust & safety<< /li>
+                    </ul>
+                </div>
+            </div>
+            <div class="apply">
                 <h1 style="color: black;">Apply On Go</h1>
                 <h6 style="color: black;">Get real-time job updates on our App</h6>
-                <img width="100%"src="https://thumbs.dreamstime.com/b/kiev-ukraine-november-download-app-store-get-google-play-kiev-ukraine-november-download-app-store-get-233766016.jpg" alt="">
+                <img width="100%"
+                    src="https://thumbs.dreamstime.com/b/kiev-ukraine-november-download-app-store-get-google-play-kiev-ukraine-november-download-app-store-get-233766016.jpg"
+                    alt="">
+            </div>
         </div>
-    </div>
-    <div class="footer2nd">
-        <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/infoedge-logo.svg" alt=""></div>
-        <div><p style="color: rgb(59, 56, 56);font-size:13px" >All trademarks are the property of their respective owners
-            <br>All rights reserved © 2022 Info Edge (India) Ltd.</p>
+        <div class="footer2nd">
+            <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/infoedge-logo.svg" alt=""></div>
+            <div>
+                <p style="color: rgb(59, 56, 56);font-size:13px">All trademarks are the property of their respective
+                    owners
+                    <br>All rights reserved © 2022 Info Edge (India) Ltd.
+                </p>
+            </div>
+            <h5 style="color: black;">Our Buisnees Partners</5>
+                <div id="footer-comp">
+                    <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/nnacres.png" alt="">
+                    </div>
+                    <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/shiksha.png" alt="">
+                    </div>
+                    <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/shiksha.png" alt="">
+                    </div>
+                    <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jeevansathi.png" alt="">
+                    </div>
+                </div>
         </div>
-        <h5 style="color: black;">Our Buisnees Partners</5>
-        <div id="footer-comp">
-        <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/nnacres.png" alt=""></div>
-        <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/shiksha.png" alt=""></div>
-        <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/shiksha.png" alt=""></div>
-        <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jeevansathi.png" alt=""></div></div>
-    </div>
-</footer>      
+    </footer>
 </body>
+
 </html>
 <script src="./Js/view.js"></script>
