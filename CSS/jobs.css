@@ -17,7 +17,7 @@ hr {
 }
 
 div {
-   border: 1px solid green ;
+   border: 1px solid transparent;
 }
 
 a {
@@ -52,11 +52,13 @@ a {
 }
 .problem{
     display:none;
-    position:absolute;
+    position:fixed;
     border: 3px solid yellow;
     width: 40vw;
     height: 60vh;
     text-align: center;
+    z-index: 99999999;
+    color: black;
     margin: 10% 30%;
     padding: 20px;
     background: rgb(255,255,255);
@@ -70,6 +72,29 @@ a {
     transition: scale(0.1) 350ms ease-in-out;
 }
 /* loginslider  */
+/* loginslider  */
+#avatarhead{
+    font-size: 50px;
+    margin: 10px auto;
+}
+.UserDetails{
+    text-align: center;
+}
+.UserDetails>div{
+    text-align: left;
+    margin: 20px;
+}
+#avatar{
+    width: 50%;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.avatarx{
+    color: coral;
+    font-size: 22px;
+    margin-left: 15px;
+}
+
 .loginform {
     margin: 20px 20px
 }
@@ -84,7 +109,6 @@ a {
 
 .googlebutton {
     width: 85%;
-    ;
     padding: 8px;
     border-radius: 10px;
     background-color: white;
@@ -130,7 +154,7 @@ label {
     border: 0px;
     width: 2rem;
     aspect-ratio: 1;
-    z-index: 9999;
+    z-index: 100000;
     top: 1rem;
     background: transparent;
     right: 2rem;
@@ -149,11 +173,12 @@ html {
     
 }
 header {
-    z-index: 99999;
+    z-index: 99;
     position: sticky;
     top: 0;
     padding: 5px;
     display: flex;
+    border: 1px solid black;
     justify-content: space-around;
     align-items: center;
     background: rgba(17, 16, 16, 0.8);
@@ -280,6 +305,7 @@ header>div:nth-child(2) {
     background: rgb(131, 58, 180);
     transform: scale(1.1);
     z-index: 1.1;
+    cursor: pointer;
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 16%, rgba(255, 187, 0, 0.8774860285911239) 100%);
 
 }
@@ -288,6 +314,7 @@ header>div:nth-child(2) {
     background: white;
     color: black;
     border: 1px solid black;
+    cursor: pointer;
 }
 
 /* gradient button end */
@@ -368,13 +395,13 @@ justify-content: space-around;
 }
 .JobScontainer{
     z-index: 1;
-    width: 65%;
+    width: 67%;
     height: auto;
     margin-top: 10px;
     margin-left: 400px;
 }
 .JobScontainer>div{
-    width: 90%;
+    width: 80%;
     margin:10px auto;
     padding: 5px;
     height: auto
@@ -383,8 +410,8 @@ justify-content: space-around;
     border-radius: 5px;
     background-color: white;
     color: black;
-    width: 90%;
-    margin:10px auto;
+    width: 80%;
+    margin:20px auto;
     padding: 5px;
     height: auto;
     display: flex;
@@ -393,6 +420,7 @@ justify-content: space-around;
 }
 .JobcardFirstDiv{
     width: 70%;
+    margin:15px auto;
 }
 #headingJobs{
     position:fixed;
@@ -401,22 +429,39 @@ justify-content: space-around;
     top: 70px;
     color: transparent;
     background: rgb(74,39,255);
-    background: linear-gradient(117deg, rgba(74,39,255,1) 0%, rgba(233,208,255,1) 28%, rgba(255,124,30,1) 75%, rgba(255,0,65,1) 100%);-webkit-background-clip: text;
+    background: linear-gradient(117deg, rgba(74,39,255,1) 0%, rgba(233,208,255,1) 28%, rgba(255,124,30,1) 75%, rgba(255,0,65,1) 100%);
+    -webkit-background-clip: text;
 }
 
 #favButton{
     padding: 8px 15px;
     border: 0px;
     color: white;
-    border-radius: 10px;
+    border-radius: 50px;
     background-color: rgb(12, 133, 255);
 }
 #favButton:hover{
     background-color: rgb(32, 3, 122);
 }
+#viewButton{
+    padding: 8px 15px;
+    border: 0px;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    background-color: rgb(227, 255, 12);
+    border: 3px solid rgb(255, 255, 12);
+    margin: 5px;
+}
+#viewButton:hover{
+    background-color: rgb(222, 255, 103);
+    border: 3px solid orange;
+}
 .cardimage{
     width: 200px;
     height: 200px;
+    margin-right:20px;
+    border:3px solid rgb(170, 168, 168);
+    border-radius: 12px;
     text-align: right;
 }
 #Jobname{
