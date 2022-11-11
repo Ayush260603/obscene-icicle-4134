@@ -97,16 +97,46 @@ function displayCards(array){
         let rating = document.createElement("h4");
         rating.setAttribute("id","JobRating")
         let y = (element.rating/10)
-        rating.innerText="Rating:-" + y +"⭐⭐⭐⭐⭐";
+        let starq = "";
+            if(y>=1 && y<2 || y<1){
+            starq="⭐"
+          }if(y>=2 && y<3 ){
+            starq="⭐"
+          }if(y>=3 && y<4 ){
+            starq="⭐⭐"
+          }if(y>=4 && y<5 ){
+            starq="⭐⭐"
+          }if(y>=5 && y<6 ){
+            starq="⭐⭐⭐"
+          }if(y>=6 && y<7 ){
+            starq="⭐⭐⭐"
+          }if(y>=7 && y<8 ){
+            starq="⭐⭐⭐⭐"
+          }if(y>=8 && y<9 ){
+            starq="⭐⭐⭐⭐"
+          }if(y>=9 && y<=10 ){
+            starq="⭐⭐⭐⭐⭐"
+          }
+        rating.innerText="Rating:-" + y +starq;
 
         let salary = document.createElement("h5");
         salary.setAttribute("id","Salary")
         salary.innerText="Salary :"+element.salary;
 
+        let apply = document.createElement("button");
+        apply.setAttribute("class","fgradbutton")
+        apply.innerText= "Apply Now";
+        apply.addEventListener("click",function(){
+            localStorage.setItem("AppliedJob",JSON.stringify(element))
+            document.querySelector(".applyjob").style.display="block"
+        });
+
         let button = document.createElement("button");
         button.setAttribute("id","favButton")
         button.innerText= "Add to Favorites";
         button.addEventListener("click",function(){
+            button.style.backgroundColor="maroon";
+            button.innerText="Added to Favorites";
             if(favData.includes(element)){
                 document.querySelector(".problem").style.display="block"
             }else{
@@ -133,7 +163,7 @@ function displayCards(array){
         image.innerText= element.image;
 // the things that will go inside divs are created
 
-        div1.append(name,date,type,phrase,rating,salary,button,view)
+        div1.append(name,date,type,phrase,rating,salary,apply,button,view)
         div2.append(image)
         divout.append(div1,div2)
         document.querySelector(".JobScontainer").append(divout)
@@ -143,4 +173,106 @@ function displayCards(array){
 document.querySelector("#close").addEventListener("click",function(){
     document.querySelector(".problem").style.display="none"
 })
+document.querySelector("#close1").addEventListener("click",function(){
+    document.querySelector(".applyjob").style.display="none"
+})
 
+document.querySelector("#Proceed").addEventListener("click",redirectToOtp)
+function redirectToOtp(){
+    setTimeout(function(){
+        document.location.href="otp.html"
+    },2000)
+}
+
+// Rating Slider Function
+var slider = document.getElementById("myRange");
+var output = document.getElementById("displayslider");
+let star = document.getElementById("stars");
+output.innerHTML = slider.value;
+
+slider.addEventListener("input",function() {
+  output.innerHTML = this.value;
+  let ratingData = JobData.filter(function(element){
+    return element.rating/10 >= output.innerHTML
+  })
+  ratingData.sort((a,b)=> a.rating - b.rating)
+  document.querySelector(".JobScontainer").innerHTML="";
+    displayCards(ratingData)
+  if(output.innerHTML>1 && output.innerHTML<2 ){
+    star.innerHTML="⭐"
+  } if(output.innerHTML>3 && output.innerHTML<4 ){
+    star.innerHTML="⭐⭐"
+  } if(output.innerHTML>5 && output.innerHTML<6 ){
+    star.innerHTML="⭐⭐⭐"
+  } if(output.innerHTML>7 && output.innerHTML<8 ){
+    star.innerHTML="⭐⭐⭐⭐"
+  } if(output.innerHTML>9 && output.innerHTML<10 ){
+    star.innerHTML="⭐⭐⭐⭐⭐"
+  }
+
+})
+
+// Higher to lower salary functionality
+let htl = document.querySelector("#HTL")
+let lth = document.querySelector("#LTH")
+lth.style.background="grey"
+htl.style.background="grey"
+htl.addEventListener("click",SortHTL)
+lth.addEventListener("click",SortLTH)
+function SortHTL(){
+    lth.style.background="grey"
+    htl.style.background="rgb(32,150,242)"
+
+    let HTLData = JobData.sort((a,b)=> b.salary - a.salary)
+    document.querySelector(".JobScontainer").innerHTML=""
+    displayCards(HTLData)
+}
+function SortLTH(){
+    htl.style.background="grey"
+    lth.style.background="rgb(32,150,242)"
+    let LTHData = JobData.sort((a,b)=> a.salary - b.salary)
+    document.querySelector(".JobScontainer").innerHTML=""
+    displayCards(LTHData)
+}   
+
+//  Jobtype Filter Function 
+
+let selected = document.querySelector("#filter")
+selected.addEventListener("change",FilterFunc)
+
+function FilterFunc(){
+    document.querySelector(".JobScontainer").innerHTML=""
+    if(selected.value==""){
+        displayCards(JobData)
+    }else{
+        let JobTypeData = JobData.filter((element)=>{
+            return element.jobtype.toLowerCase() == selected.value.toLowerCase()
+        })
+        console.log(JobTypeData)
+        displayCards(JobTypeData)
+    }
+   
+}
+// Search filter function
+
+let search = document.querySelector(".searchinput")
+search.addEventListener("input",SearchFunction)
+
+function SearchFunction(){
+    
+    document.querySelector(".JobScontainer").innerHTML="";
+    let searchData = JobData.filter((element)=>{
+        return element.name.toLowerCase().includes(search.value.toLowerCase());
+    })
+    console.log(searchData)
+    if(searchData==""){
+        document.querySelector(".problem>h1").innerText="Oops! No Jobs Found";
+        document.querySelector(".problem>img").src="https://cdn.dribbble.com/users/808936/screenshots/4218610/dribbble-cat.gif";
+        document.querySelector(".problem>h2").innerText="";
+        document.querySelector(".problem").style.display="block"
+    }else{
+        document.querySelector(".problem").style.display="none"
+        displayCards(searchData)
+    }
+    
+}

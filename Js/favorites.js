@@ -111,7 +111,7 @@ function loginslide(){
     // the things that will go inside divs are created
     
             div1.append(name,date,type,phrase,rating,salary,image)
-            div2.append(button,view)
+            div2.append(view,button)
             div2.setAttribute("class","flexalign")
             div1.addEventListener("click",function(){
                 let arr=[]

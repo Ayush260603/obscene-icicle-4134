@@ -67,7 +67,7 @@ function loginslide(){
     
             let name = document.createElement("h1");
             name.setAttribute("id","Jobname")
-            name.innerText= "💠 "+ element.name;
+            name.innerText= element.name;
             count++
     
             let date = document.createElement("h3");
