@@ -16,6 +16,13 @@
         <!-- preloader -->
         <div id="preloader"></div>
         <!-- alertdiv -->
+        <div class="applyjob">
+            <img width="40%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
+            <h1 style="font-size:30px">Do You want to apply for job with your given credentials?</h1>
+            <h2>OTP Confirmation will be needed..</h2>
+            <button class="fgradbutton" id="Proceed">YES</button>
+            <button class="gradbutton" id="close1">No </button>
+        </div>
         <div class="problem">
             <img width="40%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
             <h1 style="font-size:30px">Do You want to Logout?</h1>
@@ -42,7 +49,10 @@
                         <h1  class="avatarx" id="avatarstatus">Not Working</h1>
                         <h4>Gender:</h4>
                         <h1  class="avatarx" id="avatargender">Male</h1>
-                        
+                        <br>
+                        <div class="flexalign">
+                            <a href="index.html"> <button id="logoutbut" class="fgradbutton">Logout</button></a>
+                         </div>
                     </div>
                    
                 </div>
@@ -117,7 +127,8 @@
                 <a class="headsters"> Hello  </a><a  class="headsters" style="color: rgb(253, 122, 6);" id="avatarname"></a><span> </span><a class="headsters"> !</a>
                 <h2 style="color: black;"> We welcome you to PlaceMe.com!</h2>
                 <p>Are you willing to share with recruiters if you are already holding a job offer?</p>
-                <button style="margin:5px 10px" class="fgradbutton">My Jobs</button><button class="gradbutton">Update</button>
+                <a href="favorites.html"><button style="margin:5px 10px" class="fgradbutton">My Jobs</button></a>
+                <a href="jobs.html"><button class="gradbutton">Updates</button></a>
                 <h2>Review : ⭐⭐⭐</h2>
                 <h5>Profile Performance</h5>
                 <p>3X Boost to Your Profile Performance. Explore.
@@ -150,8 +161,8 @@
                             <p id="JobLine">Description :We are looking for an ambitious, fire breathing Agile Coach who will play an instrumental part in transforming and continuously refining and improving the way we incept, implement and deliver world class digital outcomes to our customers. </p>
                             <h5 id="JobRating">Rating : ⭐⭐⭐</h5>
                             <h5 id="Salary">Salary:50000/-</h5>
-                            <button id="favButton">Add to Favorite</button>
-                            <button class="fgradbutton">Apply Now</button>
+                            <a href="favorites.html"><button id="favButton">Add to Favorite</button></a>
+                            <button class="fgradbutton" id="loginpageapply">Apply Now</button>
                         </div>
                         <div>
                             <img class="cardimage" src="https://media.istockphoto.com/id/1344688156/photo/portrait-of-a-man-using-a-computer-in-a-modern-office.jpg?b=1&s=170667a&w=0&k=20&c=AAVVOvN9uY1Rd_0QsWb8WvBN-4VSUdCORiZx51s5OLc=" alt="">
@@ -166,8 +177,8 @@
                             <p id="JobLine">Description :We are looking for an ambitious, fire breathing Agile Coach who will play an instrumental part in transforming and continuously refining and improving the way we incept, implement and deliver world class digital outcomes to our customers. </p>
                             <h5 id="JobRating">Rating : ⭐⭐⭐⭐⭐</h5>
                             <h5 id="Salary">Salary:100000/-</h5>
-                            <button id="favButton">Add to Favorite</button>
-                            <button class="fgradbutton">Apply Now</button>
+                            <a href="favorites.html"><button id="favButton">Add to Favorite</button></a>
+                            <button class="fgradbutton" id="loginpageapply2">Apply Now</button>
                         </div>
                         <div>
                             <img class="cardimage" src="https://i.pinimg.com/280x280_RS/77/25/80/772580c32c13b5127616c22c3cac71bf.jpg" alt="">
@@ -200,7 +211,8 @@
                 <div style="padding:12px" class="white">
                 <h1>Eren Jaeger</h1>    
                 <p>I want to hire someone who knows Frontend Web Development, Backend Development and has good communication skills, so apply for the job here if you have these things in you</p>   
-                <p>Contact:- 989XXXXXXX</p><button class="fgradbutton">Contact Details</button>
+                <p>Contact:- 989XXXXXXX</p>
+                <a href="favorites.html"><button class="fgradbutton">Contact Details</button></a>
                     </div>
             </div>
             <div class="flexalign white">
@@ -208,7 +220,8 @@
                 <div style="padding:12px" class="white">
                 <h1>Millie Bobby Brown</h1>
                 <p>I want to hire someone who knows Frontend Web Development, Backend Development and has good communication skills, so apply for the job here if you have these things in you</p>
-                <p>Contact:- 989XXXXXXX</p><button class="fgradbutton">Contact Details</button>
+                <p>Contact:- 989XXXXXXX</p>
+                <a href="favorites.html"><button class="fgradbutton">Contact Details</button></a>
                     </div>
             </div>
             <div class="flexalign white">
@@ -216,7 +229,8 @@
                 <div style="padding:12px" class="white">
                 <h1>Isagi Yoichi</h1>
                 <p>I want to hire someone who knows Frontend Web Development, Backend Development and has good communication skills, so apply for the job here if you have these things in you</p>
-                <p>Contact:- 989XXXXXXX</p><button class="fgradbutton">Contact Details</button>
+                <p>Contact:- 989XXXXXXX</p>
+                <a href="favorites.html"><button class="fgradbutton">Contact Details</button></a>
                     </div>
             </div>
         </div> 

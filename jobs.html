@@ -14,14 +14,21 @@
         <!-- preloader -->
         <div id="preloader"></div>
         <!-- alertdiv -->
-        <div class="problem">
+        <div class="applyjob">
             <img width="40%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
+            <h1 style="font-size:30px">Do You want to apply for job with your given credentials?</h1>
+            <h2>OTP Confirmation will be needed..</h2>
+            <button class="fgradbutton" id="Proceed">YES</button>
+            <button class="gradbutton" id="close1">No </button>
+        </div>
+        <div class="problem">
+            <img width="50%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
             <h1 style="font-size:30px">Oh!Looks like you have already added this job on favorites!</h1>
             <h2>...</h2>
             <button class="gradbutton" id="close">Close </button>
         </div>
        <!-- login slider -->
-  <div class="loginslider">
+        <div class="loginslider">
     <nav id="primary-header">
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
                 class="sr-only">💠</span></button>
@@ -39,29 +46,25 @@
                         <h1  class="avatarx" id="avatarstatus">Not Working</h1>
                         <h4>Gender:</h4>
                         <h1  class="avatarx" id="avatargender">Male</h1>
-                        
+                        <br>
+                        <div class="logout flexalign">
+                           <a href="index.html"> <button id="logoutbut" class="fgradbutton">Logout</button></a>
+                        </div>
                     </div>
                    
                 </div>
             </ul>
         </nav>
     </nav>
-</div>
+        </div>
         <!-- navigation bar -->
         <header>
             <div id="logoholder">
                 <a href="login.html"><img id="logo" src="CSS/Images/logo.jpg" alt="Place Me"></a>
             </div>
             <div class="home">
-                <a href="#search-sec">
-                    <div id="JobsNav">Jobs
-                        <ul class="jobsul">
-                            <li>Recommended jobs</li>
-                            <li>Jobs from recruiters</li>
-                            <li>Jobs from alerts</li>
-                            <li>Application status</li>
-                            <li>Saved jobs</li>
-                        </ul>
+                <a href="login.html">
+                    <div id="JobsNav">Home
                     </div>
                 </a>
                 <a href="#top-companies">
@@ -100,7 +103,7 @@
     <!-- recommended bar -->
     <div class="recom-bar">
         <div class="flexalign"><h1 style="font-size: 50px;">🛄<h1>Recommended Jobs For You</h1></div>
-        <div class="flexalign"><h2>You Can Appy Upto 5 Jobs ! </h2><span>⚫</span><button class="gradbutton">Apply Jobs</button></div>
+        <div class="flexalign"><h2>You Can Appy Upto 5 Jobs ! </h2><span>⚫</span><a href="login.html"><button class="gradbutton">New Updates</button></a></div>
     </div>
     <div class="ActualPage">
         <h1 id="headingJobs">Jobs</h1>
@@ -112,16 +115,43 @@
                 </div>
             </div>
         </div>
-            <div>
-                <h1 id="filterhead">Salary Filter Slider</h1>
-                <select name="" id="filter"> Sort</select>
+        <br>
+            <div class="filterdiv">
+                <h1 id="filterhead">Filter Jobs</h1>
+                <select name="" id="filter"> 
+                    <option value="">Select Job-Type</option>
+                    <option value="Director">Directior</option>
+                    <option value="Assistant">Assistant</option>
+                    <option value="Supervisor">Supervisor</option>
+                    <option value="Analyst">Analyst</option>
+                    <option value="Associate">Associate</option>
+                    <option value="Officer">Officer</option>
+                    <option value="Manager">Manager</option>
+                    <option value="Agent">Agent</option>
+                </select>
             </div>
-            <div>Logo</div>
+            <div class="HTLswitcher">
+                <h1>Salary Filter</h1>
+                <div>
+                    <button id="HTL" class="gradbutton">High to Low</button>
+                    <button id="LTH"  class="fgradbutton">Low to High</button>
+                </div>
+               
+            </div>
+
+            <div class="ratingslider">
+                <h1>Salary Filter</h1>
+                <div>
+                    <a> Sort By Rating Above :</a>
+                <a id="displayslider"></a><br>
+            <input type="range"  min=0 max=10 step="0.1" value="50" id="myRange"><br><a id="stars">⭐⭐⭐⭐⭐</a>
+            
+                </div>    
+            </div>
+            
         </div>
         <div class="JobScontainer">
-            
             <!-- Append Job data here -->
-            
                 <div class="JobCard flexalign">
                     <div class="JobcardFirstDiv">
                         <h1 id="Jobname">Jobtitle </h1>

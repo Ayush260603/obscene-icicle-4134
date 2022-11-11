@@ -16,9 +16,9 @@ hr {
     width: 90%;
 }
 
-div {
-   border: 1px solid transparent;
-}
+/* div {
+   border: 1px solid green;
+} */
 
 a {
     text-decoration: none;
@@ -70,6 +70,25 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.3);
     transform: scale(0.9);
     transition: scale(0.1) 350ms ease-in-out;
+}
+.applyjob{
+    display:none;
+    position:fixed;
+    border: 3px solid yellow;
+    width: 40vw;
+    height: 60vh;
+    text-align: center;
+    z-index: 99999999;
+    color: black;
+    margin: 10% 30%;
+    padding: 20px;
+    background: rgb(255,255,255);
+    background: linear-gradient(331deg, rgba(255,255,255,0.8494748241093313) 0%, rgba(255,255,255,0.19681375968356096) 25%, rgba(255,255,255,0.8074580173866421) 50%, rgba(255,255,255,0.19961488013174022) 75%, rgba(255,255,255,0.8886905103838411) 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 /* loginslider  */
 /* loginslider  */
@@ -170,7 +189,6 @@ label {
 html {
     background-color: black;
     color: white;
-    
 }
 header {
     z-index: 99;
@@ -257,6 +275,33 @@ header>div:nth-child(2) {
     background: rgb(131, 58, 180);
     background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 81%, rgba(255, 187, 0, 1) 100%);
 }
+.gradbutton:hover {
+    background: rgb(131, 58, 180);
+    transform: scale(1.1);
+    z-index: 1.1;
+    cursor: pointer;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 16%, rgba(255, 187, 0, 0.8774860285911239) 100%);
+
+}
+.fgradbutton {
+    margin: 10px auto;
+    margin-right: 10px;
+    padding: 8px 20px;
+    border-radius: 30px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    background: rgb(57,162,168);
+    background: linear-gradient(90deg, rgba(57,162,168,1) 0%, rgba(63,94,251,1) 29%, rgba(82,85,226,1) 58%, rgba(243,0,255,1) 100%);
+}
+.fgradbutton:hover {
+    background: rgb(131, 58, 180);
+    transform: scale(1.1);
+    z-index: 1.1;
+    cursor: pointer;
+    background: rgb(63,94,251);
+background: linear-gradient(90deg, rgba(63,94,251,1) 2%, rgba(243,0,255,1) 27%, rgba(57,162,168,1) 72%, rgba(82,85,226,1) 95%);
+}
 .searchbox {
     width: 100%;
     margin: 0px 0px;
@@ -291,7 +336,11 @@ header>div:nth-child(2) {
     border: 0px;
     color: white;
     background: rgb(36, 3, 57);
-    background: linear-gradient(90deg, rgb(189, 37, 37) 0%, rgb(53, 43, 242) 81%, rgba(255, 187, 0, 1) 100%);
+    background: linear-gradient(90deg, rgb(77, 7, 255) 0%, rgb(51, 238, 251) 81%, rgb(12, 255, 40) 100%);
+}
+.agradbutton:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 #loginbut {
     border: 1px solid white;
@@ -382,8 +431,13 @@ justify-content: space-around;
     position: fixed;
     left: 20px;
     top: 200px;
+    padding:15px ;
+    -webkit-box-shadow:0px 0px 29px 0px rgba(255,255,255,0.93);
+-moz-box-shadow: 0px 0px 29px 0px rgba(255,255,255,0.93);
+box-shadow: 0px 0px 29px 0px rgba(255,255,255,0.93);
+border-radius: 10px;
     width: 370px;
-    height:80vh ;
+    height:66vh ;
     margin: 5px;
 }
 .recom-bar{
@@ -391,12 +445,12 @@ justify-content: space-around;
     justify-content: right;
 }
 .recom-bar>div{
-    margin: 0px 50px;
+    margin: 0px 100px;
 }
 .JobScontainer{
     z-index: 1;
     width: 67%;
-    height: auto;
+    min-height:80vh;
     margin-top: 10px;
     margin-left: 400px;
 }
@@ -420,7 +474,7 @@ justify-content: space-around;
 }
 .JobcardFirstDiv{
     width: 70%;
-    margin:15px auto;
+    margin:15px 15pxs;
 }
 #headingJobs{
     position:fixed;
@@ -449,7 +503,6 @@ justify-content: space-around;
     color: rgb(0, 0, 0);
     border-radius: 50px;
     background-color: rgb(227, 255, 12);
-    border: 3px solid rgb(255, 255, 12);
     margin: 5px;
 }
 #viewButton:hover{
@@ -467,3 +520,58 @@ justify-content: space-around;
 #Jobname{
     font-size: 25px;
 }
+#logoutbut{
+    padding: 10px 70px;
+    background: rgb(255,0,0);
+    background: linear-gradient(55deg, rgba(255,0,0,1) 0%, rgba(255,130,68,1) 25%, rgba(255,0,0,1) 51%, rgba(255,2,7,1) 52%, rgba(255,63,186,1) 75%, rgba(255,0,0,1) 100%);
+    }
+#logoutbut:hover{
+    -webkit-box-shadow:0px 0px 51px 3px rgba(255,255,255,0.9);
+-moz-box-shadow: 0px 0px 51px 3px rgba(255,255,255,0.9);
+box-shadow: 0px 0px 51px 3px rgba(255,255,255,0.9);
+}
+#filter{
+    border-radius: 15px;
+    font-size: 18px;
+    margin: 5px auto;
+    width: 100%;
+    padding: 15px;
+    background-color: azure;
+}
+#filter:hover{
+    cursor:pointer;
+    -webkit-box-shadow:0px 0px 51px 3px rgba(0, 42, 255, 0.8);
+    -moz-box-shadow: 0px 0px 51px 3px rgba(47, 0, 255, 0.8);
+    box-shadow: 0px 0px 51px 3px rgba(0, 102, 255, 0.8);
+}
+/* leftpart  */
+#myRange{
+    width: 60%;
+    margin: auto;    
+}
+#stars{
+    font-size: larger;
+}
+#slider{
+    width: 100%;
+}
+.ratingslider>div{
+    text-align: center;
+    padding: 15px 30px;
+    margin: 15px auto;
+    color:black;
+    background: rgb(255,255,255);
+    background: linear-gradient(331deg, rgba(255,255,255,0.8494748241093313) 0%, rgba(255,255,255,0.19681375968356096) 25%, rgba(255,255,255,0.8074580173866421) 50%, rgba(255,255,255,0.19961488013174022) 75%, rgba(255,255,255,0.8886905103838411) 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.HTLswitcher,.filterdiv,.ratingslider{
+    text-align: center;
+    padding: 15px;
+}
+.HTLswitcher>div{
+    margin: 10px auto;
+   background-color: white;
+   border-radius: 25px;
+}
+
