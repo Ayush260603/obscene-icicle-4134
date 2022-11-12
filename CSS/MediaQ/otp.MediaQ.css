@@ -1,7 +1,5 @@
 /* --------------------------Medium screen sizes ------------------------------------------*/
-div {
-  border: 1px solid yellowgreen;
-}
+
 @media all and (min-width: 810px) and (max-width: 1280px) {
   /*--------------------- Universals--------------------- */
   * {
@@ -218,13 +216,14 @@ div {
   }
   .JobcardFirstDiv + div {
     height: auto;
+    padding: 20px;
   }
   #Jobname {
     font-size: 25px;
   }
   #favButton,
   #viewButton {
-    padding: 3px 9px;
-    font-size: 18px;
+    padding: 8px 15px;
+    font-size: 14px;
   }
 }

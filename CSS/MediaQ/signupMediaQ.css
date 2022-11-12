@@ -56,6 +56,9 @@
   .signup {
     height: 110vh;
   }
+  footer {
+    margin-top: 0px;
+  }
   /* -------------------------Page Specifc Start------------------------- */
 }
 
@@ -120,9 +123,14 @@
     color: black;
   }
   /* ----------------------------------Page Specific Start---------------------------------- */
+  footer {
+    margin-top: 0px;
+  }
   .signup {
     flex-direction: column;
     height: max-content;
+    padding: 0px;
+    margin: 0px;
   }
   .orGogle {
     font-size: 26px;

@@ -82,6 +82,7 @@ footer li {
   .logofooter > div {
     display: flex;
     justify-content: center;
+    width: 120px;
   }
   .footer1st li {
     font-size: 10px;

@@ -154,7 +154,9 @@ html {
   position: relative;
   background-color: black;
 }
-
+footer {
+  margin-top: 0px;
+}
 header {
   position: sticky;
   top: 0;
@@ -268,8 +270,11 @@ body {
   background-image: url("Images/signup.jpg");
   background-size: cover;
 }
+footer {
+  margin-top: 0px;
+}
 .signup {
-  height: 93vh;
+  height: 95vh;
   display: flex;
   justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.7);
