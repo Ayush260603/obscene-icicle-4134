@@ -1,0 +1,375 @@
+/* CSS Starts from the Sliders section */
+
+/* ========================companies hiring ========================================*/
+
+.companies {
+  min-width: 250px;
+  margin: 15px auto;
+}
+.Slidebuttons {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgb(6, 165, 228);
+  border: 3px dotted rgb(255, 255, 255);
+  cursor: pointer;
+  opacity: 0.7;
+  display: grid;
+  margin-top: 10%;
+  z-index: 999;
+}
+.Slidebuttons:hover {
+  border: 3px dotted rgb(9, 211, 238);
+  opacity: 1;
+}
+#pre-but {
+  position: absolute;
+  left: 20px;
+}
+#nxt-but {
+  position: absolute;
+  right: 20px;
+}
+#topcomp-sec {
+  position: relative;
+  overflow: hidden;
+}
+#Slider,
+#Slider2,
+#Slider3 {
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  transition: all 500ms ease;
+  width: 200vw;
+  margin: 30px auto;
+}
+#Slider > div,
+#Slider2 > div {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: left;
+  margin: 2px 90px;
+  scroll-behavior: smooth;
+  transition: all 500ms ease;
+}
+#Slider::-webkit-scrollbar,
+#Slider2::-webkit-scrollbar {
+  display: none;
+}
+
+#Slider > div > div,
+#Slider2 > div > div {
+  padding: 15px;
+  border: 2px solid white;
+  width: 220px;
+  height: auto;
+  margin: 10px;
+  -webkit-box-shadow: 0px 0px 22px 5px rgba(37, 79, 184, 1);
+  -moz-box-shadow: 0px 0px 22px 5px rgba(37, 79, 184, 1);
+  box-shadow: 0px 0px 22px 5px rgba(37, 79, 184, 1);
+  cursor: -webkit-grab;
+}
+#Slider > div > div > img,
+#Slider2 > div > div > img {
+  background-color: white;
+  border-radius: 10px;
+  margin: 6px;
+  padding: 5px;
+  width: 35%;
+  height: 25%;
+  -webkit-box-shadow: 0px 0px 22px 5px rgba(184, 37, 184, 1);
+  -moz-box-shadow: 0px 0px 22px 5px rgba(184, 37, 184, 1);
+  box-shadow: 0px 0px 22px 5px rgba(184, 37, 184, 1);
+}
+.slidptag {
+  color: grey;
+  margin: 7px auto;
+}
+.compslidtranslateNXT {
+  transform: translateX(-850px);
+}
+.compslidtranslatePRE {
+  transform: translateX(0px);
+}
+/* companies hiring :end ============================================================================================*/
+
+/* companies hiring actively start ============================================================================================ */
+#compani-sec {
+  position: relative;
+  overflow: hidden;
+}
+#pre-but2 {
+  position: absolute;
+  left: 20px;
+}
+#nxt-but2 {
+  position: absolute;
+  right: 20px;
+}
+#Slider2 > div > div {
+  -webkit-box-shadow: 0px 0px 16px 10px rgba(255, 0, 21, 0.51);
+  -moz-box-shadow: 0px 0px 16px 10px rgba(255, 0, 21, 0.51);
+  box-shadow: 0px 0px 16px 10px rgba(255, 0, 21, 0.51);
+}
+/* companies hiring actively end ============================================================================================ */
+
+/* sponsored companies :start ============================================================================================ */
+.companies3 {
+  max-height: 400px;
+  margin: 0px;
+}
+#pre-but3 {
+  position: absolute;
+  top: 12%;
+  left: 20px;
+}
+#nxt-but3 {
+  top: 12%;
+  position: absolute;
+  right: 20px;
+}
+#sponsor-sec {
+  position: relative;
+  overflow: hidden;
+}
+#Slider3 > div {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: left;
+  margin: 2px 90px;
+  scroll-behavior: smooth;
+  transition: all 500ms ease;
+}
+#Slider3::-webkit-scrollbar {
+  display: none;
+}
+
+#Slider3 > div > div {
+  padding: 10px;
+  border: 2px solid white;
+  width: 220px;
+  height: 170px;
+  margin: 10px;
+  -webkit-box-shadow: 0px 0px 26px 4px rgba(229, 250, 73, 1);
+  -moz-box-shadow: 0px 0px 26px 4px rgba(229, 250, 73, 1);
+  box-shadow: 0px 0px 26px 4px rgba(229, 250, 73, 1);
+  cursor: -webkit-grab;
+}
+#Slider3 > div > div > img {
+  background-color: white;
+  border-radius: 10px;
+  margin: 6px;
+  padding: 5px;
+  width: 80%;
+  height: 35%;
+  -webkit-box-shadow: 0px 0px 22px 5px rgba(184, 37, 184, 1);
+  -moz-box-shadow: 0px 0px 22px 5px rgba(184, 37, 184, 1);
+  box-shadow: 0px 0px 22px 5px rgba(184, 37, 184, 1);
+}
+/* sponsored companies :end ============================================================================================*/
+
+/*-------------------------------- Discover Jobs----------------------------------------------- */
+.discover-jobs {
+  width: 60vw;
+  height: 50vh;
+  border-radius: 10px;
+  margin: 15px auto;
+  background-color: blanchedalmond;
+  color: brown;
+  display: flex;
+  text-align: center;
+}
+.discover-jobs > div:nth-child(1) {
+  background-image: url("https://img.freepik.com/free-vector/goal-achievement-career-promotion-school-graduation-educational-trajectory-educational-capital-strategy-determine-your-educational-way-concept-pinkish-coral-bluevector-isolated-illustration_335657-1255.jpg?w=2000");
+  background-size: cover;
+  border-radius: 10px;
+  width: 70%;
+}
+.discover-jobs button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  margin: 10px 20px;
+  width: 100%;
+  background-color: rgb(242, 223, 156);
+  border: 3px solid rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+}
+.discover-jobs button:hover {
+  background-color: rgb(254, 224, 113);
+}
+/* Interview prep start  ============================================================================================*/
+#interview-sec {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin: 20px 200px;
+  padding: 15px;
+}
+#interview-sec > div {
+  height: 300px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+#interview-sec > div > div,
+#interview-sec2 > div > div {
+  padding: 10px;
+  width: 30%;
+}
+#interview-sec > div > div:nth-child(3) {
+  background-image: url("https://thumbs.dreamstime.com/b/smiling-girl-writing-test-paper-pen-sitting-desk-vector-flat-illustration-happy-woman-representation-resume-183611357.jpg");
+  background-size: cover;
+  border-right: 2px solid white;
+  width: 20%;
+}
+#interview-sec > div > div:nth-child(2) {
+  text-align: left;
+  padding: 0px;
+  width: 40%;
+}
+#interview-sec > div > div:nth-child(1) {
+  background-image: url("https://thumbs.dreamstime.com/b/man-taking-university-exam-remotely-temporarily-student-writing-test-concept-online-exam-online-survey-testing-e-man-taking-183976385.jpg");
+  background-size: cover;
+  width: 20%;
+}
+.Intergrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 20px auto;
+  gap: 10px;
+}
+.Intergrid a {
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+.Intergrid label {
+  color: rgb(123, 119, 119);
+  font-size: 13px;
+}
+.Intergrid > div {
+  height: 45px;
+  width: 75%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 500ms ease;
+}
+.Intergrid > div:hover {
+  background-color: azure;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* Interview Prep :end ============================================================================================*/
+
+/* accelerate job :start============================================================================================ */
+#interview-sec2 > div {
+  height: 150px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+#interview-sec2 {
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin: 20px 200px;
+  padding: 15px;
+}
+#interview-sec2 > div > div:nth-child(3) {
+  background: url("Images/456.png") no-repeat;
+  background-size: contain;
+  border-right: 2px solid white;
+  width: 15%;
+}
+#interview-sec2 > div > div:nth-child(2) {
+  text-align: left;
+  padding: 0px;
+  width: 60%;
+}
+#interview-sec2 > div > div:nth-child(1) {
+  background: url("Images/123png.png") no-repeat;
+  background-size: contain;
+  width: 15%;
+}
+#interview-sec2 button {
+  padding: 10px 20px;
+  margin: 10px 5px;
+  font-size: 18px;
+  background-color: transparent;
+  color: rgb(77, 75, 75);
+  border-radius: 20px;
+  border: 1px solid rgb(72, 255, 194);
+  transition: all 350ms ease;
+}
+#interview-sec2 button:hover {
+  background-color: rgb(208, 247, 247);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+/* accelerate job :end ============================================================================================*/
+
+/* grow career :start============================================================================================ */
+
+/* grow career :end ============================================================================================*/
+
+/* naukri app :start ============================================================================================*/
+#appsect {
+  background: rgb(247, 249, 254);
+  border-radius: 20px;
+  margin: 20px 200px;
+  padding: 15px;
+  position: relative;
+}
+#appsect > div {
+  height: 300px;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+#appsect > div > div {
+  padding: 10px;
+  width: 30%;
+}
+#appsect > div > div:nth-child(1) {
+  width: 70%;
+  background: rgb(247, 249, 254);
+}
+#appsect > div > div:nth-child(2) {
+  width: 70%;
+  background: url("https://static.naukimg.com/s/0/0/i/download-app-link/MaskGroup_v4.png")
+    no-repeat;
+}
+#appsect button {
+  padding: 10px;
+  margin: 5px 5px;
+  font-size: 18px;
+  border-radius: 20px;
+  background-color: rgb(40, 154, 255);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(27, 179, 255);
+  transition: all 350ms ease;
+}
+#appsect button:hover {
+  background-color: rgb(208, 247, 247);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+#appsect a {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 20px;
+  padding: 7px;
+  margin: 7px;
+  position: absolute;
+}
+#appsect input {
+  padding: 5px;
+  outline: none;
+  border: 0px;
+}
+#appHead {
+  font-size: 38px;
+  color: rgb(22, 68, 186);
+}
+/* nauri app :end============================================================================================ */

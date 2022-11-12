@@ -1,0 +1,317 @@
+/* --------------------------Medium screen sizes ------------------------------------------*/
+@media all and (min-width: 810px) and (max-width: 1280px) {
+  /*--------------------- Universals--------------------- */
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+  }
+  .loginslider {
+    display: block;
+  }
+  .flexalign {
+    display: grid;
+  }
+  .problem {
+    height: 24vh;
+    top: 150px;
+    color: black;
+  }
+  .sectionHeads {
+    font-size: 40px;
+    margin: 25px auto;
+  }
+  #loginbut {
+    margin: 1px 3px;
+  }
+  .gradbutton {
+    margin: 1px 3px;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  header > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0px;
+    margin: 0px;
+  }
+  .home > a > div {
+    margin: 0px 5px;
+    padding: 1px;
+    text-align: center;
+  }
+  .jobsul,
+  .Compsul,
+  .Servsul,
+  .jobsul:hover,
+  .Compsul:hover,
+  .Servsul :hover,
+  #JobsNav:hover .jobsul,
+  #CompNav:hover .Compsul,
+  #ServNav:hover .Servsul {
+    display: none;
+  }
+  /* -------------------------Page Specifc Start------------------------- */
+  .ActualPage {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sort {
+    position: absolute;
+    top: 10px;
+    width: 80%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #searchbox-inner {
+    width: 190%;
+    margin: 15px auto;
+  }
+  #filterhead {
+    display: none;
+  }
+  .searchinput {
+    width: 65%;
+  }
+  .HTLswitcher > div {
+    padding: 10px;
+  }
+  #headingJobs {
+    font-size: 60px;
+    top: 90px;
+    left: 25px;
+  }
+  .JobScontainer {
+    position: static;
+    width: 100%;
+    margin: auto;
+    margin-top: 240px;
+  }
+  .avatarx {
+    font-size: 12px;
+  }
+  #avatarhead {
+    font-size: 25px;
+  }
+  .JobCard {
+    position: relative;
+    margin: 0px;
+  }
+  .cardimage {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 80px;
+    height: 80px;
+  }
+  .JobScontainer > div {
+    width: 90%;
+    margin: 10px 10px;
+  }
+  .JobcardFirstDiv {
+    width: 90%;
+    margin: 10px 10px;
+  }
+  #viewButton {
+    padding: 7px 20px;
+    margin: 7px 10px;
+    font-size: 10px;
+  }
+  .gradbutton,
+  .fgradbutton {
+    margin: 7px 5px;
+    padding: 7px 5px;
+  }
+  .ratingslider > div {
+    margin: 8px auto;
+  }
+  .HTLswitcher,
+  .filterdiv,
+  .ratingslider {
+    padding: 5px;
+  }
+  .ratingslider > div {
+    padding: 5px;
+  }
+  .recom-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0px;
+  }
+
+  .recom-bar > div {
+    margin: 0px;
+    display: flex;
+    padding-right: 20px;
+    justify-content: left;
+  }
+  #bagicon {
+    font-size: 40px;
+  }
+  span {
+    display: none;
+  }
+  #newupdate {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+/* -----------------------------------Small Screen Sizes----------------------------------- */
+
+@media all and (min-width: 320px) and (max-width: 809px) {
+  /*------------------------------------ Universals------------------------------------ */
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+  }
+  .flexalign {
+    display: grid;
+  }
+  .sectionHeads {
+    font-size: 25px;
+    margin: 10px auto;
+  }
+  #loginbut {
+    margin: 1px 3px;
+  }
+  .gradbutton,
+  .fgradbutton {
+    margin: 7px 5px;
+    padding: 7px 5px;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  header > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+    margin: 0px;
+  }
+  .home > a > div {
+    margin: 0px 5px;
+    padding: 1px;
+    text-align: center;
+  }
+  .loginslider,
+  #mqx {
+    display: none;
+  }
+  .jobsul,
+  .Compsul,
+  .Servsul,
+  .jobsul:hover,
+  .Compsul:hover,
+  .Servsul :hover,
+  #JobsNav:hover .jobsul,
+  #CompNav:hover .Compsul,
+  #ServNav:hover .Servsul {
+    display: none;
+  }
+  .problem {
+    height: 38vh;
+    width: 45vh;
+    margin: auto;
+    left: 10px;
+    top: 150px;
+    color: black;
+  }
+  /* ----------------------------------Page Specific Start---------------------------------- */
+  .ActualPage {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sort {
+    position: absolute;
+    top: 10px;
+    width: 80%;
+    height: fit-content;
+  }
+  .searchinput {
+    width: 65%;
+  }
+  .HTLswitcher > div {
+    padding: 10px;
+  }
+  #headingJobs {
+    font-size: 60px;
+    top: 90px;
+    left: 25px;
+  }
+  .JobScontainer {
+    position: static;
+    width: 100%;
+    margin: 0px;
+    margin-top: 400px;
+  }
+  .JobCard {
+    position: relative;
+    margin: 0px;
+  }
+  .cardimage {
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    width: 80px;
+    height: 80px;
+  }
+  .JobScontainer > div {
+    width: 90%;
+    margin: 10px 10px;
+  }
+  .JobcardFirstDiv {
+    width: 90%;
+    margin: 10px 10px;
+  }
+  #viewButton {
+    padding: 7px 20px;
+    margin: 7px 10px;
+    font-size: 10px;
+  }
+  #favButton,
+  .fgradbutton {
+    padding: 7px 12px;
+    margin: 2px 5px;
+    font-size: 10px;
+  }
+  .HTLswitcher,
+  .filterdiv,
+  .ratingslider {
+    padding: 5px;
+  }
+  .ratingslider > div {
+    padding: 5px;
+  }
+  .recom-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0px;
+  }
+
+  .recom-bar > div {
+    margin: 0px;
+    display: flex;
+    padding-right: 20px;
+    justify-content: left;
+  }
+  #bagicon {
+    font-size: 40px;
+  }
+  span {
+    display: none;
+  }
+  #newupdate {
+    margin: 0px;
+    padding: 0px;
+  }
+}

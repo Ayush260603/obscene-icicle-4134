@@ -1,0 +1,143 @@
+/* --------------------------Medium screen sizes ------------------------------------------*/
+@media all and (min-width: 810px) and (max-width: 1280px) {
+  /*--------------------- Universals--------------------- */
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+  }
+  .loginslider {
+    display: block;
+  }
+  .flexalign {
+    display: grid;
+  }
+  .problem {
+    height: 48vh;
+    top: 150px;
+    color: black;
+  }
+  .sectionHeads {
+    font-size: 40px;
+    margin: 25px auto;
+  }
+  #loginbut {
+    margin: 10px 15px;
+  }
+  .gradbutton {
+    margin: 10px 15px;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  header > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0px;
+    margin: 0px;
+  }
+  .home > a > div {
+    margin: 0px 5px;
+    padding: 1px;
+    text-align: center;
+  }
+  .jobsul,
+  .Compsul,
+  .Servsul,
+  .jobsul:hover,
+  .Compsul:hover,
+  .Servsul :hover,
+  #JobsNav:hover .jobsul,
+  #CompNav:hover .Compsul,
+  #ServNav:hover .Servsul {
+    display: none;
+  }
+  .signup {
+    height: 110vh;
+  }
+  /* -------------------------Page Specifc Start------------------------- */
+}
+
+/* -----------------------------------Small Screen Sizes----------------------------------- */
+
+@media all and (min-width: 320px) and (max-width: 809px) {
+  /*------------------------------------ Universals------------------------------------ */
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+  }
+  .flexalign {
+    display: grid;
+  }
+  .sectionHeads {
+    font-size: 25px;
+    margin: 10px auto;
+  }
+  #loginbut {
+    margin: 1px 3px;
+  }
+  .gradbutton {
+    margin: 1px 3px;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  header > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+    margin: 0px;
+  }
+  .home > a > div {
+    margin: 0px 5px;
+    padding: 1px;
+    text-align: center;
+  }
+  .loginslider,
+  #mqx {
+    display: none;
+  }
+  .jobsul,
+  .Compsul,
+  .Servsul,
+  .jobsul:hover,
+  .Compsul:hover,
+  .Servsul :hover,
+  #JobsNav:hover .jobsul,
+  #CompNav:hover .Compsul,
+  #ServNav:hover .Servsul {
+    display: none;
+  }
+  .problem {
+    height: 40vh;
+    width: 35vh;
+    margin: auto;
+    left: 10px;
+    top: 150px;
+    color: black;
+  }
+  /* ----------------------------------Page Specific Start---------------------------------- */
+  .signup {
+    flex-direction: column;
+    height: max-content;
+  }
+  .orGogle {
+    font-size: 26px;
+  }
+  .signup > div {
+    border: 0px;
+    margin: 0px;
+  }
+  .signup > div:nth-child(1) {
+    display: none;
+  }
+  .signup > div:nth-child(3) {
+    width: 90%;
+    padding: 0px;
+    margin: 10px;
+    border: 0px;
+  }
+}

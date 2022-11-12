@@ -1,21 +1,28 @@
 /* universal tags */
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 18px;
-    scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
 }
 html {
-    position: relative;
-    background-color: black;
-    background: rgb(0,212,255);
-background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(0,0,0,1) 3%, rgba(0,0,0,1) 97%, rgba(255,0,0,1) 100%);
+  position: relative;
+  background-color: black;
+  background: rgb(0, 212, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 3%,
+    rgba(0, 0, 0, 1) 97%,
+    rgba(255, 0, 0, 1) 100%
+  );
 }
+
 hr {
-    margin: 15px;
-    color: rgb(69, 67, 67);
-    width: 90%;
+  margin: 15px;
+  color: rgb(69, 67, 67);
+  width: 90%;
 }
 
 /* div{
@@ -23,448 +30,441 @@ hr {
 } */
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .flex {
-    display: flex;
+  display: flex;
 }
-.flexalign{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.flexalign {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 /* preloader */
-#preloader{
-    background: black url("Images/preloader.gif") no-repeat center center;
-    background-size: 20%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100000;
+#preloader {
+  background: black url("Images/preloader.gif") no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000000000000000000000;
 }
 /* Section headings */
 .sectionHeads {
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    margin-top: 50px;
-
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
 }
-.problem{
-    display: none;
-    position: fixed;
-    top: 20px;
-    z-index: 999999999;
-    color: black;
-    border: 3px solid yellow;
-    width: 40vw;
-    height: 60vh;
-    z-index: inherit;
-    text-align: center;
-    margin: 10% 30%;
-    padding: 20px;
-    background: rgb(255,255,255);
-    background: linear-gradient(331deg, rgba(255,255,255,0.8494748241093313) 0%, rgba(255,255,255,0.19681375968356096) 25%, rgba(255,255,255,0.8074580173866421) 50%, rgba(255,255,255,0.19961488013174022) 75%, rgba(255,255,255,0.8886905103838411) 100%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    transform: scale(0.9);
-    transition: scale(0.1) 350ms ease-in-out;
+.problem {
+  display: none;
+  position: fixed;
+  top: 20px;
+  z-index: 999999999;
+  color: black;
+  border: 3px solid yellow;
+  width: 40vw;
+  height: 60vh;
+  z-index: inherit;
+  text-align: center;
+  margin: 10% 30%;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    331deg,
+    rgba(255, 255, 255, 0.8494748241093313) 0%,
+    rgba(255, 255, 255, 0.19681375968356096) 25%,
+    rgba(255, 255, 255, 0.8074580173866421) 50%,
+    rgba(255, 255, 255, 0.19961488013174022) 75%,
+    rgba(255, 255, 255, 0.8886905103838411) 100%
+  );
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform: scale(0.9);
+  transition: scale(0.1) 350ms ease-in-out;
 }
-.emptycart{
-    display: none;
-    position: fixed;
-    top: 50px;
-    z-index: 999999999;
-    color: black;
-    border: 3px solid yellow;
-    width: 40vw;
-    height: 65vh;
-    z-index: inherit;
-    text-align: center;
-    margin: 10% 30%;
-    padding: 20px;
-    background: rgb(255,255,255);
-    background: linear-gradient(331deg, rgba(255,255,255,0.8494748241093313) 0%, rgba(255,255,255,0.19681375968356096) 25%, rgba(255,255,255,0.8074580173866421) 50%, rgba(255,255,255,0.19961488013174022) 75%, rgba(255,255,255,0.8886905103838411) 100%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    transform: scale(0.9);
-    transition: scale(0.1) 350ms ease-in-out;
+.emptycart {
+  display: none;
+  position: fixed;
+  top: 50px;
+  z-index: 999999999;
+  color: black;
+  border: 3px solid yellow;
+  width: 40vw;
+  height: 65vh;
+  z-index: inherit;
+  text-align: center;
+  margin: 10% 30%;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    331deg,
+    rgba(255, 255, 255, 0.8494748241093313) 0%,
+    rgba(255, 255, 255, 0.19681375968356096) 25%,
+    rgba(255, 255, 255, 0.8074580173866421) 50%,
+    rgba(255, 255, 255, 0.19961488013174022) 75%,
+    rgba(255, 255, 255, 0.8886905103838411) 100%
+  );
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform: scale(0.9);
+  transition: scale(0.1) 350ms ease-in-out;
 }
 /* loginslider  */
-#avatarhead{
-    font-size: 50px;
-    margin: 10px auto;
+#avatarhead {
+  font-size: 50px;
+  margin: 10px auto;
 }
-.UserDetails{
-    text-align: center;
+.UserDetails {
+  text-align: center;
 }
-.UserDetails>div{
-    text-align: left;
-    margin: 20px;
+.UserDetails > div {
+  text-align: left;
+  margin: 20px;
 }
-#avatar{
-    width: 50%;
-    border-radius: 50%;
-    border: 3px solid white;
+#avatar {
+  width: 50%;
+  border-radius: 50%;
+  border: 3px solid white;
 }
-.avatarx{
-    color: coral;
-    font-size: 22px;
-    margin-left: 15px;
+.avatarx {
+  color: coral;
+  font-size: 22px;
+  margin-left: 15px;
 }
 
 #primary-header {
-    display: flex;
-    justify-content: space-between;
-    gap: 0px;
-    align-items: center;
-    color: azure;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+  align-items: center;
+  color: azure;
 }
 
 .primary-navigation {
-
-    gap: 2px;
-    display: flex;
-    z-index: 1000;
-    position: fixed;
-    inset: 0 0 0 70%;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: rgba(13, 13, 13, 0.7);
-    padding: 10px;
-    backdrop-filter: blur(1rem);
-    transform: translateX(100%);
-    transition: transform 350ms ease-in-out;
+  gap: 2px;
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  inset: 0 0 0 70%;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(13, 13, 13, 0.7);
+  padding: 10px;
+  backdrop-filter: blur(1rem);
+  transform: translateX(100%);
+  transition: transform 350ms ease-in-out;
 }
 
 .mobile-nav-toggle {
-    display: block;
-    position: fixed;
-    border: 0px;
-    width: 2rem;
-    aspect-ratio: 1;
-    z-index: 9999;
-    top: 1rem;
-    background: transparent;
-    right: 2rem;
+  display: block;
+  position: fixed;
+  border: 0px;
+  width: 2rem;
+  aspect-ratio: 1;
+  z-index: 9999;
+  top: 1rem;
+  background: transparent;
+  right: 2rem;
 }
-.primary-navigation[data-visible=true] {
-    transform: translateX(0%);
+.primary-navigation[data-visible="true"] {
+  transform: translateX(0%);
 }
 
 /* login slider emd  */
 
 /* navbar */
 
-
 header {
-    position: sticky;
-    top: 0;
-    padding: 5px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: rgba(17, 16, 16, 0.8);
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(17, 16, 16, 0.8);
 }
 
-header>div:nth-child(2) {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px;
+header > div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
 }
 
-.home>a>div {
-    margin: 0px 20px;
-    padding: 5px;
-    transition: all 0.1s ease-in-out;
+.home > a > div {
+  margin: 0px 20px;
+  padding: 5px;
+  transition: all 0.1s ease-in-out;
 }
 
-.home>a>div:hover {
-    border-bottom: 3px solid rgb(174, 12, 69);
+.home > a > div:hover {
+  border-bottom: 3px solid rgb(174, 12, 69);
 }
 
-#JobsNav:Hover .jobsul,
-#CompNav:Hover .Compsul,
-#ServNav:Hover .Servsul {
-    display: block;
+#JobsNav:hover .jobsul,
+#CompNav:hover .Compsul,
+#ServNav:hover .Servsul {
+  display: block;
 }
-.jobsul:hover,.Compsul:hover,.Servsul:hover{
-    display: block;
+.jobsul:hover,
+.Compsul:hover,
+.Servsul:hover {
+  display: block;
 }
-.jobsul>li,
-.Compsul>li,
-.Servsul>li {
-    list-style: none;
-    padding: 10px;
-    border-bottom: 1px grey;
+.jobsul > li,
+.Compsul > li,
+.Servsul > li {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px grey;
 }
-.jobsul,.Compsul,.Servsul{
-    margin-top: 15px;
-    display: none;
-    position: absolute;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: rgb(255, 224, 239);
-    border-right: 1px solid white;
+.jobsul,
+.Compsul,
+.Servsul {
+  margin-top: 15px;
+  display: none;
+  position: absolute;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 224, 239);
+  border-right: 1px solid white;
 }
-#JobNav ul{
-    left: 600px;
-}#CompNav ul:nth-child(1){
-    left: 500px;
-}#CompNav ul:nth-child(2){
-    left:710px
-}#CompNav ul:nth-child(3){
-    left: 930px;
+#JobsNav ul {
+  right: 640px;
 }
-#ServNav ul:nth-child(1){
-    left: 600px;
-}#ServNav ul:nth-child(2){
-    left:790px
-}#ServNav ul:nth-child(3){
-    left: 1040px;
+#CompNav ul {
+  right: 520px;
 }
-
+#ServNav ul {
+  right: 415px;
+}
 #logoholder {
-    padding: 0px;
-    margin: 0px;
-    width: 170px;
-    height: 100%;
+  padding: 0px;
+  margin: 0px;
+  width: 170px;
+  height: 100%;
 }
 
 #logo {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* navbar end */
 /* gradient button  */
 .gradbutton {
-    margin: 10px auto;
-    padding: 10px 30px;
-    border-radius: 30px;
-    border: 0px;
-    color: white;
-    cursor: pointer;
-    background: rgb(131, 58, 180);
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 81%, rgba(255, 187, 0, 1) 100%);
+  margin: 10px auto;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 81%,
+    rgba(255, 187, 0, 1) 100%
+  );
 }
 .gradbutton:hover {
-    background: rgb(131, 58, 180);
-    transform: scale(1.1);
-    z-index: 1.1;
-    cursor: pointer;
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 16%, rgba(255, 187, 0, 0.8774860285911239) 100%);
-
+  background: rgb(131, 58, 180);
+  transform: scale(1.1);
+  z-index: 1.1;
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 16%,
+    rgba(255, 187, 0, 0.8774860285911239) 100%
+  );
 }
 .fgradbutton {
-    margin: 10px auto;
-    padding: 10px 30px;
-    border-radius: 30px;
-    border: 0px;
-    color: white;
-    cursor: pointer;
-    background: rgb(57,162,168);
-    background: linear-gradient(90deg, rgba(57,162,168,1) 0%, rgba(63,94,251,1) 29%, rgba(82,85,226,1) 58%, rgba(243,0,255,1) 100%);
+  margin: 10px auto;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+  background: rgb(57, 162, 168);
+  background: linear-gradient(
+    90deg,
+    rgba(57, 162, 168, 1) 0%,
+    rgba(63, 94, 251, 1) 29%,
+    rgba(82, 85, 226, 1) 58%,
+    rgba(243, 0, 255, 1) 100%
+  );
 }
 .fgradbutton:hover {
-    background: rgb(131, 58, 180);
-    transform: scale(1.1);
-    z-index: 1.1;
-    cursor: pointer;
-    background: rgb(63,94,251);
-background: linear-gradient(90deg, rgba(63,94,251,1) 2%, rgba(243,0,255,1) 27%, rgba(57,162,168,1) 72%, rgba(82,85,226,1) 95%);
+  background: rgb(131, 58, 180);
+  transform: scale(1.1);
+  z-index: 1.1;
+  cursor: pointer;
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 2%,
+    rgba(243, 0, 255, 1) 27%,
+    rgba(57, 162, 168, 1) 72%,
+    rgba(82, 85, 226, 1) 95%
+  );
 }
 #loginbut {
-    background: transparent;
-    color: white;
-    border: 0px;
-    margin: 5px 10px;
+  background: transparent;
+  color: white;
+  border: 0px;
+  margin: 5px 10px;
 }
-#logoutbut{
-    padding: 10px 70px;
-    background: rgb(255,0,0);
-    background: linear-gradient(55deg, rgba(255,0,0,1) 0%, rgba(255,130,68,1) 25%, rgba(255,0,0,1) 51%, rgba(255,2,7,1) 52%, rgba(255,63,186,1) 75%, rgba(255,0,0,1) 100%);
-    }
-#logoutbut:hover{
-    -webkit-box-shadow:0px 0px 51px 3px rgba(255,255,255,0.9);
--moz-box-shadow: 0px 0px 51px 3px rgba(255,255,255,0.9);
-box-shadow: 0px 0px 51px 3px rgba(255,255,255,0.9);
+#logoutbut {
+  padding: 10px 70px;
+  background: rgb(255, 0, 0);
+  background: linear-gradient(
+    55deg,
+    rgba(255, 0, 0, 1) 0%,
+    rgba(255, 130, 68, 1) 25%,
+    rgba(255, 0, 0, 1) 51%,
+    rgba(255, 2, 7, 1) 52%,
+    rgba(255, 63, 186, 1) 75%,
+    rgba(255, 0, 0, 1) 100%
+  );
 }
-
+#logoutbut:hover {
+  -webkit-box-shadow: 0px 0px 51px 3px rgba(255, 255, 255, 0.9);
+  -moz-box-shadow: 0px 0px 51px 3px rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 0px 51px 3px rgba(255, 255, 255, 0.9);
+}
 
 #loginbut:hover {
-    background: white;
-    color: black;
-    cursor: pointer;
+  background: white;
+  color: black;
+  cursor: pointer;
 }
 
 /* gradient button end */
-/* footerstart */
-footer{
-
-    background-color: rgb(255, 255, 255);
-    margin-top: 20px;
-    width: 100%;
-    color: black;
-}
-.logofooter>div{
-    margin: auto;
-    padding: 20px;
-    width: 170px;
-}
-.footer2nd{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-}
-.footer1st{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-footer li{
-    font-size: 15px;
-    margin: 5px;
-    list-style: none;
-    color: rgb(71, 71, 71);
-}
-.apply{
-    border-radius: 7px;
-    border:1px solid grey;
-    margin: 0px;
-    padding: 15px;
-    align-items: center;
-    width: 250px;
-}
-.apply>div{
-    width: 100%;
-}
-.apply>div:nth-child(2){
-    padding: 0px;
-    width: 250px
-}
-#footer-comp{
-    display: flex;
-    justify-content: space-between;
-    
-}
-/* footerend */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* extras */
-.favoritejobs{
-    width: 80%;
-    margin: auto;
-  
+.favoritejobs {
+  width: 80%;
+  margin: auto;
 }
-.JobcardFirstDiv{
-    padding: 10px;
+.JobcardFirstDiv {
+  padding: 10px;
 }
-.JobScontainer{
-    z-index: 1;
-    width: 90%;
-    min-height: 75vh;
-    margin: auto;
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-
+.JobScontainer {
+  z-index: 1;
+  width: 90%;
+  min-height: 75vh;
+  margin: auto;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-.JobScontainer>div{
-    width: 90%;
-    margin:10px auto;
-    padding: 5px;
-    height: auto
+.JobScontainer > div {
+  width: 90%;
+  margin: 10px auto;
+  padding: 5px;
+  height: auto;
 }
 
-.JobCard:nth-child(2n-1){
-    -webkit-box-shadow:0px 0px 32px 8px rgba(45,255,196,0.69);
-    -moz-box-shadow: 0px 0px 32px 8px rgba(45,255,196,0.69);
-    box-shadow: 0px 0px 32px 8px rgba(45,255,196,0.69);
+.JobCard:nth-child(2n-1) {
+  -webkit-box-shadow: 0px 0px 32px 8px rgba(45, 255, 196, 0.69);
+  -moz-box-shadow: 0px 0px 32px 8px rgba(45, 255, 196, 0.69);
+  box-shadow: 0px 0px 32px 8px rgba(45, 255, 196, 0.69);
 }
-.JobCard:nth-child(2n){
-    -webkit-box-shadow:0px 0px 32px 8px rgba(255,46,46,0.69);
-    -moz-box-shadow: 0px 0px 32px 8px rgba(255,46,46,0.69);
-    box-shadow: 0px 0px 32px 8px rgba(255,46,46,0.69);
-}
-
-.JobCard{
-    border-radius: 5px;
-    background-color: white;
-    color: black;
-    margin:10px auto;
-    padding: 20px;
-    height: auto;
+.JobCard:nth-child(2n) {
+  -webkit-box-shadow: 0px 0px 32px 8px rgba(255, 46, 46, 0.69);
+  -moz-box-shadow: 0px 0px 32px 8px rgba(255, 46, 46, 0.69);
+  box-shadow: 0px 0px 32px 8px rgba(255, 46, 46, 0.69);
 }
 
-#favButton{
-    padding: 8px 30px;
-    border: 0px;
-    border-radius: 5px;
-    color: white;
-    background-color: rgb(215, 23, 23);
+.JobCard {
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin: 10px auto;
+  padding: 20px;
+  height: auto;
 }
-#favButton:hover{
-    background-color: rgb(109, 6, 6);
+
+#favButton {
+  padding: 8px 30px;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(215, 23, 23);
 }
-#viewButton{
-    padding: 8px 10px;
-    border-radius: 5px;
-    border: 0px;
-    color: rgb(255, 255, 255);
-    background: rgb(57,162,168);
-background: linear-gradient(90deg, rgba(57,162,168,1) 0%, rgba(63,94,251,1) 29%, rgba(82,85,226,1) 58%, rgba(243,0,255,1) 100%);
+#favButton:hover {
+  background-color: rgb(109, 6, 6);
 }
-#viewButton:hover{
-    transform: scale(1.1);
-    z-index: 1.1;
-    background: rgb(63,94,251);
-background: linear-gradient(90deg, rgba(63,94,251,1) 2%, rgba(243,0,255,1) 27%, rgba(57,162,168,1) 72%, rgba(82,85,226,1) 95%);
+.jobCard2ndDiv {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 5px;
 }
-.cardimage{
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    margin-left: 60px;
+#viewButton {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 0px;
+  color: rgb(255, 255, 255);
+  background: rgb(57, 162, 168);
+  background: linear-gradient(
+    90deg,
+    rgba(57, 162, 168, 1) 0%,
+    rgba(63, 94, 251, 1) 29%,
+    rgba(82, 85, 226, 1) 58%,
+    rgba(243, 0, 255, 1) 100%
+  );
 }
-#Jobname{
-    font-size: 25px;
+#viewButton:hover {
+  transform: scale(1.1);
+  z-index: 1.1;
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 2%,
+    rgba(243, 0, 255, 1) 27%,
+    rgba(57, 162, 168, 1) 72%,
+    rgba(82, 85, 226, 1) 95%
+  );
 }
-.recom-bar{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 25px;
-    color: white;
-    background-image: url("Images/bg2.jpg");
-    background-size: cover;
+.cardimage {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-left: 60px;
 }
-.recom-bar>div>h1{
-    margin: 0px 50px;
-    font-size: 60px;
-    color: transparent;
-    background: rgb(74,39,255);
-    background: linear-gradient(117deg, rgb(255, 39, 39) 0%, rgb(255, 146, 3) 28%, rgb(255, 251, 30) 75%, rgb(0, 255, 8) 100%);-webkit-background-clip: text;
+#Jobname {
+  font-size: 25px;
+}
+.recom-bar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 25px;
+  color: white;
+  background-image: url("Images/bg2.jpg");
+  background-size: cover;
+}
+.recom-bar > div > h1 {
+  margin: 0px 50px;
+  font-size: 60px;
+  color: transparent;
+  background: rgb(74, 39, 255);
+  background: linear-gradient(
+    117deg,
+    rgb(255, 39, 39) 0%,
+    rgb(255, 146, 3) 28%,
+    rgb(255, 251, 30) 75%,
+    rgb(0, 255, 8) 100%
+  );
+  -webkit-background-clip: text;
 }

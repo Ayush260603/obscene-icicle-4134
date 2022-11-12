@@ -1,0 +1,230 @@
+/* --------------------------Medium screen sizes ------------------------------------------*/
+div {
+  border: 1px solid yellowgreen;
+}
+@media all and (min-width: 810px) and (max-width: 1280px) {
+  /*--------------------- Universals--------------------- */
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+  }
+  .loginslider {
+    display: block;
+  }
+  .flexalign {
+    display: grid;
+  }
+  .problem,
+  .changejob {
+    height: 50vh;
+    margin: auto;
+    left: 260px;
+    top: 150px;
+    color: black;
+  }
+  .sectionHeads {
+    font-size: 40px;
+    margin: 25px auto;
+  }
+  #loginbut {
+    margin: 1px 3px;
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+  #registerbut {
+    margin: 1px 3px;
+    padding: 5px 12px;
+    font-size: 12px;
+  }
+  .gradbutton {
+    margin: 1px 3px;
+  }
+  .navbuts {
+    display: flex;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  header > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+    margin: 0px;
+  }
+  .home > a > div {
+    margin: 0px 5px;
+    padding: 1px;
+    text-align: center;
+  }
+  .jobsul,
+  .Compsul,
+  .Servsul,
+  .jobsul:hover,
+  .Compsul:hover,
+  .Servsul :hover,
+  #JobsNav:hover .jobsul,
+  #CompNav:hover .Compsul,
+  #ServNav:hover .Servsul {
+    display: none;
+  }
+  /* -------------------------Page Specifc Start------------------------- */
+  .otpx {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .otpx > div {
+    width: 60%;
+  }
+  .otpx > div:nth-child(1) {
+    width: 100%;
+  }
+  .otpx > div:nth-child(2) {
+    width: 40%;
+    margin: 50px auto;
+  }
+  .avatarx {
+    font-size: 13px;
+  }
+  #avatarhead {
+    font-size: 30px;
+  }
+  #heading1 {
+    top: 550px;
+    left: 15px;
+    font-size: 20px;
+  }
+  .JobScontainer {
+    width: 80%;
+    margin: 10px 100px;
+  }
+  .JobCard {
+    flex-direction: column;
+    height: auto;
+  }
+  .JobcardFirstDiv {
+    width: 90%;
+  }
+  .JobcardFirstDiv + div {
+    height: auto;
+  }
+  #Jobname {
+    font-size: 45px;
+  }
+  #favButton,
+  #viewButton {
+    padding: 6px 15px;
+    font-size: 18px;
+  }
+}
+
+/* -----------------------------------Small Screen Sizes----------------------------------- */
+
+@media all and (min-width: 320px) and (max-width: 809px) {
+  /*------------------------------------ Universals------------------------------------ */
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+  }
+  .flexalign {
+    display: flex;
+  }
+  .sectionHeads {
+    font-size: 25px;
+    margin: 10px auto;
+  }
+  #loginbut {
+    margin: 1px 3px;
+    padding: 3px 10px;
+    font-size: 9px;
+  }
+  #registerbut {
+    padding: 5px 12px;
+    font-size: 9px;
+  }
+  .gradbutton {
+    margin: 1px 3px;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  header > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+    margin: 0px;
+  }
+  .home > a > div {
+    margin: 0px 5px;
+    padding: 1px;
+    text-align: center;
+  }
+  .loginslider,
+  #mqx {
+    display: none;
+  }
+  .jobsul,
+  .Compsul,
+  .Servsul,
+  .jobsul:hover,
+  .Compsul:hover,
+  .Servsul :hover,
+  #JobsNav:hover .jobsul,
+  #CompNav:hover .Compsul,
+  #ServNav:hover .Servsul {
+    display: none;
+  }
+  .problem,
+  .changejob {
+    height: 30vh;
+    margin: auto;
+    left: 120px;
+    top: 150px;
+    color: black;
+  }
+  /* ----------------------------------Page Specific Start---------------------------------- */
+  .otpx {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .otpx > div {
+    width: 60%;
+  }
+  .otpx > div:nth-child(1) {
+    width: 100%;
+  }
+  .otpx > div:nth-child(2) {
+    width: 60%;
+    margin: 50px auto;
+  }
+  #heading1 {
+    top: 550px;
+    left: 15px;
+    font-size: 20px;
+  }
+  .JobScontainer {
+    width: 90%;
+    margin: 20px;
+  }
+  .JobCard {
+    flex-direction: column;
+    height: auto;
+  }
+  .JobcardFirstDiv {
+    width: 90%;
+  }
+  .JobcardFirstDiv + div {
+    height: auto;
+  }
+  #Jobname {
+    font-size: 25px;
+  }
+  #favButton,
+  #viewButton {
+    padding: 3px 9px;
+    font-size: 18px;
+  }
+}
