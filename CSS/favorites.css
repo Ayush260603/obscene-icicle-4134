@@ -379,6 +379,7 @@ header > div:nth-child(2) {
 }
 
 .JobCard {
+  position: relative;
   border-radius: 5px;
   background-color: white;
   color: black;
@@ -389,14 +390,6 @@ header > div:nth-child(2) {
   -moz-box-shadow: 0px 0px 32px 8px rgba(45, 255, 196, 0.69);
   box-shadow: 0px 0px 32px 8px rgba(45, 255, 196, 0.69);
 }
-
-#favButton {
-  padding: 8px 30px;
-  border: 0px;
-  border-radius: 5px;
-  color: white;
-  background-color: rgb(215, 23, 23);
-}
 #favButton:hover {
   background-color: rgb(109, 6, 6);
 }
@@ -405,7 +398,21 @@ header > div:nth-child(2) {
   justify-content: space-around;
   margin: 20px 5px;
 }
+#favButton {
+  position: absolute;
+  right: 40px;
+  bottom: 10px;
+  padding: 8px 30px;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(215, 23, 23);
+}
+
 #viewButton {
+  position: absolute;
+  left: 40px;
+  bottom: 10px;
   padding: 8px 10px;
   border-radius: 5px;
   border: 0px;
@@ -418,6 +425,12 @@ header > div:nth-child(2) {
     rgba(82, 85, 226, 1) 58%,
     rgba(243, 0, 255, 1) 100%
   );
+}
+.cardimage {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  margin-left: 60px;
 }
 #viewButton:hover {
   transform: scale(1.1);

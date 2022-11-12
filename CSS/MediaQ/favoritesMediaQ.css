@@ -69,25 +69,34 @@
   }
   .JobCard {
     position: relative;
-    height: 600px;
-  }
-  #viewButton,
-  #favButton {
-    margin: 5px 10px;
-    padding: 5px 10px;
-    font-size: 12px;
-  }
-  .jobCard2ndDiv {
-    height: 100px;
-    width: 100px;
-    display: grid;
-    flex-direction: column;
-    align-items: left;
+    height: 500px;
   }
   .cardimage {
     position: absolute;
-    height: 110px;
-    width: 110px;
+    width: 100px;
+    height: 100px;
+    right: 50px;
+  }
+  #viewButton {
+    position: absolute;
+    left: 30px;
+    padding: 12px;
+    bottom: 120px;
+    font-size: 15px;
+  }
+  #favButton {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    padding: 12px;
+    font-size: 15px;
+    width: 100px;
+    text-align: center;
+  }
+  .cardimage {
+    position: absolute;
+    height: 150px;
+    width: 150px;
     right: 20px;
     bottom: 20px;
   }
@@ -227,9 +236,18 @@
     height: 100px;
     right: 50px;
   }
-  #viewButton,
+  #viewButton {
+    position: absolute;
+    left: 10px;
+    bottom: 80px;
+  }
   #favButton {
-    margin: 10px 25px;
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+    padding: 8px;
+    width: 70px;
+    text-align: center;
   }
   .JobCard {
     width: 40%;
