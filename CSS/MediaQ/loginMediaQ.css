@@ -1,0 +1,297 @@
+/* --------------------------Medium screen sizes ------------------------------------------*/
+@media all and (min-width: 810px) and (max-width: 1280px) {
+  /*--------------------- Universals--------------------- */
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+  }
+  .loginslider {
+    display: block;
+  }
+  .flexalign {
+    display: grid;
+  }
+  .problem {
+    height: 24vh;
+    top: 150px;
+    color: black;
+  }
+  .sectionHeads {
+    font-size: 40px;
+    margin: 25px auto;
+  }
+  #loginbut {
+    margin: 1px 3px;
+  }
+  .gradbutton {
+    margin: 1px 3px;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  header > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 0px;
+    margin: 0px;
+  }
+  .home > a > div {
+    margin: 0px 5px;
+    padding: 1px;
+    text-align: center;
+  }
+  .jobsul,
+  .Compsul,
+  .Servsul,
+  .jobsul:hover,
+  .Compsul:hover,
+  .Servsul :hover,
+  #JobsNav:hover .jobsul,
+  #CompNav:hover .Compsul,
+  #ServNav:hover .Servsul {
+    display: none;
+  }
+  /* -------------------------Page Specifc Start------------------------- */
+  #headingJobs {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bolder;
+    left: 50px;
+    top: 1020px;
+    color: transparent;
+  }
+  section {
+    margin: 10px auto;
+  }
+  .searchbox {
+    width: 90%;
+    margin: 10px 3px;
+    padding: 15px 5px;
+  }
+  #searchbox-inner {
+    width: 90%;
+  }
+  .searchinput {
+    width: 80%;
+  }
+  .band {
+    background-image: url("../Images/bg1.jpg");
+    background-size: cover;
+  }
+  .Avatar {
+    position: absolute;
+    left: 42%;
+    right: 42%;
+    top: 210px;
+  }
+  .insidePI {
+    text-align: center;
+    margin-top: 0px;
+    margin: 0px 10px;
+    padding: 50px 40px;
+  }
+  .PersonInfo {
+    position: static;
+    width: 54%;
+    margin: 20px 20%;
+  }
+  #qrcose {
+    margin: 5px 50px;
+    width: 20%;
+  }
+  .container1,
+  .recruiters,
+  #flexing {
+    width: 95%;
+  }
+  #logoutbut {
+    position: absolute;
+    top: -500px;
+    right: 220px;
+    padding: 10px 60px;
+    z-index: 999999;
+  }
+  #placemeimg {
+    top: 720px;
+    width: 25%;
+  }
+  #avatarhead {
+    font-size: 23px;
+  }
+  .PlacemeApp {
+    position: static;
+
+    width: 60%;
+    margin: auto 15%;
+    margin-top: 100px;
+    border-radius: 10px;
+  }
+  .JobCard {
+    position: relative;
+    padding: 10px;
+  }
+  .cardimage {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 20px;
+    bottom: 3px;
+  }
+  #flexing > div {
+    width: 35%;
+  }
+  #flexing > div > div {
+    width: 70%;
+    margin: 5px;
+  }
+  .avatarx {
+    font-size: 15px;
+  }
+}
+
+/* -----------------------------------Small Screen Sizes----------------------------------- */
+
+@media all and (min-width: 320px) and (max-width: 809px) {
+  /*------------------------------------ Universals------------------------------------ */
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+  }
+  .flexalign {
+    display: grid;
+  }
+  .sectionHeads {
+    font-size: 25px;
+    margin: 10px auto;
+  }
+  #loginbut {
+    margin: 1px 1px;
+  }
+  .gradbutton {
+    margin: 1px 3px;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+  header > div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px;
+    margin: 0px;
+  }
+  .home > a > div {
+    margin: 0px 5px;
+    padding: 1px;
+    text-align: center;
+  }
+  .loginslider,
+  #mqx {
+    display: none;
+  }
+  .jobsul,
+  .Compsul,
+  .Servsul,
+  .jobsul:hover,
+  .Compsul:hover,
+  .Servsul :hover,
+  #JobsNav:hover .jobsul,
+  #CompNav:hover .Compsul,
+  #ServNav:hover .Servsul {
+    display: none;
+  }
+  .problem {
+    height: 38vh;
+    width: 45vh;
+    margin: auto;
+    left: 10px;
+    top: 150px;
+    color: black;
+  }
+  /* ----------------------------------Page Specific Start---------------------------------- */
+  #headingJobs {
+    position: absolute;
+    font-size: 20px;
+    font-weight: bolder;
+    left: 50px;
+    top: 980px;
+    color: transparent;
+  }
+  section {
+    margin: 10px auto;
+  }
+  .searchbox {
+    width: 90%;
+    margin: 10px 3px;
+    padding: 15px 5px;
+  }
+  #searchbox-inner {
+    width: 90%;
+  }
+  .searchinput {
+    width: 60%;
+  }
+  .band {
+    background-image: url("../Images/bg1.jpg");
+    background-size: cover;
+  }
+  .Avatar {
+    position: absolute;
+    left: 38%;
+    right: 40%;
+    top: 210px;
+  }
+  .insidePI {
+    margin-top: 0px;
+    margin: 0px 10px;
+    padding: 35px 40px;
+  }
+  .PersonInfo {
+    position: static;
+    width: 100%;
+    top: 50px;
+  }
+  .container1,
+  .recruiters,
+  #flexing {
+    width: 95%;
+  }
+  #logoutbut {
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    padding: 5px 17px;
+    z-index: 999999;
+  }
+  #placemeimg {
+    top: 720px;
+    width: 60%;
+  }
+  .PlacemeApp {
+    position: static;
+    margin-top: 100px;
+    width: 93%;
+    border-radius: 10px;
+  }
+  .JobCard {
+    position: relative;
+    padding: 10px;
+  }
+  .cardimage {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 20px;
+    bottom: 3px;
+  }
+  #flexing > div {
+    width: 35%;
+  }
+  #flexing > div > div {
+    width: 70%;
+    margin: 5px;
+  }
+}

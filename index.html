@@ -7,31 +7,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlaceMe.com</title>
     <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/index2.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/MediaQ/indexMediaQ.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100;1,200;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-------------------------------------- popups and extras ------------------------------------ -->
+     <!-- navigation bar -->
+     <header>
+        <div id="logoholder">
+            <a href="index.html"><img id="logo" src="CSS/Images/logo.jpg" alt="Place Me"></a>
+        </div>
+        <div class="home">
+            <a href="#search-sec">
+                <div id="JobsNav">Jobs
+                    <ul class="jobsul">
+                        <li>Recommended jobs</li>
+                        <li>Jobs from recruiters</li>
+                        <li>Jobs from alerts</li>
+                        <li>Application status</li>
+                        <li>Saved jobs</li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#topcomp-sec">
+                <div id="CompNav">Companies
+                    <ul class="Compsul">
+                        <li><b>Explore Collections</b></li>
+                        <li>Top companies</li>
+                        <li> IT companies</li>
+                        <li> Fintech companies</li>
+                        <li> Sponsored companies</li>
+                        <li> Featured companies</li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#interview-sec2">
+                <div id="ServNav">Services
+                    <ul class="Servsul">
+                        <li><b>Learn & upskill</b></li>
+                        <li>Data Science courses</li>
+                        <li>Technology courses</li>
+                        <li>Management courses</li>
+                        <li>Finance courses</li>
+                        <li> Design courses</li>
+                        <li>Healthcare courses</li>
+                        <li>Degree programs</li>
+                    </ul>
+                </div>
+            </a>
+            <div class="gradbutton" id="loginbut" style="padding: 5px 25px;">Login</div>
+            <div class="gradbutton" id="registerbut" style="padding: 5px 25px;">Register</div> 
+        </div>
+    </header>
     <!-- preloader -->
     <div id="preloader"></div>
-        <!-- alertdiv -->
-        <div class="problem">
+    <!-- alertdiv -->
+    <div class="problem">
             <img width="70%" style="margin: 30px;" src="CSS/Images/tick.png">
             <h1 style="font-size:30px">Applying for Job Successful!</h1>
             <h2>Lets find more Jobs to Apply</h2>
             <button class="fgradbutton" id="jobspage">Done</button>
             <button class="gradbutton" id="close">OK </button>
             <a href="signup.html"><button class="fgradbutton" id="signupxs">Signup</button></a>
-        </div>
-
-        <div class="changejob">
-            <img width="40%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
-            <h1 style="font-size:30px">Dont want to apply to this Job?..</h1>
-            <h2>If you want to Change Job click Yes</h2>
-            <a href="jobs.html"><button class="fgradbutton">Yes</button></a>
-            <button id="no" class="gradbutton">No</button>
-        </div>
+    </div>
+    <div class="changejob">
+        <img width="40%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
+        <h1 style="font-size:30px">Dont want to apply to this Job?..</h1>
+        <h2>If you want to Change Job click Yes</h2>
+        <a href="jobs.html"><button class="fgradbutton">Yes</button></a>
+        <button id="no" class="gradbutton">No</button>
+    </div>
     <!-- login slider -->
     <div class="loginslider">
         <nav id="primary-header">
@@ -62,66 +112,23 @@
             </nav>
         </nav>
     </div>
-    <!-- navigation bar -->
-    <header>
-        <div id="logoholder">
-            <a href="index.html"><img id="logo" src="CSS/Images/logo.jpg" alt="Place Me"></a>
-        </div>
-        <div class="home">
-            <a href="#search-sec">
-                <div id="JobsNav">Jobs
-                    <ul class="jobsul">
-                        <li>Recommended jobs</li>
-                        <li>Jobs from recruiters</li>
-                        <li>Jobs from alerts</li>
-                        <li>Application status</li>
-                        <li>Saved jobs</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="#top-companies">
-                <div id="CompNav">Companies
-                    <ul class="Compsul">
-                        <li><b>Explore Collections</b></li>
-                        <li>Top companies</li>
-                        <li> IT companies</li>
-                        <li> Fintech companies</li>
-                        <li> Sponsored companies</li>
-                        <li> Featured companies</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="#services">
-                <div id="ServNav">Services
-                    <ul class="Servsul">
-                        <li><b>Learn & upskill</b></li>
-                        <li>Data Science courses</li>
-                        <li>Technology courses</li>
-                        <li>Management courses</li>
-                        <li>Finance courses</li>
-                        <li> Design courses</li>
-                        <li>Healthcare courses</li>
-                        <li>Degree programs</li>
-                    </ul>
-                </div>
-            </a>
-            <div class="gradbutton" id="loginbut" style="padding: 5px 25px;">Login</div>
-            <div class="gradbutton" id="registerbut" style="padding: 5px 25px;">Register</div> 
-        </div>
-    </header>
+   
 
 
-    <!-- landingpage -->
+<!-- -----------------------------------------------mainpage----------------------------------------- -->
+
+
+    <!------------------------------------------- landingpage ------------------------------------------->
     <div class="FirstView">
         <div>
 
             <div class="frontpage flex">
                 <div id="maintextholder">
                     <div>
-                        <h1 id="heading">Got Skills? <br>Apply now <br>and find <br> your Dream Job.</h1><br>
+                        <h1 id="heading">Got Skills? <br>Apply now <br id="mqx">and find <br id="mqx"> your Dream Job.</h1><br>
                         <p>5 lakh+ jobs for you to explore</p>
                         <br>
-                        <button class="gradbutton">Apply Now</button>
+                        <button id="leftapply"class="gradbutton">Apply Now</button>
                     </div>
                 </div>
                 <div id="mainimgholder"><img id="mainimg" src="CSS/Images/manworking.png" alt=""></div>
@@ -129,22 +136,22 @@
 
         </div>
     </div>
-    <!-- searchbox  -->
+    <!------------------------------------------- searchbox  ------------------------------------------->
     <section id="search-sec">
-        <div style="height: 90px;"></div>
+        <div id="space"></div>
         <h1 class="sectionHeads">Find a job nearby</h1>
         <div class="searchbox">
 
             <div id="searchbox-inner">
-                <input class="searchinput" type="text" placeholder="Enter Xyz">
+                <input class="searchinput" type="text" placeholder="Enter Job Name">
                 <select class="searchinput" name="" id="">
                     <option value="">Web Developer</option>
                     <option value="">Android Developer</option>
                     <option value="">Game Developer</option>
                     <option value="">AI Specialist</option>
                 </select>
-                <input class="searchinput" type="text" placeholder="Enter Location">
-                <button class="gradbutton">Search</button>
+                <input id="xx" class="searchinput" type="text" placeholder="Enter Location">
+                <a href="jobs.html"><button class="gradbutton">Search</button></a>
             </div>
         </div>
         <!-- links -->
@@ -165,86 +172,339 @@
         </div>
     </section>
 
-    <!-- companies hiring  -->
+    <!------------------------------------------- companies hiring  ------------------------------------------->
+    <section id="topcomp-sec">
     <h1 class="sectionHeads">Top Companies Hiring Now</h1>
-    <div class="companies">
-        <div>
+     <div class="companies">
+        <div class="flex">
+         <button id="pre-but" class="Slidebuttons">⬅️</button>
+        <button id="nxt-but" class="Slidebuttons">➡️</button>
+       
+        </div>
+         <div id="Slider">
+            <div>
             <!-- div slider -->
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <!-- companies hiring Actively  -->
-    <h1 class="sectionHeads">Featured Companies Hiring Actively</h1>
-    <div class="Active-companies">
-        <div>
-            <!-- div flex 5 cards -->
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <button class="gradbutton">View All Companies</button>
-    </div>
-    <!-- discover jobs  -->
-    <div class="discover-jobs">
-        <div>
             <div>
-                <!-- div-slider  -->
+                <h1>MNCs :</h1>
+                <p class="slidptag">5.8k actively hiring</p>
+                <img src="Css/Images/google.png" alt="someItem was here">
+                <img src="Css/Images/facebook.png" alt="someItem was here"><br>
+                <img src="Css/Images/linked.png" alt="someItem was here">
+                <img src="Css/Images/logo1.png" alt="someItem was here">
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>Internet :</h1>
+                <p class="slidptag">2.3k actively hiring</p>
+                <img src="Css/Images/insta.jpg" alt="someItem was here">
+                <img src="Css/Images/logo2.jpg" alt="someItem was here"><br>
+                <img src="Css/Images/logo3.jpg" alt="someItem was here">
+                <img src="Css/Images/logo4.png" alt="someItem was here">
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>International :</h1>
+                <p  class="slidptag">5k actively hiring</p>
+                <img src="Css/Images/logo5.jpg" alt="someItem was here">
+                <img src="Css/Images/logo6.jpg" alt="someItem was here"><br>
+                <img src="Css/Images/linked.png" alt="someItem was here">
+                <img src="Css/Images/facebook.png" alt="someItem was here">
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>International :</h1>
+                <p class="slidptag">7.1k actively hiring</p>
+                <img src="Css/Images/logo6.jpg" alt="someItem was here">
+                <img src="Css/Images/logo3.jpg" alt="someItem was here"><br>
+                <img src="Css/Images/google.png" alt="someItem was here">
+                <img src="Css/Images/insta.jpg" alt="someItem was here">
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>Hospitality :</h1>
+                <p class="slidptag">5.8k actively hiring</p>
+                <img src="Css/Images/google.png" alt="someItem was here">
+                <img src="Css/Images/facebook.png" alt="someItem was here"><br>
+                <img src="Css/Images/linked.png" alt="someItem was here">
+                <img src="Css/Images/logo1.png" alt="someItem was here">
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>Fintech :</h1>
+                <p class="slidptag">2.3k actively hiring</p>
+                <img src="Css/Images/insta.jpg" alt="someItem was here">
+                <img src="Css/Images/logo2.jpg" alt="someItem was here"><br>
+                <img src="Css/Images/logo3.jpg" alt="someItem was here">
+                <img src="Css/Images/logo4.png" alt="someItem was here">
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>Trading :</h1>
+                <p  class="slidptag">5k actively hiring</p>
+                <img src="Css/Images/logo5.jpg" alt="someItem was here">
+                <img src="Css/Images/logo6.jpg" alt="someItem was here"><br>
+                <img src="Css/Images/linked.png" alt="someItem was here">
+                <img src="Css/Images/facebook.png" alt="someItem was here">
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>Manufacturing :</h1>
+                <p class="slidptag">7.1k actively hiring</p>
+                <img src="Css/Images/logo6.jpg" alt="someItem was here">
+                <img src="Css/Images/logo3.jpg" alt="someItem was here"><br>
+                <img src="Css/Images/google.png" alt="someItem was here">
+                <img src="Css/Images/insta.jpg" alt="someItem was here">
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+    </section>
+    
+    <!------------------------------------------- companies hiring Actively  ------------------------------------------->
+    <section id="compani-sec">
+        <h1 class="sectionHeads">Featured Companies Hiring Actively</h1>
+        <div class="companies">
+            <div class="flex">
+             <button id="pre-but2" class="Slidebuttons">⬅️</button>
+            <button id="nxt-but2" class="Slidebuttons">➡️</button>
+           
+            </div>
+             <div id="Slider2">
+                <div>
+                <!-- div slider -->
+                <div>
+                    <h1>Fintech :</h1>
+                    <p class="slidptag">2.3k actively hiring</p>
+                    <img src="Css/Images/logoA.png" alt="someItem was here">
+                    <img src="Css/Images/logoB.png" alt="someItem was here"><br>
+                    <img src="Css/Images/logoC.svg" alt="someItem was here">
+                    <img src="Css/Images/logoD.png" alt="someItem was here">
+                    <p style="color: rgb(60, 163, 115);">More▶️ </p>
+                </div>
+                <div>
+                    <h1>Trading :</h1>
+                    <p  class="slidptag">5k actively hiring</p>
+                    <img src="Css/Images/logoG.png" alt="someItem was here">
+                    <img src="Css/Images/logoD.png" alt="someItem was here"><br>
+                    <img src="Css/Images/logoE.png" alt="someItem was here">
+                    <img src="Css/Images/logoF.png" alt="someItem was here">
+                    <p style="color: rgb(60, 163, 115);">More▶️ </p>
+                </div>
+                <div>
+                    <h1>Manufacturing :</h1>
+                    <p class="slidptag">7.1k actively hiring</p>
+                    <img src="Css/Images/logoG.png" alt="someItem was here">
+                    <img src="Css/Images/google.png" alt="someItem was here"><br>
+                    <img src="Css/Images/linked.png" alt="someItem was here">
+                    <img src="Css/Images/logoB.png" alt="someItem was here">
+                    <p style="color: rgb(60, 163, 115);">More▶️ </p>
+                </div>
+                <div>
+                    <h1>MNCs :</h1>
+                    <p class="slidptag">5.8k actively hiring</p>
+                    <img src="Css/Images/logoG.png" alt="someItem was here">
+                    <img src="Css/Images/logogH.png" alt="someItem was here"><br>
+                    <img src="Css/Images/logoD.png" alt="someItem was here">
+                    <img src="Css/Images/logoF.png" alt="someItem was here">
+                    <p style="color: rgb(60, 163, 115);">More▶️ </p>
+                </div>
+                <div>
+                    <h1>Internet :</h1>
+                    <p class="slidptag">2.3k actively hiring</p>
+                    <img src="Css/Images/logoB.png" alt="someItem was here">
+                    <img src="Css/Images/logoA.png" alt="someItem was here"><br>
+                    <img src="Css/Images/logoE.png" alt="someItem was here">
+                    <img src="Css/Images/logoC.svg" alt="someItem was here">
+                    <p style="color: rgb(60, 163, 115);">More▶️ </p>
+                </div>
+                <div>
+                    <h1>International :</h1>
+                    <p  class="slidptag">5k actively hiring</p>
+                    <img src="Css/Images/logo5.jpg" alt="someItem was here">
+                    <img src="Css/Images/logo6.jpg" alt="someItem was here"><br>
+                    <img src="Css/Images/linked.png" alt="someItem was here">
+                    <img src="Css/Images/facebook.png" alt="someItem was here">
+                    <p style="color: rgb(60, 163, 115);">More▶️ </p>
+                </div>
+                <div>
+                    <h1>International :</h1>
+                    <p class="slidptag">7.1k actively hiring</p>
+                    <img src="Css/Images/logo6.jpg" alt="someItem was here">
+                    <img src="Css/Images/logo3.jpg" alt="someItem was here"><br>
+                    <img src="Css/Images/google.png" alt="someItem was here">
+                    <img src="Css/Images/insta.jpg" alt="someItem was here">
+                    <p style="color: rgb(60, 163, 115);">More▶️ </p>
+                </div>
+                <div>
+                    <h1>Hospitality :</h1>
+                    <p class="slidptag">5.8k actively hiring</p>
+                    <img src="Css/Images/google.png" alt="someItem was here">
+                    <img src="Css/Images/facebook.png" alt="someItem was here"><br>
+                    <img src="Css/Images/linked.png" alt="someItem was here">
+                    <img src="Css/Images/logo1.png" alt="someItem was here">
+                    <p style="color: rgb(60, 163, 115);">More▶️ </p>
+                </div>
+                
+            </div>
             </div>
         </div>
-    </div>
-    <!-- sponsored companies -->
-    <h1 class="sectionHeads">Sponored Companies</h1>
-    <div class="sponsered-companies">
-        <div>
-            <!-- div flex 5 cards -->
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <button class="gradbutton">View All Companies</button>
-    </div>
-    <!-- Interview Prep  -->
-    <div class="prepare-interview">
-        <div>
-            <div>
-                <!-- div-slider  -->
-            </div>
-        </div>
-    </div>
-    <!-- Accelerate your job -->
-    <div class="accelerate-job">
-        <div>
-            <div>
-                <!-- div-slider  -->
-            </div>
-        </div>
-    </div>
-    <!-- grow career -->
-    <div class="grow-career">
-        <div>
-            <div>
-                <!-- div-slider  -->
-            </div>
-        </div>
-    </div>
-    <!-- Naukri -app div  -->
-    <div class="naukri-app">
-        <div>
-            <div>
-                2 divs
-            </div>
-        </div>
-    </div>
-<section>
+       <center><a href="jobs.html"><button class="gradbutton">View All Companies</button></a></center> 
+    </section>
 
+    <!------------------------------------------- discover jobs  ------------------------------------------->
+    <section id="discover-sec">
+        <h1 class="sectionHeads">Discover Jobs</h1>
+        <div class="discover-jobs">
+            <div>
+               
+            </div>
+            <div>
+                <!-- div-slider  -->
+                <button>Technical</button><br>
+                <button>Arts</button><br>
+                <button>Medical</button><br>
+                <button>Civil</button><br>
+                <button>Corporate</button>
+            </div>
+        </div>
+    </section>
+
+     <!------------------------------------------- Interview Prep  ------------------------------------------->
+     <h1 class="sectionHeads">Interviews facality</h1>
+     <section id="interview-sec">
+        
+        <div>
+            <div></div>
+            <div>
+                <h1 id="interviewhead">Interview by professionls</h1>
+                <div class="Intergrid">
+                    <div><img width="20%" src="https://thumbs.dreamstime.com/b/amazon-logo-white-background-montreal-canada-july-printed-paper-98221126.jpg" alt=""><a>Amazon<br>
+                        <label>2.1k Interviews+</label></a></div>
+                    <div><img width="20%" src="https://i.pinimg.com/originals/15/aa/16/15aa1678d4ee5615c5c53ed5c9968126.png" alt=""><a>Flipkart<br>
+                        <label>2.1k Interviews+</label></a></div>
+                    <div><img width="20%" src="https://www.tcs.com/content/dam/tcs/images/logo/tata-logo-blue.png" alt=""><a>Tata<br>
+                        <label>2.1k Interviews+</label></a></div>
+                    <div><img width="20%" src="CSS/Images/byjus.jpg" alt=""><a>Byjus<br>
+                        <label>2.1k Interviews+</label></a></div>
+                    <div><img width="20%" src="CSS/Images/congi.jpg" alt=""><a>Congnizant<br>
+                        <label>2.1k Interviews+</label></a></div>
+                    <div><img width="20%" src="https://alchemyimmersive.com/wp-content/uploads/sites/4/2020/04/apple-logo-transparent.png" alt=""><a>Apple<br>
+                        <label>2.1k Interviews+</label></a></div>
+                </div>
+            </div>
+            <div>1</div>
+        </div>
+    </section>
+  
+    <!------------------------------------------- Accelerate your job ------------------------------------------->
+    <h1 class="sectionHeads">Grow Your Career</h1>
+     <section id="interview-sec2">
+        
+        <div>
+            <div></div>
+            <div>
+                <h1 style="color: rgb(37, 37, 37);">Accelerate Your Job with Premium Services</h1>
+                <p style="color: rgb(37, 37, 37);">Services to help you get hired, faster: from preparing your CV, getting recruiter attention, finding the right jobs, and more!</p>
+                <p style="color: rgb(37, 37, 37);">Accelerate Your Job with Premium Services in here PlaceME.com</p>
+                <button>Resume Writing</button>
+                <button>Priority Application</button>
+                <button>Aritficial Intelligence</button>
+            </div>
+            <div></div>
+        </div>
+    </section>
+
+    <!------------------------------------------- Naukri -app div  ------------------------------------------->
+    <h1 class="sectionHeads">PlaceMe App</h1>
+    <section id="appsect">
+       
+       <div>
+           <div>
+               <h1 id="appHead">Stand out among recruiters with a video profile</h1>
+               <p style="color: rgb(37, 37, 37);">We can send daily updates on your number, and also to get training log into PlaceME.com to not miss job updates</p>
+               <p style="color: rgb(37, 37, 37);">Scan this QR code to get PlaceMe app on your Mobile.</p>
+               <img width="18%" src="CSS/Images/qr.png" alt="">
+               <a><input type="text" placeholder="Enter Mobile Number"><button> Search</button></a>
+               
+           </div>
+           <div>hi</div>
+       </div>
+   </section>
+  <!------------------------------------------- sponsored companies ------------------------------------------->
+  <section id="sponsor-sec">
+    <h1 class="sectionHeads">Sponored Companies</h1>
+    <div class="companies3">
+         <button id="pre-but3" class="Slidebuttons">⬅️</button>
+        <button id="nxt-but3" class="Slidebuttons">➡️</button>
+       
+
+         <div id="Slider3">
+            <div>
+            <!-- div slider -->
+            <div>
+                <h1>Fintech :</h1>
+                <p class="slidptag">2.3k actively hiring</p>
+                <img src="Css/Images/rhino.jpg" alt="someItem was here"><br>
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>Rhino:</h1>
+                <p  class="slidptag">Joined since 2025</p>
+                <img src="Css/Images/logo7.jpg" alt="someItem was here"><br>
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>Company :</h1>
+                <p class="slidptag">Joined since 2012</p>
+                <img src="Css/Images/logo.jpg" alt="someItem was here"><br>
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>PlaceMe :</h1>
+                <p class="slidptag">Joined since 2016</p>
+                <img src="Css/Images/unicorn.png" alt="someItem was here"><br>
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>Toyota :</h1>
+                <p class="slidptag">Joined since 2015</p>
+                <img src="Css/Images/toyota.png" alt="someItem was here"><br>
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>Aligator :</h1>
+                <p  class="slidptag">Joined since 2004</p>
+                <img src="Css/Images/rhino.jpg" alt="someItem was here"><br>
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>Peter Parker :</h1>
+                <p class="slidptag">Joined since 2022</p>
+                <img src="Css/Images/logo5.jpg" alt="someItem was here"><br>
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            <div>
+                <h1>I can do this all day :</h1>
+                <p class="slidptag">Joined since 2019</p>
+                <img src="Css/Images/bg2.jpg" alt="someItem was here"><br>
+                <p style="color: rgb(60, 163, 115);">More▶️ </p>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+   <center><a href="jobs.html"><button class="gradbutton">View All Companies</button></a></center> 
 </section>
+
+
+
+
+<!--  -------------------------------------main page end----------------------------------------- -->
+
+
+
 <footer>
     <div class="footer1st">
         <div class="logofooter">
@@ -283,7 +543,7 @@
         </div>
     </div>
     <div class="footer2nd">
-        <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/infoedge-logo.svg" alt=""></div>
+        <div><img id="infoedge"src="https://static.naukimg.com/s/0/0/i/new-homepage/infoedge-logo.svg" alt=""></div>
         <div><p style="color: rgb(59, 56, 56);font-size:13px" >All trademarks are the property of their respective owners
             <br>All rights reserved © 2022 Info Edge (India) Ltd.</p>
         </div>

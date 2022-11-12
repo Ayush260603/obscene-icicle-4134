@@ -1,515 +1,500 @@
 /* universal tags */
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 18px;
-    scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 hr {
-    margin: 15px;
-    color: rgb(69, 67, 67);
-    width: 90%;
+  margin: 15px;
+  color: rgb(69, 67, 67);
+  width: 90%;
 }
 
 /* div {
     border: 1px solid transparent;
 } */
-.twhite{
-    color: rgb(255, 255, 255);
+.twhite {
+  color: rgb(255, 255, 255);
 }
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .flex {
-    display: flex;
-}.flexalign{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+}
+.flexalign {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 /* preloader */
-#preloader{
-    background: black url("Images/preloader.gif") no-repeat center center;
-    background-size: 20%;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index: 100000;
+#preloader {
+  background: black url("Images/preloader.gif") no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 10000000000000000000000000;
 }
 /* Section headings */
 .sectionHeads {
-    font-size: 40px;
-    color: white;
-    text-align: center;
-    margin-top: 50px;
-
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
 }
-.problem{
-    display:none;
-    position:absolute;
-    border: 3px solid yellow;
-    width: 40vw;
-    height: 60vh;
-    text-align: center;
-    margin: 10% 30%;
-    padding: 20px;
-    background: rgb(255,255,255);
-    background: linear-gradient(331deg, rgba(255,255,255,0.8494748241093313) 0%, rgba(255,255,255,0.19681375968356096) 25%, rgba(255,255,255,0.8074580173866421) 50%, rgba(255,255,255,0.19961488013174022) 75%, rgba(255,255,255,0.8886905103838411) 100%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    transform: scale(0.9);
-    transition: scale(0.1) 350ms ease-in-out;
+.problem {
+  display: none;
+  position: fixed;
+  border: 3px solid yellow;
+  width: 40vw;
+  height: 60vh;
+  text-align: center;
+  margin: 10% 30%;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    331deg,
+    rgba(255, 255, 255, 0.8494748241093313) 0%,
+    rgba(255, 255, 255, 0.19681375968356096) 25%,
+    rgba(255, 255, 255, 0.8074580173866421) 50%,
+    rgba(255, 255, 255, 0.19961488013174022) 75%,
+    rgba(255, 255, 255, 0.8886905103838411) 100%
+  );
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform: scale(0.9);
+  transition: scale(0.1) 350ms ease-in-out;
 }
-.changejob{
-    display:none;
-    position:absolute;
-    border: 3px solid yellow;
-    width: 40vw;
-    height: 60vh;
-    text-align: center;
-    margin: 10% 30%;
-    padding: 20px;
-    background: rgb(255,255,255);
-    background: linear-gradient(331deg, rgba(255,255,255,0.8494748241093313) 0%, rgba(255,255,255,0.19681375968356096) 25%, rgba(255,255,255,0.8074580173866421) 50%, rgba(255,255,255,0.19961488013174022) 75%, rgba(255,255,255,0.8886905103838411) 100%);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    transform: scale(0.9);
-    transition: scale(0.1) 350ms ease-in-out;
+.changejob {
+  display: none;
+  position: fixed;
+  border: 3px solid yellow;
+  width: 40vw;
+  height: 60vh;
+  text-align: center;
+  margin: 10% 30%;
+  padding: 20px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    331deg,
+    rgba(255, 255, 255, 0.8494748241093313) 0%,
+    rgba(255, 255, 255, 0.19681375968356096) 25%,
+    rgba(255, 255, 255, 0.8074580173866421) 50%,
+    rgba(255, 255, 255, 0.19961488013174022) 75%,
+    rgba(255, 255, 255, 0.8886905103838411) 100%
+  );
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform: scale(0.9);
+  transition: scale(0.1) 350ms ease-in-out;
 }
 .fgradbutton {
-    margin: 10px auto;
-    padding: 10px 30px;
-    border-radius: 30px;
-    border: 0px;
-    color: white;
-    cursor: pointer;
-    background: rgb(57,162,168);
-    background: linear-gradient(90deg, rgba(57,162,168,1) 0%, rgba(63,94,251,1) 29%, rgba(82,85,226,1) 58%, rgba(243,0,255,1) 100%);
+  margin: 10px auto;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+  background: rgb(57, 162, 168);
+  background: linear-gradient(
+    90deg,
+    rgba(57, 162, 168, 1) 0%,
+    rgba(63, 94, 251, 1) 29%,
+    rgba(82, 85, 226, 1) 58%,
+    rgba(243, 0, 255, 1) 100%
+  );
 }
 .fgradbutton:hover {
-    background: rgb(131, 58, 180);
-    transform: scale(1.1);
-    z-index: 1.1;
-    cursor: pointer;
-    background: rgb(63,94,251);
-background: linear-gradient(90deg, rgba(63,94,251,1) 2%, rgba(243,0,255,1) 27%, rgba(57,162,168,1) 72%, rgba(82,85,226,1) 95%);
+  background: rgb(131, 58, 180);
+  transform: scale(1.1);
+  z-index: 1.1;
+  cursor: pointer;
+  background: rgb(63, 94, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 94, 251, 1) 2%,
+    rgba(243, 0, 255, 1) 27%,
+    rgba(57, 162, 168, 1) 72%,
+    rgba(82, 85, 226, 1) 95%
+  );
 }
 /* loginslider  */
 .loginform {
-    margin: 20px 20px
+  margin: 20px 20px;
 }
 
 .logininput {
-    width: 85%;
-    padding: 8px;
-    border-radius: 10px;
-    margin: 10px;
-    margin-bottom: 10px;
+  width: 85%;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
 }
 
 .googlebutton {
-    width: 85%;
-    ;
-    padding: 8px;
-    border-radius: 10px;
-    background-color: white;
-    margin: 10px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    -webkit-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-    -moz-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-    box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
+  width: 85%;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
+  -moz-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
+  box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
 }
 
 label {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 #primary-header {
-    display: flex;
-    justify-content: space-between;
-    gap: 0px;
-    align-items: center;
-    color: azure;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+  align-items: center;
+  color: azure;
 }
 /* loginslider  */
-#avatarhead{
-    font-size: 50px;
-    margin: 10px auto;
+#avatarhead {
+  font-size: 50px;
+  margin: 10px auto;
 }
-.UserDetails{
-    text-align: center;
+.UserDetails {
+  text-align: center;
 }
-.UserDetails>div{
-    text-align: left;
-    margin: 20px;
+.UserDetails > div {
+  text-align: left;
+  margin: 20px;
 }
-#avatar{
-    width: 50%;
-    border-radius: 50%;
-    border: 3px solid white;
+#avatar {
+  width: 50%;
+  border-radius: 50%;
+  border: 3px solid white;
 }
-.avatarx{
-    color: coral;
-    font-size: 22px;
-    margin-left: 15px;
+.avatarx {
+  color: coral;
+  font-size: 22px;
+  margin-left: 15px;
 }
 
 #primary-header {
-    display: flex;
-    justify-content: space-between;
-    gap: 0px;
-    align-items: center;
-    color: azure;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+  align-items: center;
+  color: azure;
 }
 
 .primary-navigation {
-
-    gap: 2px;
-    display: flex;
-    z-index: 1000;
-    position: fixed;
-    inset: 0 0 0 70%;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: rgba(13, 13, 13, 0.7);
-    padding: 10px;
-    backdrop-filter: blur(1rem);
-    transform: translateX(100%);
-    transition: transform 350ms ease-in-out;
+  gap: 2px;
+  display: flex;
+  z-index: 1000;
+  position: fixed;
+  inset: 0 0 0 70%;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(13, 13, 13, 0.7);
+  padding: 10px;
+  backdrop-filter: blur(1rem);
+  transform: translateX(100%);
+  transition: transform 350ms ease-in-out;
 }
 
 .mobile-nav-toggle {
-    display: block;
-    position: fixed;
-    border: 0px;
-    width: 2rem;
-    aspect-ratio: 1;
-    z-index: 9999;
-    top: 1rem;
-    background: transparent;
-    right: 2rem;
+  display: block;
+  position: fixed;
+  border: 0px;
+  width: 2rem;
+  aspect-ratio: 1;
+  z-index: 9999;
+  top: 1rem;
+  background: transparent;
+  right: 2rem;
 }
 
-.primary-navigation[data-visible=true] {
-    transform: translateX(0%);
+.primary-navigation[data-visible="true"] {
+  transform: translateX(0%);
 }
 
 /* login slider emd  */
 
 /* navbar */
 html {
-    position: relative;
-    background-color: black;
+  position: relative;
+  background-color: black;
 }
 
 header {
-    border: 1px solid black;
-    position: sticky;
-    top: 0px;
-    margin-top: 0px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: rgba(17, 16, 16, 0.8);
+  border: 1px solid black;
+  position: sticky;
+  top: 0px;
+  margin-top: 0px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(17, 16, 16, 0.8);
 }
 
-header>div:nth-child(2) {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0px;
+header > div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+}
+.home > a > div {
+  margin: 0px 20px;
+  padding: 5px;
+  transition: all 0.1s ease-in-out;
 }
 
-.home>a>div {
-    margin: 0px 20px;
-    padding: 5px;
-    transition: all 0.1s ease-in-out;
-}
-
-.home>a>div:hover {
-    border-bottom: 3px solid rgb(174, 12, 69);
+.home > a > div:hover {
+  border-bottom: 3px solid rgb(174, 12, 69);
 }
 #logoholder {
-    padding: 0px;
-    margin: 0px;
-    width: 170px;
-    height: 100%;
+  padding: 0px;
+  margin: 0px;
+  width: 170px;
+  height: 100%;
 }
 
 #logo {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* navbar end */
 /* gradient button  */
 .gradbutton {
-    margin: 10px auto;
-    padding: 10px 30px;
-    border-radius: 30px;
-    border: 0px;
-    color: white;
-    background: rgb(131, 58, 180);
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 81%, rgba(255, 187, 0, 1) 100%);
+  margin: 10px auto;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 0px;
+  color: white;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 81%,
+    rgba(255, 187, 0, 1) 100%
+  );
 }
 
 #loginbut {
-    border: 1px solid white;
-    background: transparent;
-    color: white;
-    padding: 5px 30px;
-    margin: 5px 10px;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  padding: 5px 30px;
+  margin: 5px 10px;
 }
 
 .gradbutton:hover {
-    background: rgb(131, 58, 180);
-    transform: scale(1.1);
-    z-index: 1.1;
-    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 16%, rgba(255, 187, 0, 0.8774860285911239) 100%);
-    cursor: pointer;
+  background: rgb(131, 58, 180);
+  transform: scale(1.1);
+  z-index: 1.1;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 16%,
+    rgba(255, 187, 0, 0.8774860285911239) 100%
+  );
+  cursor: pointer;
 }
 
 #loginbut:hover {
-    background: white;
-    color: black;
-    border: 1px solid black;
-    cursor: pointer;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 /* gradient button end */
-/* footerstart */
-footer{
-    background-color: rgb(255, 255, 255);
-    margin-top: 20px;
-    margin-bottom: 0px;
-    width: 100%;
-    color: black;
-    }
-.logofooter>div{
-    margin: auto;
-    padding: 20px;
-    width: 170px;
-}
-.footer2nd{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-}
-.footer1st{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-footer li{
-    font-size: 15px;
-    margin: 5px;
-    list-style: none;
-    color: rgb(71, 71, 71);
-}
-.apply{
-    border-radius: 7px;
-    border:1px solid grey;
-    margin: 0px;
-    padding: 15px;
-    align-items: center;
-    width: 250px;
-}
-.apply>div{
-    width: 100%;
-}
-.apply>div:nth-child(2){
-    padding: 0px;
-    width: 250px
-}
-#footer-comp{
-    display: flex;
-    justify-content: space-between;
-    
-}
-/* footerend */
 
-body{
-    background-image: url("Images/signup.jpg");
-    background-size: cover;
+body {
+  background-image: url("Images/signup.jpg");
+  background-size: cover;
 }
-.otpx{
-    height: 90vh;
-    background-color: rgba(0,0,0,0.7);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.otpx {
+  height: 90vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.otpinput{
-    padding: 10px;
-    margin: 5px;
-    border-radius: 9px;
-    width: 70%;
+.otpinput {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 9px;
+  width: 70%;
 }
-.otpx>div:nth-child(1){
-    padding: 0px;
-    background: transparent;
-    border: 0px;
-    width: 60%;
+.otpx > div:nth-child(1) {
+  padding: 0px;
+  background: transparent;
+  border: 0px;
+  width: 60%;
 }
-.otpx>div:nth-child(2){
-    -webkit-box-shadow:0px 0px 31px 0px rgba(255,255,255,0.74);
--moz-box-shadow: 0px 0px 31px 0px rgba(255,255,255,0.74);
-box-shadow: 0px 0px 31px 0px rgba(255,255,255,0.74);
+.otpx > div:nth-child(2) {
+  -webkit-box-shadow: 0px 0px 31px 0px rgba(255, 255, 255, 0.74);
+  -moz-box-shadow: 0px 0px 31px 0px rgba(255, 255, 255, 0.74);
+  box-shadow: 0px 0px 31px 0px rgba(255, 255, 255, 0.74);
 }
-.otpx>div{
-    text-align: center;
-    width: 35%;
-    padding: 20px;
-    margin: 25px;
-    margin-top: 80px;
-    height: 80%;
-    border: 1px solid white;
-    -webkit-box-shadow: 0px 0px 62px 6px rgba(45, 59, 255, 0.55);
-    -moz-box-shadow: 0px 0px 62px 6px rgba(19, 46, 176, 0.55);
-    box-shadow: 0px 0px 62px 6px rgba(12, 25, 113, 0.55);
+.otpx > div {
+  text-align: center;
+  width: 35%;
+  padding: 20px;
+  margin: 25px;
+  margin-top: 80px;
+  height: 80%;
+  border: 1px solid white;
+  -webkit-box-shadow: 0px 0px 62px 6px rgba(45, 59, 255, 0.55);
+  -moz-box-shadow: 0px 0px 62px 6px rgba(19, 46, 176, 0.55);
+  box-shadow: 0px 0px 62px 6px rgba(12, 25, 113, 0.55);
 }
-#google-button{
-    width: 100px;
-    margin: auto;
+#google-button {
+  width: 100px;
+  margin: auto;
 }
-#otpbutton{
-    background-color:rgba(0,0,0,0.5);
-    color: white;
-    padding: 10px 40px;
-    border: 2px solid gold;
-    margin: 20px auto;
+#otpbutton {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 40px;
+  border: 2px solid gold;
+  margin: 20px auto;
+}
+#otpbutton:hover {
+  -webkit-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
+  -moz-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
+  box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
+}
+.white {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+div[type="OTP"] {
+  display: static;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.JobScontainer {
+  background-color: white;
+  border-radius: 10px;
+  z-index: 0;
+  height: auto;
+  margin: 0px;
+}
+.JobScontainer > div {
+  width: 90%;
+  margin: 10px auto;
+  padding: 5px;
+  height: auto;
+}
+.JobCard {
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  width: 100%;
+  margin: 10px auto;
+  padding: 5px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.JobcardFirstDiv {
+  text-align: left;
+  width: 70%;
+}
+.JobcardFirstDiv + div {
+  height: 450px;
+}
 
+#favButton {
+  padding: 8px 15px;
+  border: 0px;
+  color: white;
+  border: 3px solid rgb(71, 135, 255);
+  background-color: rgb(12, 133, 255);
+  font-size: 20px;
+  margin: 5px;
 }
-#otpbutton:hover{
-    -webkit-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-    -moz-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-    box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
+#viewButton {
+  font-size: 20px;
+  padding: 8px 15px;
+  border: 0px;
+  color: rgb(0, 0, 0);
+  border: 2px solid black;
+  background-color: rgb(235, 254, 21);
+  margin: 5px;
+  margin-top: 7px;
+}
+#favButton:hover {
+  background-color: rgb(32, 3, 122);
+  cursor: pointer;
+}
+#viewButton:hover {
+  background-color: rgb(187, 185, 183);
+  cursor: pointer;
+}
 
-}
-.white{
-    background-color: white;
-    border-radius: 10px;
-    color:black;
-}
-div[type="OTP"]{
-    display: static;
-    background-color: rgba(0,0,0,0.8);
-}
-.JobScontainer{
-    background-color: white;
-    border-radius: 10px;
-     z-index: 0;
-     height: auto;
-     margin: 0px ;
- }
- .JobScontainer>div{
-     width: 90%;
-     margin:10px auto;
-     padding: 5px;
-     height: auto;
- }
- .JobCard{
-     border-radius: 5px;
-     background-color: white;
-     color: black;
-     width: 100%;
-     margin:10px auto;
-     padding: 5px;
-     height: auto;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
- .JobcardFirstDiv{
-    text-align: left;
-     width: 70%;
- }
- .JobcardFirstDiv+div{
-height: 450px;
- }
+.backbutton {
+  margin: 10px auto;
+  padding: 11px 30px;
+  border-radius: 30px;
+  font-size: 30px;
+  border: 0px;
+  color: white;
+  background: rgb(1, 255, 221);
+  background: linear-gradient(
+    90deg,
+    rgb(36, 191, 28) 10%,
+    rgb(32, 169, 171) 81%,
+    rgb(62, 9, 196) 100%
+  );
 
- #favButton{
-     padding: 8px 15px;
-     border: 0px;
-     color: white;
-     border: 3px solid rgb(71, 135, 255);
-     background-color: rgb(12, 133, 255);
-     font-size: 20px;
-     margin: 5px;
- }#viewButton{
-     font-size: 20px;
-     padding: 8px 15px;
-     border: 0px;
-     color: rgb(0, 0, 0);
-     border: 2px solid black;
-     background-color: rgb(235, 254, 21);
-     margin: 5px;
-     margin-top: 7px;
- }
- #favButton:hover{
-     background-color: rgb(32, 3, 122);
-     cursor: pointer;
- }#viewButton:hover{
-     background-color: rgb(187, 185, 183);
-     cursor: pointer;
- }
- 
- 
- .backbutton{
-     margin: 10px auto;
-     padding: 11px 30px;
-     border-radius: 30px;
-     font-size: 30px;
-     border: 0px;
-     color: white;
-     background: rgb(1, 255, 221);
-     background: linear-gradient(90deg, rgb(36, 191, 28) 10%, rgb(32, 169, 171) 81%, rgb(62, 9, 196) 100%);
-  
-     -webkit-box-shadow:0px 0px 56px 0px rgba(255,0,0,0.49);
-     -moz-box-shadow: 0px 0px 56px 0px rgba(255,0,0,0.49);
-     box-shadow: 0px 0px 56px 0px rgba(255,0,0,0.49);
-     
- }
- .backbutton:hover{
-     cursor: pointer;
-     transform: scale(1.02);
-     -webkit-box-shadow:0px 0px 56px 0px rgba(255, 242, 0, 0.58);
-     -moz-box-shadow: 0px 0px 56px 0px rgba(255, 242, 4, 0.58);
-     box-shadow: 0px 0px 56px 0px rgba(255, 245, 49, 0.58);
- 
- }
- .cardimage{
-     width: 200px;
-     height: 200px;
-     margin-top: 0px;
-     text-align: center;
-    border-radius: 15px;
-    border: 2px solid greenyellow;
-    }
- #Jobname{
-     font-size: 45px;
- }
- #heading1{
-    position: absolute;
-    top: 100px;
-    font-size:40px ;
-    margin:5px auto;
-    color:white;
- }
- #heading2{
-    font-size:80px ;
-    margin:5px auto;
-    color:white;
- }
+  -webkit-box-shadow: 0px 0px 56px 0px rgba(255, 0, 0, 0.49);
+  -moz-box-shadow: 0px 0px 56px 0px rgba(255, 0, 0, 0.49);
+  box-shadow: 0px 0px 56px 0px rgba(255, 0, 0, 0.49);
+}
+.backbutton:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+  -webkit-box-shadow: 0px 0px 56px 0px rgba(255, 242, 0, 0.58);
+  -moz-box-shadow: 0px 0px 56px 0px rgba(255, 242, 4, 0.58);
+  box-shadow: 0px 0px 56px 0px rgba(255, 245, 49, 0.58);
+}
+.cardimage {
+  width: 200px;
+  height: 200px;
+  margin-top: 0px;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid greenyellow;
+}
+#Jobname {
+  font-size: 45px;
+}
+#heading1 {
+  position: absolute;
+  top: 100px;
+  font-size: 40px;
+  margin: 5px auto;
+  color: white;
+}
+#heading2 {
+  font-size: 80px;
+  margin: 5px auto;
+  color: white;
+}
