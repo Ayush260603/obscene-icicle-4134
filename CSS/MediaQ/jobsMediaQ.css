@@ -301,9 +301,13 @@
     margin: 7px 10px;
     font-size: 10px;
   }
-  #favButton,
+  #favButton {
+    padding: 7px 30px;
+    margin: 2px 5px 2px 18px;
+    font-size: 14px;
+  }
   .fgradbutton {
-    padding: 7px 12px;
+    padding: 8px 12px;
     margin: 2px 5px;
     font-size: 10px;
   }

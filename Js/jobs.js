@@ -169,7 +169,7 @@ function displayCards(array) {
     image.innerText = element.image;
     // the things that will go inside divs are created
 
-    div1.append(name, date, type, phrase, rating, salary, apply, button, view);
+    div1.append(name, date, type, phrase, rating, salary, apply, view, button);
     div2.append(image);
     divout.append(div1, div2);
     document.querySelector(".JobScontainer").append(divout);
