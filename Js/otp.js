@@ -95,11 +95,11 @@ function displayCards(array) {
     salary.innerText = "Salary :" + element.salary;
 
     let button = document.createElement("button");
-    button.setAttribute("id", "favButton");
+    button.setAttribute("id", "viewButton");
     button.innerText = "View Details";
 
     let view = document.createElement("button");
-    view.setAttribute("id", "viewButton");
+    view.setAttribute("id", "favButton");
     view.innerText = "Change Job";
     view.addEventListener("click", () => {
       document.querySelector(".changejob").style.display = "block";

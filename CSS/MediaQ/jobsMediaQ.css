@@ -201,9 +201,32 @@
     padding: 1px;
     text-align: center;
   }
-  .loginslider,
+
   #mqx {
     display: none;
+  }
+  .loginslider {
+    display: block;
+  }
+  .mobile-nav-toggle {
+    border-radius: 50%;
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    z-index: 999999999999999999999999999999999999;
+  }
+  .primary-navigation {
+    inset: 0 0 0 40%;
+  }
+  #avatarhead {
+    margin-top: 50px;
+    font-size: 25px;
+  }
+  #avatar {
+    width: 30%;
+  }
+  .avatarx {
+    font-size: 12px;
   }
   .jobsul,
   .Compsul,
@@ -265,8 +288,9 @@
     height: 80px;
   }
   .JobScontainer > div {
-    width: 90%;
-    margin: 10px 10px;
+    width: 85%;
+    margin: 10px 15px;
+    padding: 8px;
   }
   .JobcardFirstDiv {
     width: 90%;
@@ -297,12 +321,16 @@
     align-items: flex-end;
     margin: 0px;
   }
-
+  .recom-bar > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
   .recom-bar > div {
     margin: 0px;
+    text-align: center;
     display: flex;
+    font-size: 14px;
     padding-right: 20px;
-    justify-content: left;
   }
   #bagicon {
     font-size: 40px;

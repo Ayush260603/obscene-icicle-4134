@@ -385,9 +385,9 @@ header > div:nth-child(2) {
   background: rgb(36, 3, 57);
   background: linear-gradient(
     90deg,
-    rgb(77, 7, 255) 0%,
-    rgb(51, 238, 251) 81%,
-    rgb(12, 255, 40) 100%
+    rgb(77, 17, 227) 0%,
+    rgb(32, 125, 232) 81%,
+    rgb(48, 204, 247) 100%
   );
 }
 .agradbutton:hover {
@@ -578,15 +578,13 @@ header > div:nth-child(2) {
   text-align: center;
   padding: 15px 30px;
   margin: 15px auto;
-  color: black;
+  color: rgb(255, 251, 251);
   background: rgb(255, 255, 255);
+  background: rgb(23, 6, 107);
   background: linear-gradient(
-    331deg,
-    rgba(255, 255, 255, 0.8494748241093313) 0%,
-    rgba(255, 255, 255, 0.19681375968356096) 25%,
-    rgba(255, 255, 255, 0.8074580173866421) 50%,
-    rgba(255, 255, 255, 0.19961488013174022) 75%,
-    rgba(255, 255, 255, 0.8886905103838411) 100%
+    90deg,
+    rgba(23, 6, 107, 1) 0%,
+    rgba(8, 129, 123, 1) 89%
   );
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);

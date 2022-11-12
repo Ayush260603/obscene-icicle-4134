@@ -56,6 +56,7 @@ loginslide();
 
 let OneJobData = JSON.parse(localStorage.getItem("OneJob"));
 displayCards(OneJobData);
+let favData = JSON.parse(localStorage.getItem("fav-jobs")) || [];
 
 function displayCards(array) {
   document.querySelector(".JobScontainer").innerText = "";
@@ -96,13 +97,27 @@ function displayCards(array) {
     salary.setAttribute("id", "Salary");
     salary.innerText = "Salary :" + element.salary;
 
-    let button = document.createElement("button");
-    button.setAttribute("id", "favButton");
-    button.innerText = "Apply Now";
+    let apply = document.createElement("button");
+    apply.setAttribute("id", "favButton");
+    apply.innerText = "Apply Now";
+    apply.addEventListener("click", function () {
+      localStorage.setItem("AppliedJob", JSON.stringify(element));
+      document.querySelector(".applyjob").style.display = "block";
+    });
 
-    let view = document.createElement("button");
-    view.setAttribute("id", "viewButton");
-    view.innerText = "Save Job 🔖";
+    let addtofav = document.createElement("button");
+    addtofav.setAttribute("id", "viewButton");
+    addtofav.innerText = "Save Job 🔖";
+    addtofav.addEventListener("click", function () {
+      addtofav.style.backgroundColor = "maroon";
+      addtofav.innerText = "Added to Favorites";
+      if (favData.includes(element)) {
+        document.querySelector(".problem").style.display = "block";
+      } else {
+        favData.push(element);
+        localStorage.setItem("fav-jobs", JSON.stringify(favData));
+      }
+    });
 
     let desc = document.createElement("h4");
     desc.setAttribute("id", "description");
@@ -148,11 +163,25 @@ function displayCards(array) {
       department,
       jobtype,
       desc,
-      button,
-      view
+      apply,
+      addtofav
     );
     div2.append(image);
     divout.append(div1, div2);
     document.querySelector(".JobScontainer").append(divout);
   });
+}
+
+document.querySelector("#close").addEventListener("click", function () {
+  document.querySelector(".problem").style.display = "none";
+});
+document.querySelector("#close1").addEventListener("click", function () {
+  document.querySelector(".applyjob").style.display = "none";
+});
+
+document.querySelector("#Proceed").addEventListener("click", redirectToOtp);
+function redirectToOtp() {
+  setTimeout(function () {
+    document.location.href = "otp.html";
+  }, 2000);
 }

@@ -62,6 +62,14 @@ function logincheck() {
     document.querySelector("#close").style.display = "none";
     document.querySelector("#signupxs").style.display = "none";
     document.querySelector(".problem").style.display = "block";
+  } else if (logincreds.username == "" || logincreds.password == "") {
+    document.querySelector(".problem>img").src = "CSS/Images/x.png";
+    document.querySelector(".problem>h1").innerText = "No Account Found";
+    document.querySelector(".problem>h2").innerText =
+      "Please Signup to Proceed";
+    document.querySelector("#jobspage").style.display = "none";
+    document.querySelector("#close").style.display = "static";
+    document.querySelector(".problem").style.display = "block";
   } else {
     document.querySelector(".problem>img").src = "CSS/Images/x.png";
     document.querySelector(".problem>h1").innerText = "No Account Found";

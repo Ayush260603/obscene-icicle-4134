@@ -146,9 +146,30 @@
     padding: 1px;
     text-align: center;
   }
-  .loginslider,
+
   #mqx {
     display: none;
+  }
+  .loginslider {
+    display: block;
+  }
+  .mobile-nav-toggle {
+    display: block;
+    top: 30px;
+    right: 30px;
+  }
+  .primary-navigation {
+    inset: 0 0 0 40%;
+  }
+  #avatarhead {
+    margin-top: 50px;
+    font-size: 25px;
+  }
+  #avatar {
+    width: 30%;
+  }
+  .avatarx {
+    font-size: 12px;
   }
   .jobsul,
   .Compsul,
@@ -186,7 +207,7 @@
     gap: 20px;
   }
   .favoritejobs {
-    width: 98%;
+    width: 80%;
     padding: 25px;
   }
   .JobScontainer > div {
@@ -216,7 +237,7 @@
     flex-direction: column;
   }
   .recom-bar > div > h1 {
-    font-size: 15px;
+    font-size: 17px;
     margin: 2px 10px;
   }
   #blackdot {

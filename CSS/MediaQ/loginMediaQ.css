@@ -188,9 +188,29 @@
     padding: 1px;
     text-align: center;
   }
-  .loginslider,
   #mqx {
     display: none;
+  }
+  .loginslider {
+    display: block;
+  }
+  .mobile-nav-toggle {
+    display: block;
+    top: 30px;
+    right: 30px;
+  }
+  .primary-navigation {
+    inset: 0 0 0 40%;
+  }
+  #avatarhead {
+    margin-top: 50px;
+    font-size: 25px;
+  }
+  #avatar {
+    width: 30%;
+  }
+  .avatarx {
+    font-size: 12px;
   }
   .jobsul,
   .Compsul,
@@ -259,12 +279,15 @@
   #flexing {
     width: 95%;
   }
+  body {
+    position: relative;
+  }
   #logoutbut {
-    position: fixed;
-    top: 30px;
-    right: 20px;
+    position: absolute;
+    top: -500px;
+    right: -180px;
     padding: 5px 17px;
-    z-index: 999999;
+    z-index: 9999;
   }
   #placemeimg {
     top: 720px;

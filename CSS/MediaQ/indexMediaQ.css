@@ -43,6 +43,14 @@
     padding: 1px;
     text-align: center;
   }
+  .mobile-nav-toggle {
+    display: block;
+    top: 25px;
+    right: 30px;
+  }
+  .primary-navigation {
+    inset: 0 0 0 70%;
+  }
   .jobsul,
   .Compsul,
   .Servsul,
@@ -269,6 +277,7 @@
     padding: 0px;
     font-size: 10px;
   }
+
   .flexalign {
     display: grid;
   }
@@ -299,7 +308,20 @@
   }
   .loginslider,
   #mqx {
-    display: none;
+    display: block;
+  }
+  .mobile-nav-toggle {
+    display: block;
+    top: 25px;
+    right: 30px;
+  }
+  .primary-navigation {
+    inset: 0 0 0 30%;
+  }
+  .logininput,
+  .googlebutton {
+    font-size: 8px;
+    width: 72%;
   }
   .jobsul,
   .Compsul,
@@ -516,6 +538,9 @@
   #appsect button {
     padding: 3px;
     font-size: 10px;
+  }
+  .discover-jobs > div:nth-child(2) > button {
+    margin: 10px 3px;
   }
   /* ---------------------------------Page Specific End--------------------------------- */
 }
