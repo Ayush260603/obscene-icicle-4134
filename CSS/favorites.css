@@ -64,7 +64,7 @@ a {
   display: none;
   position: fixed;
   top: 20px;
-  z-index: 999999999;
+  z-index: 9999999999999999999999999999999999;
   color: black;
   border: 3px solid yellow;
   width: 40vw;
@@ -94,7 +94,7 @@ a {
   display: none;
   position: fixed;
   top: 50px;
-  z-index: 999999999;
+  z-index: 999999999999999999999999999999999999;
   color: black;
   border: 3px solid yellow;
   width: 40vw;
@@ -365,7 +365,7 @@ header > div:nth-child(2) {
   padding: 10px;
 }
 .JobScontainer {
-  z-index: 1;
+  z-index: -1;
   width: 90%;
   min-height: 75vh;
   margin: auto;

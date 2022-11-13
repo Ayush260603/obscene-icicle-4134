@@ -98,6 +98,7 @@ function displayCards(array) {
     view.addEventListener("click", function () {
       localStorage.setItem("AppliedJob", JSON.stringify(element));
       document.querySelector(".problem").style.display = "block";
+      document.querySelector(".problem").style.zIndex = "9999999999";
     });
 
     // image
