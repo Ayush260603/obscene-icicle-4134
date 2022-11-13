@@ -109,12 +109,13 @@
   #logoutbut {
     position: absolute;
     top: -500px;
-    right: 220px;
+    right: -120px;
     padding: 10px 60px;
     z-index: 999999;
   }
   #placemeimg {
     top: 720px;
+    right: 350px;
     width: 25%;
   }
   #avatarhead {
@@ -237,9 +238,14 @@
     font-size: 20px;
     font-weight: bolder;
     left: 50px;
-    top: 980px;
-    color: transparent;
+    top: 900px;
+    z-index: 5;
   }
+  #qrcose {
+    width: 40%;
+    margin: 5px 56px;
+  }
+
   section {
     margin: 10px auto;
   }
@@ -267,7 +273,7 @@
   .insidePI {
     margin-top: 0px;
     margin: 0px 10px;
-    padding: 35px 40px;
+    padding: 35px 40px 35px 65px;
   }
   .PersonInfo {
     position: static;
@@ -279,18 +285,21 @@
   #flexing {
     width: 95%;
   }
+  .recruiters > h1 {
+    margin-left: 27px;
+  }
   body {
     position: relative;
   }
   #logoutbut {
     position: absolute;
-    top: -500px;
+    top: -580px;
     right: -180px;
     padding: 5px 17px;
     z-index: 9999;
   }
   #placemeimg {
-    top: 720px;
+    top: 650px;
     width: 60%;
   }
   .PlacemeApp {

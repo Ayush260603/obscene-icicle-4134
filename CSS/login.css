@@ -482,10 +482,10 @@ header > div:nth-child(2) {
 }
 
 .PlacemeApp {
-  border-bottom-left-radius: 50px;
-  border-top-right-radius: 50px;
-  width: 385px;
-  padding: 10px;
+  border-radius: 20px;
+  width: 355px;
+  padding: 20px;
+
   height: auto;
   color: black;
   background-color: white;
@@ -604,20 +604,23 @@ header > div:nth-child(2) {
   font-weight: bolder;
   left: 110px;
   top: 280px;
+  -webkit-text-stroke: 1px white;
   color: transparent;
-  background: rgb(74, 39, 255);
-  background: linear-gradient(
-    117deg,
-    rgba(74, 39, 255, 1) 0%,
-    rgba(233, 208, 255, 1) 28%,
-    rgba(255, 124, 30, 1) 75%,
-    rgba(255, 0, 65, 1) 100%
-  );
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.5);
+  background: url("Images/back.png");
   -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 50s linear infinite;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
 }
 .logout {
   position: absolute;
-  top: 1230px;
+  top: 1280px;
   right: 210px;
 }
 #logoutbut {

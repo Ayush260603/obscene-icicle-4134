@@ -266,6 +266,7 @@ header > div:nth-child(2) {
   background-color: rgba(0, 0, 0, 0.8);
   color: rgb(255, 224, 239);
   border-right: 1px solid white;
+  z-index: 10;
 }
 #JobsNav ul {
   right: 680px;
@@ -321,7 +322,7 @@ header > div:nth-child(2) {
   margin: 10px auto;
   margin-right: 10px;
   padding: 8px 20px;
-  border-radius: 30px;
+  border-radius: 10px;
   border: 0px;
   color: white;
   cursor: pointer;
@@ -354,22 +355,21 @@ header > div:nth-child(2) {
 }
 
 #searchbox-inner {
-  -webkit-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-  -moz-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-  box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(49, 247, 234, 0.9);
+  -moz-box-shadow: 0px 0px 14px 2px rgba(49, 247, 227, 0.9);
+  box-shadow: 0px 0px 14px 2px rgba(49, 247, 244, 0.902);
   border-radius: 7px;
   background-color: white;
 }
 
 #searchbox-inner:hover {
-  -webkit-box-shadow: 0px 0px 122px 20px rgba(37, 0, 247, 0.55);
-  -moz-box-shadow: 0px 0px 122px 20px rgba(37, 0, 247, 0.55);
-  box-shadow: 0px 0px 122px 20px rgba(37, 0, 247, 0.55);
+  -webkit-box-shadow: 0px 0px 13px 7px rgba(160, 12, 245, 0.9);
+  -moz-box-shadow: 0px 0px 13px 7px rgba(160, 12, 245, 0.9);
+  box-shadow: 0px 0px 13px 7px rgba(160, 12, 245, 0.9);
 }
 
 .searchinput {
   border: 0px;
-  border-right: 1px solid grey;
   font-size: 18px;
   padding: 10px;
 }
@@ -432,14 +432,16 @@ header > div:nth-child(2) {
   justify-content: space-around;
 }
 .sort {
-  color: white;
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
   position: fixed;
   left: 20px;
   top: 200px;
   padding: 15px;
-  -webkit-box-shadow: 0px 0px 29px 0px rgba(255, 255, 255, 0.93);
-  -moz-box-shadow: 0px 0px 29px 0px rgba(255, 255, 255, 0.93);
-  box-shadow: 0px 0px 29px 0px rgba(255, 255, 255, 0.93);
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
+    rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,
+    rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+
   border-radius: 10px;
   width: 370px;
   height: 66vh;
@@ -448,9 +450,21 @@ header > div:nth-child(2) {
 .recom-bar {
   display: flex;
   justify-content: right;
+  background: url("Images/qwqw.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
 .recom-bar > div {
   margin: 0px 100px;
+}
+#update {
+  background: rgb(95, 81, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(95, 81, 255, 1) 2%,
+    rgba(70, 168, 205, 1) 49%,
+    rgba(67, 75, 219, 1) 100%
+  );
 }
 .JobScontainer {
   z-index: 1;
@@ -487,13 +501,12 @@ header > div:nth-child(2) {
   left: 110px;
   top: 70px;
   color: transparent;
-  background: rgb(74, 39, 255);
+  background: rgb(255, 255, 255);
   background: linear-gradient(
-    117deg,
-    rgba(74, 39, 255, 1) 0%,
-    rgba(233, 208, 255, 1) 28%,
-    rgba(255, 124, 30, 1) 75%,
-    rgba(255, 0, 65, 1) 100%
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(254, 35, 35, 1) 50%,
+    rgba(41, 56, 161, 1) 100%
   );
   -webkit-background-clip: text;
 }
@@ -502,8 +515,9 @@ header > div:nth-child(2) {
   padding: 8px 15px;
   border: 0px;
   color: white;
-  border-radius: 50px;
+  border-radius: 10px;
   background-color: rgb(12, 133, 255);
+  margin: 5px;
 }
 #favButton:hover {
   background-color: rgb(32, 3, 122);
@@ -511,14 +525,13 @@ header > div:nth-child(2) {
 #viewButton {
   padding: 8px 15px;
   border: 0px;
-  color: rgb(0, 0, 0);
-  border-radius: 50px;
-  background-color: rgb(227, 255, 12);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  background: rgb(82, 163, 7);
   margin: 5px;
 }
 #viewButton:hover {
-  background-color: rgb(222, 255, 103);
-  border: 3px solid orange;
+  background-color: rgb(41, 233, 182);
 }
 .cardimage {
   width: 200px;
@@ -599,6 +612,8 @@ header > div:nth-child(2) {
   margin: 10px auto;
   background-color: white;
   border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 #bagicon {
   font-size: 50px;

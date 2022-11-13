@@ -13,8 +13,8 @@ html {
   background: linear-gradient(
     90deg,
     rgba(0, 5, 255, 1) 0%,
-    rgb(17, 31, 66) 1%,
-    rgb(9, 28, 71) 99%,
+    rgb(12, 21, 46) 1%,
+    rgb(8, 24, 62) 99%,
     rgba(35, 246, 254, 1) 100%
   );
 }
@@ -154,7 +154,7 @@ a {
 .primary-navigation {
   gap: 2px;
   display: flex;
-  z-index: 1000;
+  z-index: 10999999;
   position: fixed;
   inset: 0 0 0 70%;
   flex-direction: column;
@@ -172,7 +172,7 @@ a {
   border: 0px;
   width: 2rem;
   aspect-ratio: 1;
-  z-index: 9999;
+  z-index: 9999999999999999999999999;
   top: 1rem;
   background: transparent;
   right: 2rem;
@@ -194,6 +194,7 @@ header {
   justify-content: space-around;
   align-items: center;
   background: rgba(17, 16, 16, 0.8);
+  z-index: 9999;
 }
 
 header > div:nth-child(2) {
@@ -256,6 +257,7 @@ header > div:nth-child(2) {
   margin: 0px;
   width: 170px;
   height: 100%;
+  z-index: 10;
 }
 
 #logo {

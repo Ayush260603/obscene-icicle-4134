@@ -41,15 +41,23 @@ function LoginSlider() {
 
 let form1 = document.querySelector("form1");
 document.querySelector("#loginindex").addEventListener("click", logincheck);
-let logincreds = JSON.parse(localStorage.getItem("sign-creds"));
+
+let logincreds = JSON.parse(localStorage.getItem("sign-creds")) || [];
 document.querySelector("#jobspage").style.display = "none";
 function logincheck() {
   let k = document.querySelector("#username").value;
   let l = document.querySelector("#Password").value;
   console.log(k, l);
-  console.log(logincreds.username, logincreds.password);
 
-  if (k == logincreds.username && l == logincreds.password) {
+  if (logincreds == []) {
+    document.querySelector(".problem>img").src = "CSS/Images/x.png";
+    document.querySelector(".problem>h1").innerText = "No Account Found";
+    document.querySelector(".problem>h2").innerText =
+      "Please Signup to Proceed";
+    document.querySelector("#jobspage").style.display = "none";
+    document.querySelector("#close").style.display = "static";
+    document.querySelector(".problem").style.display = "block";
+  } else if (k == logincreds.username && l == logincreds.password) {
     document.querySelector(".problem>img").src = "CSS/Images/tick.png";
     document.querySelector(".problem>h1").innerText = "Login Successful!";
     document.querySelector(".problem>h2").innerText = "Welcome back ";
@@ -61,14 +69,6 @@ function logincheck() {
     });
     document.querySelector("#close").style.display = "none";
     document.querySelector("#signupxs").style.display = "none";
-    document.querySelector(".problem").style.display = "block";
-  } else if (logincreds.username == "" || logincreds.password == "") {
-    document.querySelector(".problem>img").src = "CSS/Images/x.png";
-    document.querySelector(".problem>h1").innerText = "No Account Found";
-    document.querySelector(".problem>h2").innerText =
-      "Please Signup to Proceed";
-    document.querySelector("#jobspage").style.display = "none";
-    document.querySelector("#close").style.display = "static";
     document.querySelector(".problem").style.display = "block";
   } else {
     document.querySelector(".problem>img").src = "CSS/Images/x.png";
@@ -121,10 +121,10 @@ nxtbtn2.addEventListener("click", () => {
 prebtn3.addEventListener("click", () => {
   document
     .querySelector("#Slider3")
-    .setAttribute("class", "compslidtranslatePRE");
+    .setAttribute("class", "compslidtranslatePRE2");
 });
 nxtbtn3.addEventListener("click", () => {
   document
     .querySelector("#Slider3")
-    .setAttribute("class", "compslidtranslateNXT");
+    .setAttribute("class", "compslidtranslateNXT2");
 });
