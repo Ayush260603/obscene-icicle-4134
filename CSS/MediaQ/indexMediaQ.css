@@ -403,17 +403,33 @@
   }
   #pre-but,
   #pre-but2,
-  #pre-but3 {
-    top: 38%;
-    border-radius: 0px;
-    padding: 5px 0px;
-  }
+  #pre-but3,
   #nxt-but,
   #nxt-but2,
   #nxt-but3 {
-    top: 38%;
     border-radius: 0px;
+    width: 40px;
     padding: 5px 0px;
+  }
+  #pre-but {
+    height: 73%;
+    top: 60px;
+  }
+  #nxt-but {
+    height: 73%;
+    top: 60px;
+  }
+  #nxt-but2 {
+    height: 68%;
+  }
+  #pre-but2 {
+    height: 68%;
+  }
+  #pre-but3 {
+    height: 58%;
+  }
+  #nxt-but3 {
+    height: 58%;
   }
   #Slider > div,
   #Slider2 > div {
