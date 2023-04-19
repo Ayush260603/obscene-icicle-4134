@@ -1,122 +1,45 @@
-/* universal tags */
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Open-Sans", sans-serif;
-  font-size: 18px;
-  scroll-behavior: smooth;
+body {
+  padding-top: 80px;
 }
 section {
   margin-left: 50px;
   margin-right: 50px;
 }
+.searchbox {
+  width: 100%;
+  margin: 0px 0px;
+}
+
+#searchbox-inner {
+  -webkit-box-shadow: 0px 0px 14px 2px rgba(49, 247, 234, 0.9);
+  -moz-box-shadow: 0px 0px 14px 2px rgba(49, 247, 227, 0.9);
+  box-shadow: 0px 0px 14px 2px rgba(49, 247, 244, 0.902);
+  border-radius: 7px;
+  background-color: white;
+}
+
+#searchbox-inner:hover {
+  -webkit-box-shadow: 0px 0px 13px 7px rgba(160, 12, 245, 0.9);
+  -moz-box-shadow: 0px 0px 13px 7px rgba(160, 12, 245, 0.9);
+  box-shadow: 0px 0px 13px 7px rgba(160, 12, 245, 0.9);
+}
+
+.searchinput {
+  border: 0px;
+  font-size: 18px;
+  padding: 10px;
+}
+.searchinput:focus {
+  outline: none;
+}
+
 .white {
   background-color: white;
   color: black;
 }
 .black {
-  background-color: black;
   color: white;
 }
-.flex {
-  display: flex;
-}
-.flexalign {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-hr {
-  margin: 15px;
-  color: rgb(69, 67, 67);
-  width: 90%;
-}
-div {
-  border: 1px solid transparent;
-  color: white;
-}
-a {
-  text-decoration: none;
-}
-html {
-  position: relative;
-  background-color: black;
-}
-
-/* preloader */
-#preloader {
-  background: black url("Images/preloader.gif") no-repeat center center;
-  background-size: 20%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 1000000000000000000000000;
-}
-/* Section headings */
-.sectionHeads {
-  font-size: 40px;
-  color: white;
-  text-align: center;
-  margin-top: 50px;
-}
-
-.problem {
-  display: none;
-  position: fixed;
-  z-index: 999999999;
-  color: black;
-  border: 3px solid yellow;
-  width: 40vw;
-  height: 60vh;
-  text-align: center;
-  margin: 10% 30%;
-  padding: 20px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    331deg,
-    rgba(255, 255, 255, 0.8494748241093313) 0%,
-    rgba(255, 255, 255, 0.19681375968356096) 25%,
-    rgba(255, 255, 255, 0.8074580173866421) 50%,
-    rgba(255, 255, 255, 0.19961488013174022) 75%,
-    rgba(255, 255, 255, 0.8886905103838411) 100%
-  );
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transform: scale(0.9);
-  transition: scale(0.1) 350ms ease-in-out;
-}
-.applyjob {
-  display: none;
-  position: fixed;
-  z-index: 999999999;
-  color: black;
-  border: 3px solid yellow;
-  width: 40vw;
-  height: 60vh;
-  text-align: center;
-  margin: 10% 30%;
-  padding: 20px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    331deg,
-    rgba(255, 255, 255, 0.8494748241093313) 0%,
-    rgba(255, 255, 255, 0.19681375968356096) 25%,
-    rgba(255, 255, 255, 0.8074580173866421) 50%,
-    rgba(255, 255, 255, 0.19961488013174022) 75%,
-    rgba(255, 255, 255, 0.8886905103838411) 100%
-  );
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transform: scale(0.9);
-  transition: scale(0.1) 350ms ease-in-out;
-}
-
 /* loginslider  */
 .loginform {
   margin: 20px 20px;
@@ -146,304 +69,6 @@ html {
   font-size: 22px;
   margin-left: 15px;
 }
-
-.logininput {
-  width: 85%;
-  padding: 8px;
-  border-radius: 10px;
-  margin: 10px;
-  margin-bottom: 10px;
-}
-
-.googlebutton {
-  width: 85%;
-  padding: 8px;
-  border-radius: 10px;
-  background-color: white;
-  margin: 10px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  -webkit-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-  -moz-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-  box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-}
-
-.fgradbutton {
-  margin: 10px auto;
-  padding: 10px 30px;
-  border-radius: 30px;
-  border: 0px;
-  color: white;
-  cursor: pointer;
-  background: rgb(57, 162, 168);
-  background: linear-gradient(
-    90deg,
-    rgba(57, 162, 168, 1) 0%,
-    rgba(63, 94, 251, 1) 29%,
-    rgba(82, 85, 226, 1) 58%,
-    rgba(243, 0, 255, 1) 100%
-  );
-}
-
-.fgradbutton:hover {
-  background: rgb(131, 58, 180);
-  transform: scale(1.1);
-  z-index: 1.1;
-  cursor: pointer;
-  background: rgb(63, 94, 251);
-  background: linear-gradient(
-    90deg,
-    rgba(63, 94, 251, 1) 2%,
-    rgba(243, 0, 255, 1) 27%,
-    rgba(57, 162, 168, 1) 72%,
-    rgba(82, 85, 226, 1) 95%
-  );
-}
-
-label {
-  margin-left: 20px;
-}
-
-#primary-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 0px;
-  align-items: center;
-  color: azure;
-}
-
-.primary-navigation {
-  gap: 2px;
-  display: flex;
-  z-index: 10000;
-  position: fixed;
-  inset: 0 0 0 70%;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: rgba(13, 13, 13, 0.7);
-  padding: 10px;
-  backdrop-filter: blur(1rem);
-  transform: translateX(100%);
-  transition: transform 350ms ease-in-out;
-}
-
-.mobile-nav-toggle {
-  display: block;
-  position: fixed;
-  border: 0px;
-  width: 2rem;
-  aspect-ratio: 1;
-  z-index: 9999999;
-  top: 1rem;
-  background: transparent;
-  right: 2rem;
-}
-
-.primary-navigation[data-visible="true"] {
-  transform: translateX(0%);
-}
-
-/* login slider emd  */
-
-/* navbar */
-header {
-  border: 1px solid black;
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  padding: 5px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background: rgba(17, 16, 16, 0.8);
-}
-
-header > div:nth-child(2) {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px;
-}
-
-.home > a > div {
-  margin: 0px 20px;
-  padding: 5px;
-  transition: all 0.1s ease-in-out;
-}
-
-.home > a > div:hover {
-  border-bottom: 3px solid rgb(174, 12, 69);
-}
-#qrcose {
-  margin: 5px 50px;
-  width: 60%;
-}
-#JobsNav:hover .jobsul,
-#CompNav:hover .Compsul,
-#ServNav:hover .Servsul {
-  display: block;
-}
-
-.jobsul:hover,
-.Compsul:hover,
-.Servsul:hover {
-  display: block;
-}
-
-.jobsul > li,
-.Compsul > li,
-.Servsul > li {
-  list-style: none;
-  padding: 10px;
-  border-bottom: 1px grey;
-}
-
-.jobsul,
-.Compsul,
-.Servsul {
-  margin-top: 17px;
-  display: none;
-  position: absolute;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: rgb(255, 224, 239);
-  border-right: 1px solid white;
-}
-
-#JobsNav ul {
-  right: 680px;
-}
-#CompNav ul {
-  right: 560px;
-}
-#ServNav ul {
-  right: 450px;
-}
-
-#logoholder {
-  padding: 0px;
-  margin: 0px;
-  width: 170px;
-  height: 100%;
-}
-#logo {
-  width: 100%;
-  height: 100%;
-}
-
-/* navbar end */
-
-/* gradient button  */
-.gradbutton {
-  margin: 10px auto;
-  padding: 10px 30px;
-  border-radius: 30px;
-  border: 0px;
-  color: white;
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 81%,
-    rgba(255, 187, 0, 1) 100%
-  );
-}
-.fgradbutton {
-  margin: 5px auto;
-  padding: 10px 30px;
-  border-radius: 30px;
-  border: 0px;
-  color: white;
-  cursor: pointer;
-  background: rgb(57, 162, 168);
-  background: linear-gradient(
-    90deg,
-    rgba(57, 162, 168, 1) 0%,
-    rgba(63, 94, 251, 1) 29%,
-    rgba(82, 85, 226, 1) 58%,
-    rgba(243, 0, 255, 1) 100%
-  );
-}
-
-.fgradbutton:hover {
-  background: rgb(131, 58, 180);
-  transform: scale(1.1);
-  z-index: 1.1;
-  cursor: pointer;
-  background: rgb(63, 94, 251);
-  background: linear-gradient(
-    90deg,
-    rgba(63, 94, 251, 1) 2%,
-    rgba(243, 0, 255, 1) 27%,
-    rgba(57, 162, 168, 1) 72%,
-    rgba(82, 85, 226, 1) 95%
-  );
-}
-
-.gradbutton:hover {
-  background: rgb(131, 58, 180);
-  transform: scale(1.1);
-  z-index: 1.1;
-  cursor: pointer;
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 16%,
-    rgba(255, 187, 0, 0.8774860285911239) 100%
-  );
-}
-#loginbut {
-  background: transparent;
-  color: white;
-  padding: 5px 30px;
-  margin: 5px 10px;
-}
-
-#loginbut:hover {
-  background: white;
-  cursor: pointer;
-  color: black;
-  border: 1px solid black;
-}
-
-/* gradient button end */
-/* big search box  start  */
-.searchbox {
-  width: 50%;
-  margin: 50px 50px;
-}
-
-#searchbox-inner {
-  -webkit-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-  -moz-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-  box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-  padding: 5px;
-  margin: 5px 10px;
-  border-radius: 7px;
-  background-color: white;
-}
-
-#searchbox-inner:hover {
-  -webkit-box-shadow: 0px 0px 122px 20px rgba(37, 0, 247, 0.55);
-  -moz-box-shadow: 0px 0px 122px 20px rgba(37, 0, 247, 0.55);
-  box-shadow: 0px 0px 122px 20px rgba(37, 0, 247, 0.55);
-}
-
-.searchinput {
-  width: 80%;
-  border: 0px;
-  border-right: 1px solid grey;
-  font-size: 18px;
-  padding: 10px;
-}
-
-.searchinput:hover,
-.searchinput:focus {
-  outline: none;
-}
-
-/* big seatch box end */
 
 /* extras start  */
 

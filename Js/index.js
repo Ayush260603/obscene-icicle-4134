@@ -1,89 +1,55 @@
-const primaryNav = document.querySelector(".primary-navigation");
-document
-  .querySelector(" .mobile-nav-toggle>span")
-  .addEventListener("click", LoginSlider);
-document.querySelector("#loginbut").addEventListener("click", LoginSlider);
+
 document.querySelector("#registerbut").addEventListener("click", function () {
   window.location.href = "signup.html";
-});
-// ---------------------------------------------/preloader---------------------------------------------/
-var loader = document.querySelector("#preloader");
-window.addEventListener("load", function () {
-  loader.style.display = "none";
-});
-
+})
 //-------------------------------------------------/ popup-------------------------------------------------/
-document.querySelector("#close").addEventListener("click", function () {
-  document.querySelector(".problem").style.display = "none";
-});
 
 document.querySelector("#leftapply").addEventListener("click", function () {
-  document.querySelector(".problem>img").src = "CSS/Images/x.png";
-  document.querySelector(".problem>h1").innerText = "No Account Found";
-  document.querySelector(".problem>h2").innerText =
-    "Please Signup before Proceed";
-  document.querySelector("#jobspage").style.display = "none";
-  document.querySelector("#close").style.display = "static";
-  document.querySelector(".problem").style.display = "block";
+  swal({
+    title: "Login Please!",
+    text: "You need to login before applying for Jobs!",
+    icon: "info",
+    buttons: true,
+    dangerMode: true,
+  })
+    .then((signAsk) => {
+      if (signAsk) {
+        swal("Redirecting To Signup Page", {
+          icon: "info",
+        });
+        setTimeout(function () {
+          document.location.href = "signup.html";
+        }, 2000);
+      }
+    });
+
 });
 
-// -----------------------------------------/login LoginSlider function-----------------------------------------/
-function LoginSlider() {
-  const visibility = primaryNav.getAttribute("data-visible");
-  if (visibility === "false") {
-    primaryNav.setAttribute("data-visible", true);
-    document.querySelector(" .mobile-nav-toggle>span").innerText = "✖️";
-  } else if (visibility === "true") {
-    primaryNav.setAttribute("data-visible", false);
-    document.querySelector(" .mobile-nav-toggle>span").innerText = "💠";
-  }
-}
-
-let form1 = document.querySelector("form1");
-document.querySelector("#loginindex").addEventListener("click", logincheck);
 
 let logincreds = JSON.parse(localStorage.getItem("sign-creds")) || [];
-document.querySelector("#jobspage").style.display = "none";
+let form1 = document.getElementById("LoginForm");
+form1.addEventListener("submit", (e) => {
+  e.preventDefault()
+  logincheck()
+})
+
+// document.querySelector("#jobspage").style.display = "none";
 function logincheck() {
   let k = document.querySelector("#username").value;
   let l = document.querySelector("#Password").value;
-  console.log(k, l);
+  console.log(k, l);//todo remove
 
   if (logincreds == []) {
-    document.querySelector(".problem>img").src = "CSS/Images/x.png";
-    document.querySelector(".problem>h1").innerText = "No Account Found";
-    document.querySelector(".problem>h2").innerText =
-      "Please Signup to Proceed";
-    document.querySelector("#jobspage").style.display = "none";
-    document.querySelector("#close").style.display = "static";
-    document.querySelector(".problem").style.display = "block";
+    swal("No Account Found!", "Please Signup to Proceed!", "error");
+
   } else if (k == logincreds.username && l == logincreds.password) {
-    document.querySelector(".problem>img").src = "CSS/Images/tick.png";
-    document.querySelector(".problem>h1").innerText = "Login Successful!";
-    document.querySelector(".problem>h2").innerText = "Welcome back ";
-    let jobshref = document.querySelector("#jobspage");
-    jobshref.style.display = "block";
-    jobshref.addEventListener("click", function () {
-      document.querySelector(".problem").style.display = "none";
-      jobspage();
-    });
-    document.querySelector("#close").style.display = "none";
-    document.querySelector("#signupxs").style.display = "none";
-    document.querySelector(".problem").style.display = "block";
+    swal("Login Successful!", "Redirecting To Dashboard...", "success");
+    setTimeout(function () {
+      document.location.href = "login.html";
+    }, 2000);
   } else {
-    document.querySelector(".problem>img").src = "CSS/Images/x.png";
-    document.querySelector(".problem>h1").innerText = "No Account Found";
-    document.querySelector(".problem>h2").innerText =
-      "Please Signup to Proceed";
-    document.querySelector("#jobspage").style.display = "none";
-    document.querySelector("#close").style.display = "static";
-    document.querySelector(".problem").style.display = "block";
+    swal("No Account Found!", "Please Signup to Proceed!", "error");
   }
-}
-function jobspage() {
-  setTimeout(function () {
-    document.location.href = "login.html";
-  }, 2000);
 }
 // -----------------------------------------/ login slider function end-----------------------------------------/
 
@@ -127,4 +93,4 @@ nxtbtn3.addEventListener("click", () => {
   document
     .querySelector("#Slider3")
     .setAttribute("class", "compslidtranslateNXT2");
-});
+})

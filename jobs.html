@@ -6,29 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlaceMe|Jobs</title>
     <link rel="stylesheet" href="./CSS/jobs.css">
-    <link rel="stylesheet" href="./CSS/footer.css">
+
+    <link rel="stylesheet" href="./CSS/common.css">
     <link rel="stylesheet" href="./CSS/MediaQ/jobsMediaQ.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100;1,200;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
+    <script src="./Js/jobs.js" defer></script>
+    <script src="./Js/common.js" defer></script>
 </head>
 <body>
-        <!-- preloader -->
-        <div id="preloader"></div>
-        <!-- alertdiv -->
-        <div class="applyjob">
-            <img width="40%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
-            <h1 style="font-size:30px">Do You want to apply for job with your given credentials?</h1>
-            <h2>OTP Confirmation will be needed..</h2>
-            <button class="fgradbutton" id="Proceed">YES</button>
-            <button class="gradbutton" id="close1">No </button>
-        </div>
-        <div class="problem">
-            <img width="50%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
-            <h1 style="font-size:30px">Oh!Looks like you have already added this job on favorites!</h1>
-            <h2>...</h2>
-            <button class="gradbutton" id="close">Close </button>
-        </div>
+
+     
        <!-- login slider -->
         <div class="loginslider">
     <nav id="primary-header">
@@ -59,126 +47,137 @@
         </nav>
     </nav>
         </div>
-        <!-- navigation bar -->
-        <header>
-            <div id="logoholder">
-                <a href="login.html"><img id="logo" src="CSS/Images/logo.jpg" alt="Place Me"></a>
-            </div>
-            <div class="home">
-                <a href="login.html">
-                    <div id="JobsNav">Home
-                    </div>
-                </a>
-                <a href="#top-companies">
-                    <div id="CompNav">Companies
-                        <ul class="Compsul">
-                            <li><b>Explore Collections</b></li>
-                            <li>Top companies</li>
-                            <li> IT companies</li>
-                            <li> Fintech companies</li>
-                            <li> Sponsored companies</li>
-                            <li> Featured companies</li>
-                        </ul>
-                    </div>
-                </a>
-                <a href="#services">
-                    <div id="ServNav">Services
-                        <ul class="Servsul">
-                            <li><b>Learn & upskill</b></li>
-                            <li>Data Science courses</li>
-                            <li>Technology courses</li>
-                            <li>Management courses</li>
-                            <li>Finance courses</li>
-                            <li> Design courses</li>
-                            <li>Healthcare courses</li>
-                            <li>Degree programs</li>
-                        </ul>
-                    </div>
-                </a>
-                <div class="gradbutton" id="loginbut" style="padding: 5px 25px;">Login</div>
-                <a href="favorites.html"><div class="gradbutton" id="registerbut" style="padding: 5px 25px;">Favorites 🌟</div></a>
-            </div>
-        </header>
-    
+          <!-- navigation bar -->
+    <header>
+        <div id="logoholder">
+            <a href="index.html">
+                <img id="logo" src="CSS/Images/placemeicoo.png" alt="Place Me">
+            </a>
+        </div>
+        <div class="home">
+            <a href="#search-sec">
+                <div id="JobsNav">Jobs
+                    <ul class="jobsul">
+                        <li>Recommended jobs</li>
+                        <li>Jobs from recruiters</li>
+                        <li>Jobs from alerts</li>
+                        <li>Application status</li>
+                        <li>Saved jobs</li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#topcomp-sec">
+                <div id="CompNav">Companies
+                    <ul class="Compsul">
+                        <li><b>Explore Collections</b></li>
+                        <li>Top companies</li>
+                        <li> IT companies</li>
+                        <li> Fintech companies</li>
+                        <li> Sponsored companies</li>
+                        <li> Featured companies</li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#interview-sec2">
+                <div id="ServNav">Services
+                    <ul class="Servsul">
+                        <li><b>Learn & upskill</b></li>
+                        <li>Data Science courses</li>
+                        <li>Technology courses</li>
+                        <li>Management courses</li>
+                        <li>Finance courses</li>
+                        <li> Design courses</li>
+                        <li>Healthcare courses</li>
+                        <li>Degree programs</li>
+                    </ul>
+                </div>
+            </a>
+            <div class="gradbutton" id="loginbut" style="padding: 5px 25px;">Login</div>
+            <div class="gradbutton" id="registerbut" style="padding: 5px 25px;">Register</div>
+ 
+        </div>
+    </header>
 
- <section>
-    <!-- recommended bar -->
-    <div class="recom-bar">
-        <div class="flexalign"><h1 id="bagicon">🛄<h1>Recommended Jobs For You</h1></div>
-        <div class="flexalign"><h2>You Can Appy Upto 5 Jobs ! </h2><span>⚫</span><a id="newupdate" href="login.html">
-            <button id="update" class="gradbutton">New Updates</button></a></div>
-    </div>
-    <div class="ActualPage">
-        <h1 id="headingJobs">Jobs</h1>
-        <div class="sort">
-            <div><div class="searchbox">
-                <div id="searchbox-inner">
-                    <input class="searchinput" type="text" placeholder="Search for Job">
-                    <button class="agradbutton">Search</button>
+<main>
+    <section >
+        <!-- recommended bar -->
+        <div class="recom-bar">
+            <div class="flexalign"><h1 id="bagicon">🛄<h1>Recommended Jobs For You</h1></div>
+            <div class="flexalign"><h2>You Can Appy Upto 5 Jobs ! </h2><span>⚫</span><a id="newupdate" href="login.html">
+                <button id="update" class="gradbutton">New Updates</button></a></div>
+        </div>
+        <div class="ActualPage">
+            <h1 id="headingJobs">Jobs</h1>
+            <div class="sort">
+                <div><div class="searchbox">
+                    <div id="searchbox-inner">
+                        <input class="searchinput" type="text" placeholder="Search for Job">
+                        <button class="gradbutton">Search</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <br>
-            <div class="filterdiv">
-                <h1 id="filterhead">Filter Jobs</h1>
-                <select name="" id="filter"> 
-                    <option value="">Select Job-Type</option>
-                    <option value="Director">Directior</option>
-                    <option value="Assistant">Assistant</option>
-                    <option value="Supervisor">Supervisor</option>
-                    <option value="Analyst">Analyst</option>
-                    <option value="Associate">Associate</option>
-                    <option value="Officer">Officer</option>
-                    <option value="Manager">Manager</option>
-                    <option value="Agent">Agent</option>
-                </select>
-            </div>
-            <div class="HTLswitcher">
-                <h1>Salary Filter</h1>
-                <div>
-                    <button id="HTL" class="gradbutton">High to Low</button>
-                    <button id="LTH"  class="fgradbutton">Low to High</button>
+            <br>
+                <div class="filterdiv">
+                    <h1 id="filterhead">Filter Jobs</h1>
+                    <select name="" id="filter"> 
+                        <option value="">Select Job-Type</option>
+                        <option value="Director">Directior</option>
+                        <option value="Assistant">Assistant</option>
+                        <option value="Supervisor">Supervisor</option>
+                        <option value="Analyst">Analyst</option>
+                        <option value="Associate">Associate</option>
+                        <option value="Officer">Officer</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Agent">Agent</option>
+                    </select>
                 </div>
-               
-            </div>
-
-            <div class="ratingslider">
-                <h1>Salary Filter</h1>
-                <div>
-                    <a> Sort By Rating Above :</a>
-                <a id="displayslider"></a><br>
-            <input type="range"  min=0 max=10 step="0.1" value="50" id="myRange"><br><a id="stars">⭐⭐⭐⭐⭐</a>
-            
-                </div>    
-            </div>
-            
-        </div>
-        <div class="JobScontainer">
-            <!-- Append Job data here -->
-                <div class="JobCard flexalign">
-                    <div class="JobcardFirstDiv">
-                        <h1 id="Jobname">Jobtitle </h1>
-                        <h5 id="JobDate">date</h5>
-                        <p id="Jobcategory">Category</p>
-                        <p id="JobLine">Phrase/Line</p>
-                        <h5 id="JobRating">Rating</h5>
-                        <h5 id="Salary">Salary</h5>
-                        <button id="favButton">Add to Favorite</button>
-                    </div>
+                <div class="HTLswitcher">
+                    <h1>Salary Filter</h1>
                     <div>
-                        <img class="cardimage" src="http://loremflickr.com/640/480/technics" alt="">
-                    </div> 
+                        <button id="HTL" class="gradbutton">High to Low</button>
+                        <button id="LTH"  class="fgradbutton">Low to High</button>
+                    </div>
+                   
                 </div>
-            
-        </div>
-    </div>
     
-   
- </section>
+                <div class="ratingslider">
+                    <h1>Salary Filter</h1>
+                    <div>
+                        <a> Sort By Rating Above :</a>
+                    <a id="displayslider"></a><br>
+                <input type="range"  min=0 max=10 step="0.1" value="50" id="myRange"><br><a id="stars">⭐⭐⭐⭐⭐</a>
+                
+                    </div>    
+                </div>
+                
+            </div>
+            <div class="JobScontainer">
+                <!-- Append Job data here -->
+                    <div class="JobCard flexalign">
+                        <div class="JobcardFirstDiv">
+                            <h1 id="Jobname">Jobtitle </h1>
+                            <h5 id="JobDate">date</h5>
+                            <p id="Jobcategory">Category</p>
+                            <p id="JobLine">Phrase/Line</p>
+                            <h5 id="JobRating">Rating</h5>
+                            <h5 id="Salary">Salary</h5>
+                            <button id="favButton">Add to Favorite</button>
+                        </div>
+                        <div>
+                            <img class="cardimage" src="http://loremflickr.com/640/480/technics" alt="">
+                        </div> 
+                    </div>
+                
+            </div>
+        </div>
+        
+       
+     </section>
+</main>
  <footer>
     <div class="footer1st">
         <div class="logofooter">
-            <div><img width="80%" src="CSS/Images/Logo.png" alt=""></div>
+            <div><img width="210px" src="CSS/Images/placemeicoo.png" alt=""></div>
             <div><img width="50%" src="CSS/Images/connectwithus.jpg" alt=""></div>
         </div>
         <div class="flex">
@@ -224,7 +223,7 @@
         <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/shiksha.png" alt=""></div>
         <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jeevansathi.png" alt=""></div></div>
     </div>
-</footer>     
+</footer>   
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>  
 </body>
 </html>
-<script src="./Js/jobs.js"></script>

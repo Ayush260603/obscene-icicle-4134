@@ -5,31 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PlaceMe|Favorites</title>
+    <link rel="stylesheet" href="./CSS/common.css">
     <link rel="stylesheet" href="./CSS/favorites.css">
-    <link rel="stylesheet" href="./CSS/footer.css">
+
     <link rel="stylesheet" href="./CSS/MediaQ/favoritesMediaQ.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;1,100;1,200;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
+    <script src="./Js/favorites.js" defer></script>
+    <script src="./Js/common.js" defer></script>
 </head>
 <body>
-        <!-- preloader -->
-        <div id="preloader"></div>
-        <!-- alertdiv -->
-        <div class="problem">
-            <img width="40%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
-            <h1 style="font-size:30px">Do You want to apply for job with your given credentials?</h1>
-            <h2>OTP Confirmation will be needed..</h2>
-            <button class="fgradbutton" id="Proceed">YES</button>
-            <button class="gradbutton" id="close">No </button>
-        </div>
-        <!-- empty cart  -->
-        <div class="emptycart">
-            <img width="40%" style="margin: 30px;" src="https://64.media.tumblr.com/476a87db2113426ef52bbdb3f4454e7c/tumblr_prbk34Xdnx1vvfsp9o1_540.gif" alt="">
-            <h1 style="font-size:30px">Ohh! Looks like your Favorites are empty.</h1>
-            <h2>What will you do here all lonely..</h2>
-            <a href="jobs.html"><button class="fgradbutton">Lets look for Jobs ➡️</button></a>
-        </div>
+
+
         <!-- login slider -->
         <div class="loginslider">
             <nav id="primary-header">
@@ -60,53 +47,56 @@
                 </nav>
             </nav>
         </div>
-        <!-- navigation bar -->
-        <header>
-            <div id="logoholder">
-                <a href="login.html"><img id="logo" src="CSS/Images/logo.jpg" alt="Place Me"></a>
-            </div>
-            <div class="home">
-                <a href="jobs.html">
-                    <div id="JobsNav">Jobs
-                        <ul class="jobsul">
-                            <li>Recommended jobs</li>
-                            <li>Jobs from recruiters</li>
-                            <li>Jobs from alerts</li>
-                            <li>Application status</li>
-                            <li>Saved jobs</li>
-                        </ul>
-                    </div>
-                </a>
-                <a href="#top-companies">
-                    <div id="CompNav">Companies
-                        <ul class="Compsul">
-                            <li><b>Explore Collections</b></li>
-                            <li>Top companies</li>
-                            <li> IT companies</li>
-                            <li> Fintech companies</li>
-                            <li> Sponsored companies</li>
-                            <li> Featured companies</li>
-                        </ul>
-                    </div>
-                </a>
-                <a href="#services">
-                    <div id="ServNav">Services
-                        <ul class="Servsul">
-                            <li><b>Learn & upskill</b></li>
-                            <li>Data Science courses</li>
-                            <li>Technology courses</li>
-                            <li>Management courses</li>
-                            <li>Finance courses</li>
-                            <li> Design courses</li>
-                            <li>Healthcare courses</li>
-                            <li>Degree programs</li>
-                        </ul>
-                    </div>
-                </a>
-                <div class="gradbutton" id="loginbut" style="padding: 5px 25px;">Login</div>
-                <div class="gradbutton" id="registerbut" style="padding: 5px 25px;">New Jobs!</div> 
-            </div>
-        </header>
+          <!-- navigation bar -->
+    <header>
+        <div id="logoholder">
+            <a href="index.html">
+                <img id="logo" src="CSS/Images/placemeicoo.png" alt="Place Me">
+            </a>
+        </div>
+        <div class="home">
+            <a href="#search-sec">
+                <div id="JobsNav">Jobs
+                    <ul class="jobsul">
+                        <li>Recommended jobs</li>
+                        <li>Jobs from recruiters</li>
+                        <li>Jobs from alerts</li>
+                        <li>Application status</li>
+                        <li>Saved jobs</li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#topcomp-sec">
+                <div id="CompNav">Companies
+                    <ul class="Compsul">
+                        <li><b>Explore Collections</b></li>
+                        <li>Top companies</li>
+                        <li> IT companies</li>
+                        <li> Fintech companies</li>
+                        <li> Sponsored companies</li>
+                        <li> Featured companies</li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#interview-sec2">
+                <div id="ServNav">Services
+                    <ul class="Servsul">
+                        <li><b>Learn & upskill</b></li>
+                        <li>Data Science courses</li>
+                        <li>Technology courses</li>
+                        <li>Management courses</li>
+                        <li>Finance courses</li>
+                        <li> Design courses</li>
+                        <li>Healthcare courses</li>
+                        <li>Degree programs</li>
+                    </ul>
+                </div>
+            </a>
+            <div class="gradbutton" id="loginbut" style="padding: 5px 25px;">Login</div>
+            <div class="gradbutton" id="registerbut" style="padding: 5px 25px;">Register</div>
+ 
+        </div>
+    </header>
     
     <section>
         <div class="recom-bar">
@@ -130,7 +120,7 @@
     <footer>
         <div class="footer1st">
             <div class="logofooter">
-                <div><img width="80%" src="CSS/Images/Logo.png" alt=""></div>
+                <div><img width="210px" src="CSS/Images/placemeicoo.png" alt=""></div>
                 <div><img width="50%" src="CSS/Images/connectwithus.jpg" alt=""></div>
             </div>
             <div class="flex">
@@ -176,7 +166,7 @@
             <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/shiksha.png" alt=""></div>
             <div><img src="https://static.naukimg.com/s/0/0/i/new-homepage/footer-logos/jeevansathi.png" alt=""></div></div>
         </div>
-    </footer>   
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>   
 </body>
 </html>
-<script src="./Js/favorites.js"></script>

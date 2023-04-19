@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: black !important;
+}
+/* div,
+section {
+  border: 1px solid red;
+} */
+:root {
+  --themcolor: #1fdcc3;
+  --hoverColor: rgb(37, 177, 158);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.stickky {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  background-color: white;
+  padding: 1px 90px;
+}
+img,
+input,
+select,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none !important;
+}
+
+html {
+  position: relative;
+}
+.gradbutton {
+  margin: 10px auto;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 0px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  background: var(--themcolor);
+}
+.gradbutton:hover {
+  background: var(--hoverColor);
+  z-index: 1.1;
+  cursor: pointer;
+}
+.fgradbutton {
+  margin: 10px auto;
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: 0px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  background: var(--themcolor);
+}
+.fgradbutton:hover {
+  z-index: 1.1;
+  cursor: pointer;
+  background: var(--hoverColor);
+}
+#loginbut {
+  background: white;
+  color: white;
+  border: 0px;
+  margin: 5px 10px;
+}
+#logoutbut {
+  padding: 10px 70px;
+  background: rgb(0, 255, 17);
+}
+#logoutbut:hover {
+  box-shadow: 0px 0px 51px 3px rgba(255, 255, 255, 0.9);
+}
+
+#loginbut:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+/* Section headings============================================================================================ */
+.sectionHeads {
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* loginslider  ============================================================================================*/
+.loginform {
+  margin: 20px 20px;
+}
+.loginform input {
+  margin: 10px 0px;
+}
+.loginform label {
+  margin: 0px !important;
+}
+/* div,
+section {
+  border: 1px solid red;
+} */
+.logininput {
+  border: none;
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+  margin-bottom: 10px;
+}
+
+.googlebutton {
+  width: 100%;
+  box-shadow: rgba(3, 214, 196, 0.3) 0px 0px 0px 3px;
+  padding: 8px;
+  border-radius: 3px;
+  background-color: white;
+  margin: 0;
+  margin-bottom: 10px;
+  border: none;
+
+  display: flex;
+  font-size: 17px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+}
+.googlebutton:hover {
+  cursor: pointer;
+  background-color: var(--themcolor);
+  color: white !important;
+}
+
+#primary-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+  align-items: center;
+  color: azure;
+}
+
+.primary-navigation {
+  gap: 2px;
+  z-index: 3;
+  display: flex;
+  position: fixed;
+  inset: 0 0 0 70%;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 350ms ease-in-out;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.mobile-nav-toggle {
+  display: block;
+  border: 0px;
+  width: 2rem;
+  position: fixed;
+  top: 10px;
+  z-index: 999 !important;
+  top: 2.15rem;
+  background: transparent;
+  right: 2rem;
+}
+
+.primary-navigation[data-visible="true"] {
+  transform: translateX(0%);
+}
+hr {
+  margin: 15px;
+  color: rgb(69, 67, 67);
+  width: 90%;
+}
+.flexalign {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.swal-modal > * {
+  filter: saturate(3);
+}
+
+/* login slider emd ============================================================================================ */
+
+/*todo <!----------------------------------------------- < Header And footer > -----------------------------------------------> */
+/* navbar============================================================================================ */
+html {
+  position: relative;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 22px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 300ms ease-in-out;
+}
+
+header > div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+}
+
+.home > a > div {
+  margin: 0px 20px;
+  padding: 5px;
+  transition: all 0.1s ease-in-out;
+}
+
+.home > a > div:hover {
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+#JobsNav,
+#CompNav,
+#ServNav {
+  position: relative;
+}
+#JobsNav:hover .jobsul,
+#CompNav:hover .Compsul,
+#ServNav:hover .Servsul {
+  display: block;
+}
+.jobsul:hover,
+.Compsul:hover,
+.Servsul:hover {
+  display: block;
+}
+.jobsul > li,
+.Compsul > li,
+.Servsul > li {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px grey;
+}
+.jobsul,
+.Compsul,
+.Servsul {
+  top: 100%;
+  left: -50%;
+  width: 270px;
+  margin-top: 17px;
+  display: none;
+  position: absolute;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+#logoholder {
+  padding: 0px;
+  margin: 0px;
+  width: 190px;
+  height: 100%;
+}
+
+#logo {
+  width: 100%;
+  height: 100%;
+}
+
+/* navbar end ============================================================================================*/
+
+/* footerstart ============================================================================================*/
+footer {
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  width: 100%;
+  color: black;
+}
+.logofooter > div {
+  margin: auto;
+  padding: 20px;
+  width: 170px;
+}
+.footer2nd {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer1st {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer li {
+  font-size: 15px;
+  margin: 5px;
+  list-style: none;
+  color: rgb(71, 71, 71);
+}
+.apply {
+  border-radius: 7px;
+  border: 1px solid grey;
+  margin: 0px;
+  padding: 15px;
+  align-items: center;
+  width: 250px;
+}
+.apply > div {
+  width: 100%;
+}
+.apply > div:nth-child(2) {
+  padding: 0px;
+  width: 250px;
+}
+#footer-comp {
+  display: flex;
+  justify-content: space-between;
+}
+/* footerend ============================================================================================ */
+@media all and (min-width: 855px) and (max-width: 1080px) {
+  .logofooter {
+    display: flex;
+    justify-content: space-around;
+  }
+  .logofooter > div {
+    display: flex;
+    justify-content: center;
+  }
+  .footer1st li {
+    font-size: 10px;
+  }
+  .apply {
+    padding: 10px;
+  }
+  #infoedge {
+    display: block;
+  }
+  #footer-comp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 854px) {
+  .footer1st,
+  .footer2nd {
+    flex-direction: column;
+  }
+  .logofooter {
+    display: flex;
+    justify-content: space-around;
+  }
+  .logofooter > div {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+  .footer1st li {
+    font-size: 10px;
+  }
+  .apply {
+    padding: 7px;
+  }
+  #infoedge {
+    display: none;
+  }
+  #footer-comp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

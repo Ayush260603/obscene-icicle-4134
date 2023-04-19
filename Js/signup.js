@@ -1,13 +1,8 @@
 document.querySelector("#registerbut").addEventListener("click", function () {
   window.location.href = "signup.html";
 });
-document.querySelector("#close").addEventListener("click", function () {
-  document.querySelector(".problem").style.display = "none";
-});
-var loader = document.querySelector("#preloader");
-window.addEventListener("load", function () {
-  loader.style.display = "none";
-});
+
+
 let sform = document.querySelector("#form1");
 sform.addEventListener("submit", SigninFunction);
 
@@ -17,42 +12,34 @@ lform.addEventListener("submit", LoginFuntion);
 function SigninFunction(e) {
   e.preventDefault();
   let obj1 = {
-    username: sform.signname.value,
-    password: sform.signpassword.value,
+    username: sform.signname.value.trim(),
+    password: sform.signpassword.value.trim(),
     email: sform.email.value,
     gender: sform.gender.value,
     status: "Not Working",
   };
   localStorage.setItem("sign-creds", JSON.stringify(obj1));
-  document.querySelector(".problem").style.display = "block";
+
+  swal("Signup Successful", "", "success");
+
   document.querySelector("#logIN").style.display = "flex";
   document.querySelector("#signIN").style.display = "none";
 }
 function LoginFuntion(event) {
   event.preventDefault();
   let obj2 = {
-    username: lform.loginname.value,
-    password: lform.loginpassword.value,
+    username: lform.loginname.value.trim(),
+    password: lform.loginpassword.value.trim(),
   };
   let creds = JSON.parse(localStorage.getItem("sign-creds"));
   if (obj2.username == creds.username && obj2.password == creds.password) {
-    console.log("Hello");
-    document.querySelector(".problem>h1").innerText = "Login Successful!";
-    document.querySelector(".problem>img").src = "CSS/Images/tick.png";
-    document.querySelector(".problem>h2").innerText =
-      "You can now look for jobs!";
-    document.querySelector(".problem").style.display = "block";
-    loginpage();
+
+    swal("Login Successful", "Redirecting To Dashboard...", "success");
+
+    setTimeout(function () {
+      window.location.href = "login.html";
+    }, 3000);
   } else {
-    document.querySelector(".problem>h1").innerText = "Login Unsuccessful!";
-    document.querySelector(".problem>img").src = "CSS/Images/x.png";
-    document.querySelector(".problem>h2").innerText =
-      "You entered wrong username or password";
-    document.querySelector(".problem").style.display = "block";
+    swal("Wrong Credentials", "Please check username and password", "error");
   }
-}
-function loginpage() {
-  setTimeout(function () {
-    window.location.href = "login.html";
-  }, 3000);
 }

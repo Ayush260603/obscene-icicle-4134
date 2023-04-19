@@ -1,302 +1,38 @@
-/* universal tags */
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
-  scroll-behavior: smooth;
-}
-
-hr {
-  margin: 15px;
-  color: rgb(69, 67, 67);
-  width: 90%;
-}
-
-div {
-  border: 1px solid transparent;
-  color: white;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-.flex {
-  display: flex;
-}
-.flexalign {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-/* preloader */
-#preloader {
-  background: black url("Images/preloader.gif") no-repeat center center;
-  background-size: 20%;
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  z-index: 100000000000000000000000000;
-}
-/* Section headings */
-.sectionHeads {
-  font-size: 40px;
-  color: white;
-  text-align: center;
-  margin-top: 50px;
-}
-.problem {
-  display: none;
-  color: black;
-  position: fixed;
-  border: 3px solid yellow;
-  width: 40vw;
-  height: 60vh;
-  text-align: center;
-  margin: 10% 30%;
-  padding: 20px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    331deg,
-    rgba(255, 255, 255, 0.8494748241093313) 0%,
-    rgba(255, 255, 255, 0.19681375968356096) 25%,
-    rgba(255, 255, 255, 0.8074580173866421) 50%,
-    rgba(255, 255, 255, 0.19961488013174022) 75%,
-    rgba(255, 255, 255, 0.8886905103838411) 100%
-  );
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  transform: scale(0.9);
-  transition: scale(0.1) 350ms ease-in-out;
-}
-.problem:hover {
-  transform: scale(1.001);
-  z-index: 1.001;
-}
-/* loginslider  */
-.loginform {
-  margin: 20px 20px;
-}
-
-.logininput {
-  width: 85%;
-  padding: 8px;
-  border-radius: 10px;
-  margin: 10px;
-  margin-bottom: 10px;
-}
-
-.googlebutton {
-  width: 85%;
-  padding: 8px;
-  border-radius: 10px;
-  background-color: white;
-  margin: 10px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  -webkit-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-  -moz-box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-  box-shadow: 0px 0px 62px 6px rgba(45, 255, 196, 0.55);
-}
-
-label {
-  margin-left: 20px;
-}
-
-#primary-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 0px;
-  align-items: center;
-  color: azure;
-}
-
-.primary-navigation {
-  gap: 2px;
-  display: flex;
-  z-index: 1000;
-  position: fixed;
-  inset: 0 0 0 70%;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: rgba(13, 13, 13, 0.7);
-  padding: 10px;
-  backdrop-filter: blur(1rem);
-  transform: translateX(100%);
-  transition: transform 350ms ease-in-out;
-}
-
-.mobile-nav-toggle {
-  display: block;
-  position: fixed;
-  border: 0px;
-  width: 2rem;
-  aspect-ratio: 1;
-  z-index: 9999;
-  top: 1rem;
-  background: transparent;
-  right: 2rem;
-}
-
-.primary-navigation[data-visible="true"] {
-  transform: translateX(0%);
-}
-
-/* login slider emd  */
-
-/* navbar */
-html {
-  position: relative;
-  background-color: black;
-}
-footer {
-  margin-top: 0px;
-}
-header {
-  position: sticky;
-  top: 0;
-  padding: 5px;
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid black;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.9);
-}
-
-header > div:nth-child(2) {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px;
-}
-
-.home > a > div {
-  margin: 0px 20px;
-  padding: 5px;
-  transition: all 0.1s ease-in-out;
-}
-
-.home > a > div:hover {
-  border-bottom: 3px solid rgb(174, 12, 69);
-}
-
-#JobsNav:hover .jobsul,
-#CompNav:hover .Compsul,
-#ServNav:hover .Servsul {
-  display: block;
-}
-.jobsul:hover,
-.Compsul:hover,
-.Servsul:hover {
-  display: block;
-}
-.jobsul > li,
-.Compsul > li,
-.Servsul > li {
-  list-style: none;
-  padding: 10px;
-  border-bottom: 1px grey;
-}
-.jobsul,
-.Compsul,
-.Servsul {
-  margin-top: 17px;
-  display: none;
-  position: absolute;
-  padding: 15px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: rgb(255, 224, 239);
-  border-right: 1px solid white;
-}
-#JobsNav ul {
-  right: 520px;
-}
-#CompNav ul {
-  right: 410px;
-}
-#ServNav ul {
-  right: 300px;
-}
-
-#logoholder {
-  padding: 0px;
-  margin: 0px;
-  width: 170px;
-  height: 100%;
-}
-
-#logo {
-  width: 100%;
-  height: 100%;
-}
-
-/* navbar end */
-/* gradient button  */
-.gradbutton {
-  margin: 10px auto;
-  padding: 10px 30px;
-  border-radius: 30px;
-  border: 0px;
-  color: white;
-  background: rgb(131, 58, 180);
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 81%,
-    rgba(255, 187, 0, 1) 100%
-  );
-}
-.gradbutton:hover {
-  background: rgb(131, 58, 180);
-  transform: scale(1.1);
-  z-index: 1.1;
-  cursor: pointer;
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(253, 29, 29, 1) 16%,
-    rgba(255, 187, 0, 0.8774860285911239) 100%
-  );
-}
-/* gradient button end */
-
 body {
-  background-image: url("Images/signup.jpg");
-  background-size: cover;
+  background: white;
 }
-footer {
-  margin-top: 0px;
-}
+
 .signup {
-  height: 95vh;
+  margin-top: 90px;
   display: flex;
+  gap: 20px;
   justify-content: space-around;
-  background-color: rgba(0, 0, 0, 0.7);
+}
+.fileinput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .signininput {
   padding: 10px;
   margin: 5px;
-  border-radius: 9px;
+  border: 2px solid grey;
+  border-radius: 3px;
   width: 70%;
 }
 .signup > div {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   padding: 15px;
   border-right: 1px solid white;
 }
 
 .signup > div:nth-child(2n-1) {
-  width: 20%;
-  padding: 40px;
+  width: 25%;
+  padding: 20px;
   border-right: 1px solid white;
 }
 .fileinput {
-  background-color: rgba(53, 51, 51, 0.5);
   border-radius: 10px;
   width: 350px;
   margin: 10px;
@@ -319,11 +55,9 @@ footer {
 }
 div[type="Login"] {
   display: none;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 div[type="SignIn"] {
   display: static;
-  background-color: rgba(0, 0, 0, 0.8);
 }
 form > select {
   padding: 10px;
@@ -332,7 +66,6 @@ form > select {
 }
 .signupnow {
   border: 1px solid white;
-  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   padding: 5px 30px;
   margin: 5px 10px;

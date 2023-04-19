@@ -3,15 +3,14 @@
 /* ========================companies hiring ========================================*/
 
 .companies {
+  position: relative;
   min-width: 250px;
   margin: 15px auto;
 }
 .Slidebuttons {
   font-size: 30px;
   width: 50px;
-  background-color: rgb(42, 41, 41);
-  height: 63%;
-  margin-top: 38px;
+  background-color: aquamarine;
   cursor: pointer;
   opacity: 0.7;
   display: grid;
@@ -24,25 +23,28 @@
   opacity: 1;
 }
 #pre-but {
+  top: 0;
+  height: 100%;
   position: absolute;
   left: 20px;
 }
 #nxt-but {
+  top: 0;
+  height: 100%;
   position: absolute;
   right: 20px;
 }
 #topcomp-sec {
-  position: relative;
   overflow: hidden;
 }
 #Slider,
 #Slider2,
 #Slider3 {
+  position: relative;
   scroll-behavior: smooth;
   overflow-x: scroll;
   transition: all 500ms ease;
   width: 200vw;
-  margin: 30px auto;
 }
 #Slider > div,
 #Slider2 > div {
@@ -65,24 +67,27 @@
   width: 220px;
   height: auto;
   margin: 10px;
-  -webkit-box-shadow: 0px 0px 22px 5px rgba(37, 79, 184, 1);
-  -moz-box-shadow: 0px 0px 22px 5px rgba(37, 79, 184, 1);
-  box-shadow: 0px 0px 22px 5px rgba(37, 79, 184, 1);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   cursor: -webkit-grab;
   transition: all 250ms ease;
 }
 #Slider > div > div:hover,
 #Slider2 > div > div:hover,
 #Slider3 > div > div:hover {
-  transform: scale(1.05);
   z-index: 1.1;
 }
-#Slider > div > div > img,
-#Slider2 > div > div > img {
+#Slider h1,
+#Slider2 h1,
+#Slider3 h1 {
+  font-size: 18px !important;
+}
+#Slider img,
+#Slider2 img {
   background-color: white;
   border-radius: 10px;
   margin: 6px;
   padding: 5px;
+  border: 1px solid rgb(218, 217, 217);
   width: 35%;
   height: 25%;
 }
@@ -106,48 +111,48 @@
 
 /*========================================================= companies hiring actively start ============================================================================================ */
 #compani-sec {
-  position: relative;
   overflow: hidden;
 }
 #pre-but2 {
   position: absolute;
-  height: 58%;
+  height: 100%;
+  top: 0;
   left: 20px;
 }
 #nxt-but2 {
   position: absolute;
+  height: 100%;
+  top: 0;
   right: 20px;
-  height: 58%;
 }
 #Slider2 > div > div {
-  -webkit-box-shadow: 0px 0px 16px 10px rgba(255, 0, 21, 0.51);
-  -moz-box-shadow: 0px 0px 16px 10px rgba(255, 0, 21, 0.51);
-  box-shadow: 0px 0px 16px 10px rgba(255, 0, 21, 0.51);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 /*========================================================= companies hiring actively end ============================================================================================ */
 
 /* =========================================================sponsored companies :start ============================================================================================ */
 .companies3 {
+  position: relative;
   max-height: 400px;
   margin: 0px;
 }
 #pre-but3 {
   position: absolute;
-  margin-top: 5px;
-  height: 48%;
+  top: 0;
+  height: 100%;
   left: 20px;
 }
 #nxt-but3 {
   position: absolute;
-  margin-top: 5px;
-  height: 48%;
+  top: 0;
+  height: 100%;
   right: 20px;
 }
 #sponsor-sec {
-  position: relative;
   overflow: hidden;
 }
 #Slider3 > div {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: left;
@@ -163,11 +168,9 @@
   padding: 10px;
   border: 2px solid white;
   width: 220px;
-  height: 170px;
+  height: fit-content;
   margin: 10px;
-  -webkit-box-shadow: 0px 0px 22px 5px rgba(184, 37, 184, 1);
-  -moz-box-shadow: 0px 0px 22px 5px rgba(184, 37, 184, 1);
-  box-shadow: 0px 0px 22px 5px rgba(184, 37, 184, 1);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   cursor: -webkit-grab;
   transition: all 250ms ease;
 }
@@ -177,14 +180,13 @@
   margin: 6px;
   padding: 5px;
   width: 80%;
-  height: 35%;
+  height: 70px;
 }
 /* =========================================================sponsored companies :end ============================================================================================*/
 
 /*-------------------------------- Discover Jobs----------------------------------------------- */
 .discover-jobs {
   width: 60vw;
-  height: 50vh;
   border-radius: 10px;
   margin: 15px auto;
   background-color: rgb(128, 187, 235);
@@ -214,7 +216,8 @@
 }
 /*========================================================= Interview prep start  ============================================================================================*/
 #interview-sec {
-  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
   border-radius: 20px;
   margin: 20px 180px;
   padding: 15px;
@@ -223,7 +226,6 @@
   color: black;
 }
 #interview-sec > div {
-  height: 300px;
   margin: 15px;
   display: flex;
   justify-content: space-around;
@@ -236,8 +238,7 @@
 #interview-sec > div > div:nth-child(3) {
   background-image: url("https://thumbs.dreamstime.com/b/smiling-girl-writing-test-paper-pen-sitting-desk-vector-flat-illustration-happy-woman-representation-resume-183611357.jpg");
   background-size: cover;
-  border-right: 2px solid white;
-  width: 20%;
+  width: 30%;
 }
 #interview-sec > div > div:nth-child(2) {
   text-align: left;
@@ -247,7 +248,7 @@
 #interview-sec > div > div:nth-child(1) {
   background-image: url("https://thumbs.dreamstime.com/b/man-taking-university-exam-remotely-temporarily-student-writing-test-concept-online-exam-online-survey-testing-e-man-taking-183976385.jpg");
   background-size: cover;
-  width: 20%;
+  width: 38%;
 }
 .Intergrid {
   display: grid;
@@ -262,35 +263,39 @@
 .Intergrid label {
   color: rgb(123, 119, 119);
   font-size: 13px;
+  margin: 0 !important;
 }
 .Intergrid > div {
-  height: 45px;
-  width: 75%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 15px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 12px;
   border-radius: 10px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
   transition: all 500ms ease;
 }
+.Intergrid > div > div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
 .Intergrid > div:hover {
-  background-color: azure;
   cursor: pointer;
-  transform: scale(1.1);
 }
 /* =========================================================Interview Prep :end ============================================================================================*/
 
 /* =========================================================accelerate job :start============================================================================================ */
 #interview-sec2 > div {
-  height: 150px;
   margin: 15px;
   display: flex;
   justify-content: space-around;
 }
 #interview-sec2 {
-  background-color: rgb(255, 255, 255);
-  border-radius: 20px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  border-radius: 5px;
   margin: 20px 200px;
   padding: 15px;
 }
@@ -298,22 +303,22 @@
   background: url("Images/456.png") no-repeat;
   background-size: contain;
   border-right: 2px solid white;
-  width: 15%;
+  width: 25%;
 }
 #interview-sec2 > div > div:nth-child(2) {
   text-align: left;
-  padding: 0px;
-  width: 60%;
+  padding: 12px;
+  width: 50%;
 }
 #interview-sec2 > div > div:nth-child(1) {
   background: url("Images/123png.png") no-repeat;
   background-size: contain;
-  width: 15%;
+  width: 25%;
 }
 #interview-sec2 button {
-  padding: 10px 20px;
-  margin: 10px 5px;
-  font-size: 18px;
+  padding: 5px 7px;
+  margin: 3px 4px;
+  font-size: 15px;
   background-color: transparent;
   color: rgb(77, 75, 75);
   border-radius: 20px;
@@ -323,13 +328,8 @@
 #interview-sec2 button:hover {
   background-color: rgb(208, 247, 247);
   cursor: pointer;
-  transform: scale(1.05);
 }
 /*========================================================= accelerate job :end ============================================================================================*/
-
-/* =========================================================grow career :start============================================================================================ */
-
-/*========================================================= grow career :end ============================================================================================*/
 
 /*========================================================= naukri app :start ============================================================================================*/
 #appsect {
@@ -340,7 +340,6 @@
   position: relative;
 }
 #appsect > div {
-  height: 300px;
   margin: 15px;
   display: flex;
   justify-content: space-around;
@@ -371,14 +370,13 @@
 #appsect button:hover {
   background-color: rgb(31, 107, 240);
   cursor: pointer;
-  transform: scale(1.05);
 }
 #appsect a {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: white;
   border-radius: 20px;
-  padding: 7px;
+  padding: 10px;
   margin: 7px;
-  position: absolute;
 }
 #appsect input {
   padding: 5px;
@@ -388,5 +386,10 @@
 #appHead {
   font-size: 38px;
   color: rgb(22, 68, 186);
+}
+.Appsectionn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /*========================================================= nauri app :end============================================================================================ */

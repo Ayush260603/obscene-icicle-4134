@@ -2,21 +2,10 @@ const primaryNav = document.querySelector(".primary-navigation");
 document.querySelector("#registerbut").addEventListener("click", function () {
   window.location.href = "signup.html";
 });
-var loader = document.querySelector("#preloader");
-window.addEventListener("load", function () {
-  loader.style.display = "none";
-});
 
 // Login Slider Button
 function loginslide() {
   const primaryNav = document.querySelector(".primary-navigation");
-  var loader = document.querySelector("#preloader");
-  window.addEventListener("load", function () {
-    loader.style.display = "none";
-  });
-  document.querySelector("#close").addEventListener("click", function () {
-    document.querySelector(".problem").style.display = "none";
-  });
 
   document
     .querySelector(" .mobile-nav-toggle>span")
@@ -175,14 +164,8 @@ function displayCards(array) {
     document.querySelector(".JobScontainer").append(divout);
   });
 }
-document.querySelector("#close").addEventListener("click", function () {
-  document.querySelector(".problem").style.display = "none";
-});
-document.querySelector("#close1").addEventListener("click", function () {
-  document.querySelector(".applyjob").style.display = "none";
-});
 
-document.querySelector("#Proceed").addEventListener("click", redirectToOtp);
+// document.querySelector("#Proceed").addEventListener("click", redirectToOtp);
 function redirectToOtp() {
   setTimeout(function () {
     document.location.href = "otp.html";
