@@ -46,7 +46,6 @@ section {
   background-size: contain;
   border: 2px solid white;
   border-radius: 50%;
-  filter: hue-rotate(260deg) brightness(1.1);
   width: 100px;
   height: 100px;
   position: absolute;
@@ -170,8 +169,10 @@ section {
 
 /* hello */
 .cardimage {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
   text-align: right;
 }
 
@@ -191,7 +192,8 @@ section {
 }
 
 #favButton:hover {
-  background-color: rgb(32, 3, 122);
+  color: white;
+  background-color: rgb(36, 97, 141);
 }
 .recruiters img {
   border-radius: 5px;

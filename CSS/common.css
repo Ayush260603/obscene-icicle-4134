@@ -46,6 +46,7 @@ html {
   background: var(--themcolor);
 }
 .gradbutton:hover {
+  color: white;
   background: var(--hoverColor);
   z-index: 1.1;
   cursor: pointer;
@@ -63,6 +64,7 @@ html {
 .fgradbutton:hover {
   z-index: 1.1;
   cursor: pointer;
+  color: white;
   background: var(--hoverColor);
 }
 #loginbut {
@@ -302,10 +304,12 @@ header > div:nth-child(2) {
   font-weight: 500;
   font-size: 18px !important;
   padding: 10px 70px;
-  background: orange;
+  color: seashell;
+  font-weight: 600;
+  background: rgb(255, 79, 79);
 }
 #logoutbut:hover {
-  background: var(--hoverColor);
+  background: red;
 }
 
 /* navbar end ============================================================================================*/

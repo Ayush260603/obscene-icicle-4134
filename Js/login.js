@@ -1,8 +1,15 @@
 
 document.querySelector("#registerbut").addEventListener("click", function () {
-  window.location.href = "signup.html";
+  window.location.href = "favorites.html";
 });
-
+let cred = JSON.parse(localStorage.getItem("sign-creds"));
+if (!cred) {
+  // "warning","success","error","info"
+  swal("Please Login First", "Redirecting..", "info");
+  setTimeout(() => {
+    window.location.href = "index.html"
+  }, 1000);
+}
 
 // Login Slider Button
 function loginslide() {
