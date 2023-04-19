@@ -1,28 +1,38 @@
 document.querySelector("#registerbut").addEventListener("click", function () {
-  window.location.href = "signup.html";
+  window.location.href = "favorites.html";
 });
+let cred = JSON.parse(localStorage.getItem("sign-creds"));
+if (!cred) {
+  // "warning","success","error","info"
+  swal("Please Login First", "", "info");
+  setTimeout(() => {
+    window.location.href = "index.html"
+  }, 1000);
+}
 
 // Login Slider Button
 function loginslide() {
-  const primaryNav = document.querySelector(".primary-navigation");
 
   document
     .querySelector(" .mobile-nav-toggle>span")
     .addEventListener("click", LoginSlider);
   document.querySelector("#loginbut").addEventListener("click", LoginSlider);
 
-  let cred = JSON.parse(localStorage.getItem("sign-creds"));
-  document.querySelector("#avatarname").innerText = cred.username;
-  document.querySelector("#avataremail").innerText = cred.email;
-  document.querySelector("#avatargender").innerText = cred.gender;
-  let df = cred.username.trim().split(" ");
-  console.log(df);
-  document.querySelector("#loginbut").innerText = "👤" + df[0];
-  if (cred.gender == "male") {
-    document.querySelector("#avatar").src = "CSS/Images/avatar.png";
-  } else {
-    document.querySelector("#avatar").src = "CSS/Images/avatar1.jpg";
+
+  if (cred) {
+    document.querySelector("#avatarname").innerText = cred.username;
+    document.querySelector("#avataremail").innerText = cred.email;
+    document.querySelector("#avatargender").innerText = cred.gender;
+    let df = cred.username.trim().split(" ");
+    document.querySelector("#loginbut").innerText = "👤" + df[0];
+    if (cred.gender == "female") {
+      document.querySelector("#avatar").src = "CSS/Images/avatar1.jpg";
+    } else {
+      document.querySelector("#avatar").src = "CSS/Images/avatar.png";
+    }
   }
+
+
 }
 loginslide();
 // Login Slider End
@@ -113,21 +123,39 @@ function displayCards(array) {
     apply.innerText = "Apply Now";
     apply.addEventListener("click", function () {
       localStorage.setItem("AppliedJob", JSON.stringify(element));
-      document.querySelector(".applyjob").style.display = "block";
+      swal({
+        title: "Apply For this Job?",
+        text: "You will be redirected to apply job page",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+        .then((willDelete) => {
+          if (willDelete) {
+            redirectToOtp()
+          } else {
+            null
+          }
+        });
+
     });
 
     let button = document.createElement("button");
     button.setAttribute("id", "favButton");
     button.innerText = "Add to Favorites";
     button.addEventListener("click", function () {
+
+      for (let i = 0; i < favData.length; i++) {
+        if (favData[i].id == element.id) {
+          swal("Already in Favorites", "Job is already added in your favorites", "info");
+          return
+        }
+      }
       button.style.backgroundColor = "maroon";
       button.innerText = "Added to Favorites";
-      if (favData.includes(element)) {
-        document.querySelector(".problem").style.display = "block";
-      } else {
-        favData.push(element);
-        localStorage.setItem("fav-jobs", JSON.stringify(favData));
-      }
+      favData.push(element);
+      localStorage.setItem("fav-jobs", JSON.stringify(favData));
+
     });
 
     let view = document.createElement("button");
@@ -154,12 +182,6 @@ function displayCards(array) {
   });
 }
 
-// document.querySelector("#Proceed").addEventListener("click", redirectToOtp);
-function redirectToOtp() {
-  setTimeout(function () {
-    document.location.href = "otp.html";
-  }, 2000);
-}
 
 // Rating Slider Function
 var slider = document.getElementById("myRange");
@@ -228,7 +250,7 @@ function FilterFunc() {
     let JobTypeData = JobData.filter((element) => {
       return element.jobtype.toLowerCase() == selected.value.toLowerCase();
     });
-    console.log(JobTypeData);
+
     displayCards(JobTypeData);
   }
 }
@@ -242,15 +264,15 @@ function SearchFunction() {
   let searchData = JobData.filter((element) => {
     return element.name.toLowerCase().includes(search.value.toLowerCase());
   });
-  console.log(searchData);
   if (searchData == "") {
-    document.querySelector(".problem>h1").innerText = "Oops! No Jobs Found";
-    document.querySelector(".problem>img").src =
-      "https://cdn.dribbble.com/users/808936/screenshots/4218610/dribbble-cat.gif";
-    document.querySelector(".problem>h2").innerText = "";
-    document.querySelector(".problem").style.display = "block";
+    document.querySelector(".JobScontainer").innerHTML = `<center>
+    <h1>No Jobs Found</h1> </center>`;
   } else {
-    document.querySelector(".problem").style.display = "none";
     displayCards(searchData);
   }
+}
+function redirectToOtp() {
+  setTimeout(function () {
+    document.location.href = "otp.html";
+  }, 2000);
 }

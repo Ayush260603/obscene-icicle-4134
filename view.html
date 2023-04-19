@@ -19,23 +19,8 @@
 </head>
 
 <body>
-
-    <!-- alertdiv -->
-    <div class="applyjob">
-        <img width="40%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
-        <h1 style="font-size:30px">Do You want to apply for job with your given credentials?</h1>
-        <h2>OTP Confirmation will be needed..</h2>
-        <button class="fgradbutton" id="Proceed">YES</button>
-        <button class="gradbutton" id="close1">No </button>
-    </div>
-    <div class="problem">
-        <img width="40%" style="margin: 30px;" src="CSS/Images/alert.png" alt="">
-        <h1 style="font-size:30px">Woops! You Entered Wrong Credentials</h1>
-        <h2>Please Sign In</h2>
-        <button class="gradbutton" id="close">Close </button>
-    </div>
-    <!-- login slider -->
-    <div class="loginslider">
+     <!-- login slider -->
+     <div class="loginslider">
         <nav id="primary-header">
             <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
                     class="sr-only"> <img src="./CSS/Images/hamburger.png" width="21px" alt="="></span></button>
@@ -55,20 +40,21 @@
                             <h1  class="avatarx" id="avatargender">Male</h1>
                             <br>
                             <div class="logout flexalign">
-                                <a href="index.html"> <button id="logoutbut" class="fgradbutton">Logout</button></a>
-                             </div>
+                                <button id="logoutbut" class="fgradbutton">Logout</button>
+                            </div>
                         </div>
                        
                     </div>
                 </ul>
             </nav>
         </nav>
-    </div>
+            </div>
     <!-- navigation bar -->
     <header>
         <div id="logoholder">
-            <a href="login.html"><img id="logo" src="CSS/Images/logo.jpg" alt="Place Me"></a>
-            
+            <a href="index.html">
+                <img id="logo" src="CSS/Images/placemeicoo.png" alt="Place Me">
+            </a>
         </div>
         <div class="home">
             <a href="#search-sec">
@@ -82,7 +68,7 @@
                     </ul>
                 </div>
             </a>
-            <a href="#top-companies">
+            <a href="#topcomp-sec">
                 <div id="CompNav">Companies
                     <ul class="Compsul">
                         <li><b>Explore Collections</b></li>
@@ -94,7 +80,7 @@
                     </ul>
                 </div>
             </a>
-            <a href="#services">
+            <a href="#interview-sec2">
                 <div id="ServNav">Services
                     <ul class="Servsul">
                         <li><b>Learn & upskill</b></li>
@@ -109,7 +95,8 @@
                 </div>
             </a>
             <div class="gradbutton" id="loginbut" style="padding: 5px 25px;">Login</div>
-           <a href="favorites.html"><div class="gradbutton" id="registerbut" style="padding: 5px 25px;">Favorites</div></a> 
+            <div class="gradbutton" id="registerbut" style="padding: 5px 25px;">Register</div>
+ 
         </div>
     </header>
 
@@ -117,14 +104,15 @@
         <!-- recommended bar -->
         <div class="recom-bar">
             <div class="flexalign">
-                <h1 style=" font-size:50px;color: rgb(248, 208, 78);">Job Details :</h1>
+                <h1 class="JobDetailsHead">Job Details :</h1>
             </div>
             <div class="flexalign">
-                <h2 id="similarjobs" style="color: rgb(255, 255, 255);">Search For Similar jobs </h2><span>⚫</span>
+                <h2 id="similarjobs" style="color: rgb(0, 0, 0);">Search For Similar jobs </h2><span>⚫</span>
                 <a href="jobs.html"><button class="gradbutton">Search</button></a>
             </div>
         </div>
        
+      <div class="BigBoiiii">
         <div id="leftpart">
             <div class="JobScontainer">
                 <!-- Append Job data here -->
@@ -298,24 +286,24 @@
             </div>
             <div id="mobile">
                 <div>
-                    <h1>Reviews</h1>
+                    <h1>Top Reviews</h1>
                     <ol>
-                        <li>Shravan<br>⭐⭐⭐⭐⭐</li>
-                        <li>Ankit Kumar<br>⭐⭐⭐</li>
-                        <li>Vijay Singh<br>⭐</li>
-                        <li>Queen Victoria<br>⭐⭐⭐⭐</li>
-                        <li>Shah Rukh Khan<br>⭐</li>
-                        <li>Alex Johnson<br>⭐⭐⭐⭐⭐</li>
-                        <li>Tanmay Bhatt<br>⭐⭐⭐</li>
-                        <li>Andrew Tate<br>⭐</li>
-                        <li>Hitler <br>⭐⭐⭐⭐</li>
-                        <li>Franklin D. Roosevelt<br>⭐</li>
+                        <li>Shravan<span> - </span>⭐⭐⭐⭐⭐</li>
+                        <li>Queen Victoria<span> - </span>⭐⭐⭐⭐</li>
+                        <li>Alex Johnson<span> - </span>⭐⭐⭐⭐⭐</li>
+                        <li>Ankit Kumar<span> - </span>⭐⭐⭐</li>
+                        <li>Tanmay Bhatt<span> - </span>⭐⭐⭐</li>
+                        <li>Hitler <span> - </span>⭐⭐⭐⭐</li>
+                        <li>Vijay Singh<span> - </span>⭐</li>
+                        <li>Shah Rukh Khan<span> - </span>⭐</li>
+                        <li>Franklin D. Roosevelt<span> - </span>⭐</li>
+                        <li>Andrew Tate<span> - </span>⭐</li>
                     </ol>
                 </div>
                 
             </div>
             <div style="margin:20px auto" id="perks">
-                <img width="100%" src="CSS/Images/logo.jpg" alt="">
+                <img width="100%" src="CSS/Images/placemeicoo.png" alt="">
             </div >
             
             <div id="perks">
@@ -327,6 +315,7 @@
             </div>
           
         </div>
+      </div>
 
     </section>
     <footer>
@@ -358,7 +347,7 @@
                         <li>Privacy policy</li>
                         <li>Terms & conditions</li>
                         <li>Fraud alert</li>
-                        <li>Trust & safety<< /li>
+                        <li>Trust & safety </li>
                     </ul>
                 </div>
             </div>

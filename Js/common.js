@@ -25,3 +25,27 @@ window.addEventListener("scroll", () => {
         if (TOOGLER) TOOGLER.style.top = "37px";
     }
 })
+
+
+let logouts = document.querySelectorAll("#logoutbut");
+if (logouts.length) {
+    for (let i = 0; i < logouts.length; i++) {
+        logouts[i].addEventListener("click", () => {
+            swal({
+                title: "Logout?",
+                text: "You will be logged out of the Session",
+                icon: "info",
+                buttons: true,
+                dangerMode: true,
+            })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        localStorage.clear()
+                        window.location.href = "index.html"
+                    } else {
+                        null
+                    }
+                });
+        })
+    }
+}

@@ -38,35 +38,6 @@ section {
 .black {
   color: black;
 }
-/* loginslider  */
-.loginform {
-  margin: 20px 20px;
-}
-#avatarhead {
-  font-size: 50px;
-  margin: 10px auto;
-}
-
-.UserDetails {
-  text-align: center;
-}
-
-.UserDetails > div {
-  text-align: left;
-  margin: 20px;
-}
-
-#avatar {
-  width: 50%;
-  border-radius: 50%;
-  border: 3px solid white;
-}
-
-.avatarx {
-  color: rgb(80, 255, 118);
-  font-size: 22px;
-  margin-left: 15px;
-}
 
 /* extras start  */
 

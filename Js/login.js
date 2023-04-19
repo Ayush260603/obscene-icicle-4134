@@ -16,50 +16,16 @@ function loginslide() {
   let df = cred.username.trim().split(" ");
 
   document.querySelector("#loginbut").innerText = "👤" + df[0];
-  if (cred.gender == "male") {
-    document.querySelector("#avatar").src = "CSS/Images/avatar.png";
-  } else {
+  if (cred.gender == "female") {
     document.querySelector("#avatar").src = "CSS/Images/avatar1.jpg";
+  } else {
+    document.querySelector("#avatar").src = "CSS/Images/avatar.png";
   }
 }
 loginslide();
 // Login Slider End
 
 
-let logout = document.querySelectorAll("#logoutbut");
-logout[0].addEventListener("click", LogoutFunc);
-logout[1].addEventListener("click", LogoutFunc);
-function LogoutFunc() {
-  swal({
-    title: "Logout?",
-    text: "You will Be logged out of the Session",
-    icon: "info",
-    buttons: true,
-    dangerMode: true,
-  })
-    .then((willDelete) => {
-      if (willDelete) {
-        localStorage.clear()
-        window.location.href = "index.html"
-      } else {
-        null
-      }
-    });
-}
-// problem function popup start
-// document.querySelector("#close1").addEventListener("click", function () {
-//   document.querySelector(".applyjob").style.display = "none";
-// });
-// document.querySelector("#Proceed").addEventListener("click", redirectToOtp);
-// function redirectToOtp() {
-//   setTimeout(function () {
-//     document.location.href = "otp.html";
-//   }, 2000);
-// }
-
-// problem function popup end
-
-// Apply Job Function Start
 document
   .querySelector("#loginpageapply")
   .addEventListener("click", ApplyjobFun);
@@ -88,4 +54,8 @@ function ApplyjobFun() {
   localStorage.setItem("AppliedJob", JSON.stringify(element));
   document.querySelector(".applyjob").style.display = "block";
 }
-// Apply Job Function End
+let searchinput = document.getElementById("searchbox-inner")
+
+searchinput.addEventListener("click", () => {
+  window.location.href = "jobs.html"
+})

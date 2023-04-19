@@ -3,27 +3,6 @@
 main {
   padding-top: 80px;
 }
-#avatarhead {
-  font-size: 50px;
-  margin: 10px auto;
-}
-.UserDetails {
-  text-align: center;
-}
-.UserDetails > div {
-  text-align: left;
-  margin: 20px;
-}
-#avatar {
-  width: 50%;
-  border-radius: 50%;
-  border: 3px solid white;
-}
-.avatarx {
-  color: coral;
-  font-size: 22px;
-  margin-left: 15px;
-}
 
 .searchbox {
   width: 100%;
@@ -135,10 +114,11 @@ main {
 }
 
 #favButton {
-  padding: 8px 15px;
+  padding: 10px 15px;
   border: 0px;
-
-  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  border-radius: 25px;
   background-color: rgb(12, 133, 255);
   margin: 5px;
 }
@@ -146,10 +126,11 @@ main {
   background-color: rgb(32, 3, 122);
 }
 #viewButton {
-  padding: 8px 15px;
+  padding: 10px 15px;
   border: 0px;
-
-  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  border-radius: 25px;
   background: rgb(82, 163, 7);
   margin: 5px;
 }
@@ -160,6 +141,7 @@ main {
   width: 200px;
   height: 200px;
   margin-right: 20px;
+  object-fit: cover;
   border: 3px solid rgb(170, 168, 168);
   border-radius: 12px;
   text-align: right;

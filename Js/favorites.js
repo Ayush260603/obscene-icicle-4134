@@ -3,7 +3,6 @@ document.querySelector("#registerbut").addEventListener("click", function () {
 });
 // Login Slider Button
 function loginslide() {
-  const primaryNav = document.querySelector(".primary-navigation");
 
 
 
@@ -20,10 +19,10 @@ function loginslide() {
   let df = cred.username.trim().split(" ");
   console.log(df);
   document.querySelector("#loginbut").innerText = "👤" + df[0];
-  if (cred.gender == "male") {
-    document.querySelector("#avatar").src = "CSS/Images/avatar.png";
-  } else {
+  if (cred.gender == "female") {
     document.querySelector("#avatar").src = "CSS/Images/avatar1.jpg";
+  } else {
+    document.querySelector("#avatar").src = "CSS/Images/avatar.png";
   }
 }
 loginslide();
@@ -83,8 +82,20 @@ function displayCards(array) {
     view.innerText = "Apply Now";
     view.addEventListener("click", function () {
       localStorage.setItem("AppliedJob", JSON.stringify(element));
-      document.querySelector(".problem").style.display = "block";
-      document.querySelector(".problem").style.zIndex = "9999999999";
+      swal({
+        title: "Apply For this Job?",
+        text: "You will be redirected to apply job page",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+        .then((willDelete) => {
+          if (willDelete) {
+            window.location.href = "otp.html"
+          } else {
+            null
+          }
+        });
     });
 
     // image
@@ -116,7 +127,6 @@ function deleteFunc(favData, index) {
   displayCards(favData);
 }
 
-document.querySelector("#Proceed").addEventListener("click", redirectToOtp);
 function redirectToOtp() {
   setTimeout(function () {
     document.location.href = "otp.html";

@@ -1,30 +1,9 @@
-#avatarhead {
-  font-size: 50px;
-  margin: 10px auto;
-}
-.UserDetails {
-  text-align: center;
-}
-.UserDetails > div {
-  text-align: left;
-  margin: 20px;
-}
-#avatar {
-  width: 50%;
-  border-radius: 50%;
-  border: 3px solid white;
-}
-.avatarx {
-  color: coral;
-  font-size: 22px;
-  margin-left: 15px;
-}
-
-/* login slider emd  */
 .recom-bar {
+  margin-top: 80px;
+  filter: hue-rotate(349deg);
+  background-image: url("Images/pattern.avif");
   display: flex;
   justify-content: space-between;
-  background-image: url("Images/4571135.jpg");
   background-size: cover;
   background-blend-mode: soft-light;
 }
@@ -34,8 +13,9 @@
 
 .JobScontainer {
   background-color: white;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
   z-index: 1;
   height: auto;
   margin: 10px 20px;
@@ -65,85 +45,71 @@
 #favButton {
   padding: 10px 18px;
   border: 0px;
-
-  background: rgb(255, 0, 228);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 0, 228, 1) 0%,
-    rgba(8, 129, 123, 1) 89%
-  );
-  font-size: 20px;
+  font-weight: 500;
+  font-weight: 500;
+  background: var(--themcolor);
+  font-size: 18px;
   margin: 5px;
-  border-radius: 20px;
+  border-radius: 25px;
 }
 #viewButton {
-  font-size: 20px;
-  padding: 8px 15px;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 15px;
   border: 0px;
-  color: rgb(255, 255, 255);
-  border-radius: 20px;
-  background-color: rgb(66, 152, 250);
+  border-radius: 25px;
+  background-color: rgb(175, 211, 253);
   margin: 5px;
   margin-top: 7px;
 }
 #favButton:hover {
-  background-color: rgb(32, 3, 122);
+  background-color: orange;
   cursor: pointer;
 }
 #viewButton:hover {
-  background-color: rgb(187, 185, 183);
+  background-color: rgb(190, 247, 238);
   cursor: pointer;
 }
 
 .backbutton {
   margin: 10px auto;
-  padding: 11px 30px;
+  padding: 6px;
   border-radius: 30px;
-  font-size: 30px;
+  font-size: 18px;
   border: 0px;
-
-  background: rgb(1, 255, 221);
-  background: linear-gradient(
-    90deg,
-    rgb(36, 191, 28) 10%,
-    rgb(32, 169, 171) 81%,
-    rgb(62, 9, 196) 100%
-  );
-
-  -webkit-box-shadow: 0px 0px 56px 0px rgba(255, 0, 0, 0.49);
-  -moz-box-shadow: 0px 0px 56px 0px rgba(255, 0, 0, 0.49);
-  box-shadow: 0px 0px 56px 0px rgba(255, 0, 0, 0.49);
+  width: 100%;
+  background: rgb(184, 248, 239);
 }
 .backbutton:hover {
   cursor: pointer;
-
-  -webkit-box-shadow: 0px 0px 56px 0px rgba(255, 242, 0, 0.58);
-  -moz-box-shadow: 0px 0px 56px 0px rgba(255, 242, 4, 0.58);
-  box-shadow: 0px 0px 56px 0px rgba(255, 245, 49, 0.58);
 }
 .cardimage {
   width: 300px;
-  height: 300px;
+  height: 400px;
+  margin: 4px;
+  object-fit: cover;
+  border-radius: 5px;
+  object-position: center;
   text-align: right;
 }
 #Jobname {
-  font-size: 45px;
+  font-size: 30px;
 }
 #leftpart {
   width: 75%;
 }
 #rightpart {
   display: block;
-  position: absolute;
-  top: 120px;
-  left: 1150px;
 }
-#extra-text {
-  background-color: rgb(0, 0, 0);
+.BigBoiiii {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 .text-container {
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
   padding: 30px 40px;
@@ -152,27 +118,32 @@
   margin: 10px 20px;
 }
 .black-text-container {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 5px;
   color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
   padding: 30px 40px;
   z-index: 1;
   height: auto;
   margin: 10px 20px;
 }
 #rightpart {
-  position: absolute;
-  width: 250px;
-  margin: 15px;
-  right: 35px;
+  width: 340px;
+}
+.JobDetailsHead {
+  font-size: 50px;
+  text-shadow: 2px 2px rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 #mobile {
   background-color: white;
   color: black;
-  padding: 5px 20px;
   margin: 10px auto;
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 0, 0, 1);
-  -moz-box-shadow: 0px 0px 30px 0px rgba(255, 0, 0, 1);
-  box-shadow: 0px 0px 30px 0px rgba(255, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px 20px;
 }
 #app {
   text-align: center;
@@ -183,10 +154,4 @@
   padding: 20px;
   background-color: white;
   color: black;
-}
-.recom-bar {
-  background: url("Images/bg3.jpg");
-  background-position: center;
-  height: 100px;
-  justify-content: space-around;
 }

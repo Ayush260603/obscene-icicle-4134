@@ -100,9 +100,7 @@
     right: 20px;
     bottom: 20px;
   }
-  .avatarx {
-    font-size: 15px;
-  }
+
   .JobScontainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -177,20 +175,7 @@
   #avatar {
     width: 30%;
   }
-  .avatarx {
-    font-size: 12px;
-  }
-  .jobsul,
-  .Compsul,
-  .Servsul,
-  .jobsul:hover,
-  .Compsul:hover,
-  .Servsul :hover,
-  #JobsNav:hover .jobsul,
-  #CompNav:hover .Compsul,
-  #ServNav:hover .Servsul {
-    display: none;
-  }
+
   .problem {
     height: 40vh;
     width: 38vh;

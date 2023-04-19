@@ -1,9 +1,20 @@
-const primaryNav = document.querySelector(".primary-navigation");
+
 document.querySelector("#registerbut").addEventListener("click", function () {
   window.location.href = "signup.html";
 });
+let cred = JSON.parse(localStorage.getItem("sign-creds"));
+if (!cred) {
+  // "warning","success","error","info"
+  swal("Please Login First", "", "info");
+  setTimeout(() => {
+    window.location.href = "index.html"
+  }, 1000);
+}
 
 
+let OneJobData = JSON.parse(localStorage.getItem("OneJob"));
+displayCards(OneJobData);
+let favData = JSON.parse(localStorage.getItem("fav-jobs")) || [];
 // Login Slider Button
 function loginslide() {
 
@@ -14,23 +25,17 @@ function loginslide() {
   let df = cred.username.trim().split(" ");
   console.log(df);
   document.querySelector("#loginbut").innerText = "👤" + df[0];
-  if (cred.gender == "male") {
-    document.querySelector("#avatar").src = "CSS/Images/avatar.png";
-  } else {
+
+  if (cred.gender == "female") {
     document.querySelector("#avatar").src = "CSS/Images/avatar1.jpg";
-  }
-  if (cred.gender == "male") {
-    document.querySelector("#avatar").src = "CSS/Images/avatar.png";
   } else {
-    document.querySelector("#avatar").src = "CSS/Images/avatar1.jpg";
+    document.querySelector("#avatar").src = "CSS/Images/avatar.png";
   }
 }
 loginslide();
 // Login Slider End
 
-let OneJobData = JSON.parse(localStorage.getItem("OneJob"));
-displayCards(OneJobData);
-let favData = JSON.parse(localStorage.getItem("fav-jobs")) || [];
+
 
 function displayCards(array) {
   document.querySelector(".JobScontainer").innerText = "";
@@ -76,21 +81,41 @@ function displayCards(array) {
     apply.innerText = "Apply Now";
     apply.addEventListener("click", function () {
       localStorage.setItem("AppliedJob", JSON.stringify(element));
-      document.querySelector(".applyjob").style.display = "block";
+      swal({
+        title: "Apply For this Job?",
+        text: "You will be redirected to apply job page",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+        .then((willDelete) => {
+          if (willDelete) {
+            redirectToOtp()
+          } else {
+            null
+          }
+        });
+
+
     });
 
     let addtofav = document.createElement("button");
     addtofav.setAttribute("id", "viewButton");
     addtofav.innerText = "Save Job 🔖";
     addtofav.addEventListener("click", function () {
-      addtofav.style.backgroundColor = "maroon";
-      addtofav.innerText = "Added to Favorites";
-      if (favData.includes(element)) {
-        document.querySelector(".problem").style.display = "block";
-      } else {
-        favData.push(element);
-        localStorage.setItem("fav-jobs", JSON.stringify(favData));
+      for (let i = 0; i < favData.length; i++) {
+        if (favData[i].id == element.id) {
+          swal("Already in Favorites", "Job is already added in your favorites", "info");
+          return
+        }
       }
+
+      addtofav.innerText = "Added to Favorites";
+      addtofav.style.backgroundColor = "grey";
+      addtofav.style.color = "white";
+      favData.push(element);
+      localStorage.setItem("fav-jobs", JSON.stringify(favData));
+
     });
 
     let desc = document.createElement("h4");
@@ -146,7 +171,7 @@ function displayCards(array) {
   });
 }
 
-document.querySelector("#Proceed").addEventListener("click", redirectToOtp);
+
 function redirectToOtp() {
   setTimeout(function () {
     document.location.href = "otp.html";

@@ -1,6 +1,15 @@
 document.querySelector("#registerbut").addEventListener("click", function () {
   window.location.href = "signup.html";
 });
+let cred = JSON.parse(localStorage.getItem("sign-creds"));
+if (!cred) {
+  // "warning","success","error","info"
+  swal("Please Login First", "", "info");
+  setTimeout(() => {
+    window.location.href = "index.html"
+  }, 1000);
+}
+
 
 // Login Slider Button
 function loginslide() {
@@ -11,18 +20,15 @@ function loginslide() {
   document.querySelector("#avatargender").innerText = cred.gender;
   let df = cred.username.trim().split(" ");
   document.querySelector("#loginbut").innerText = "👤" + df[0];
-  if (cred.gender == "male") {
-    document.querySelector("#avatar").src = "CSS/Images/avatar.png";
-  } else {
+  if (cred.gender == "female") {
     document.querySelector("#avatar").src = "CSS/Images/avatar1.jpg";
+  } else {
+    document.querySelector("#avatar").src = "CSS/Images/avatar.png";
   }
 }
 loginslide();
 // Login Slider End
 
-document.querySelector("#no").addEventListener("click", () => {
-  document.querySelector(".changejob").style.display = "none";
-});
 // displayCards
 let arrx = [];
 let Apply = JSON.parse(localStorage.getItem("AppliedJob"));
@@ -74,7 +80,20 @@ function displayCards(array) {
     view.setAttribute("id", "favButton");
     view.innerText = "Change Job";
     view.addEventListener("click", () => {
-      document.querySelector(".changejob").style.display = "block";
+      swal({
+        title: "Cancel Job Booking?",
+        text: "You will be redirected to All Jobs Page..",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+      })
+        .then((willDelete) => {
+          if (willDelete) {
+            window.location.href = "jobs.html"
+          } else {
+            null
+          }
+        });
     });
 
     let desc = document.createElement("h4");
@@ -155,27 +174,10 @@ function otpcheck(event) {
   event.preventDefault();
   let k = form1.OtpInput.value;
   if (k == 1234) {
-    // document.querySelector(".problem>img").src = "CSS/Images/tick.png";
-    // document.querySelector(".problem>h1").innerText =
-    //   "Applying for Job Successful!";
-    // document.querySelector(".problem>h2").innerText =
-    //   "Lets find more Jobs to Apply";
-    // let jobshref = document.querySelector("#jobspage");
-    // jobshref.style.display = "block";
-    // jobshref.addEventListener("click", function () {
-    //   document.querySelector(".problem").style.display = "none";
-    //   jobspage();
-    // });
-    // document.querySelector("#close").style.display = "none";
-    // document.querySelector(".problem").style.display = "block";
+    swal("Applying For Job Successful", "You will recieve notifications in future regarding this job", "success");
+    jobspage()
   } else {
-    // document.querySelector(".problem>img").src = "CSS/Images/x.png";
-    // document.querySelector(".problem>h1").innerText = "Wrong OTP";
-    // document.querySelector(".problem>h2").innerText =
-    //   "Please Enter Correct OTP";
-    // document.querySelector("#jobspage").style.display = "none";
-    // document.querySelector("#close").style.display = "static";
-    // document.querySelector(".problem").style.display = "block";
+    swal("Wron OTP", "Please Enter Correct OTP", "error");
   }
 }
 function jobspage() {
