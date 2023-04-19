@@ -1,0 +1,76 @@
+/*todo ----------------------------Small Screen Sizes -------------------------------- */
+@media all and (min-width: 320px) and (max-width: 809px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+  }
+  .mobile-nav-toggle {
+    top: 22px !important;
+  }
+
+  .loginform input,
+  .logininput,
+  .googlebutton {
+    font-size: 12px !important;
+    width: 100% !important;
+  }
+  #LoginForm > button > img {
+    width: 20px !important;
+  }
+  header {
+    padding: 7px !important;
+  }
+  #mqx {
+    display: none;
+  }
+  .flexalign {
+    display: grid;
+  }
+  .sectionHeads {
+    font-size: 25px;
+    margin: 10px auto;
+  }
+  #loginbut {
+    text-align: center !important;
+    margin: 1px 3px;
+  }
+  .gradbutton,
+  .agradbutton,
+  .fgradbutton,
+  #favButton,
+  #logoutbut,
+  #viewButton {
+    margin: 1px 3px !important;
+    padding: 5px 15px !important;
+    font-size: 10px !important;
+  }
+  footer > div.footer2nd > div:nth-child(2) > p {
+    padding: 10px;
+  }
+  .logofooter {
+    width: 100%;
+  }
+  body > footer > div.footer1st > div.logofooter > div:nth-child(2) > img {
+    width: 100px !important;
+  }
+  body > footer > div.footer1st > div.logofooter > div:nth-child(1) > img {
+    width: 150px;
+  }
+  .stickky {
+    padding: 7px;
+  }
+  .home * {
+    font-size: 10px !important;
+  }
+  #signIN,
+  #logIN {
+    margin-top: 50px;
+  }
+  .footer1st {
+    margin: 10px;
+  }
+  .avatarx {
+    font-size: 10px !important;
+  }
+}

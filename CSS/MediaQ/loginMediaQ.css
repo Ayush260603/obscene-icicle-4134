@@ -1,157 +1,3 @@
-/* --------------------------Medium screen sizes ------------------------------------------*/
-@media all and (min-width: 810px) and (max-width: 1280px) {
-  /*--------------------- Universals--------------------- */
-  * {
-    margin: 0px;
-    padding: 0px;
-    font-size: 15px;
-  }
-  .loginslider {
-    display: block;
-  }
-  .flexalign {
-    display: grid;
-  }
-  .problem {
-    height: 24vh;
-    top: 150px;
-    color: black;
-  }
-  .sectionHeads {
-    font-size: 40px;
-    margin: 25px auto;
-  }
-  #loginbut {
-    margin: 1px 3px;
-  }
-  .gradbutton {
-    margin: 1px 3px;
-  }
-  header {
-    display: flex;
-    justify-content: space-around;
-  }
-  header > div:nth-child(2) {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 0px;
-    margin: 0px;
-  }
-  .home > a > div {
-    margin: 0px 5px;
-    padding: 1px;
-    text-align: center;
-  }
-  .jobsul,
-  .Compsul,
-  .Servsul,
-  .jobsul:hover,
-  .Compsul:hover,
-  .Servsul :hover,
-  #JobsNav:hover .jobsul,
-  #CompNav:hover .Compsul,
-  #ServNav:hover .Servsul {
-    display: none;
-  }
-  /* -------------------------Page Specifc Start------------------------- */
-  #headingJobs {
-    position: absolute;
-    font-size: 50px;
-    font-weight: bolder;
-    left: 50px;
-    top: 1020px;
-    color: transparent;
-  }
-  section {
-    margin: 10px auto;
-  }
-  .searchbox {
-    width: 90%;
-    margin: 10px 3px;
-    padding: 15px 5px;
-  }
-  #searchbox-inner {
-    width: 90%;
-  }
-  .searchinput {
-    width: 80%;
-  }
-  .band {
-    background-image: url("../Images/bg1.jpg");
-    background-size: cover;
-  }
-  .Avatar {
-    position: absolute;
-    left: 42%;
-    right: 42%;
-    top: 210px;
-  }
-  .insidePI {
-    text-align: center;
-    margin-top: 0px;
-    margin: 0px 10px;
-    padding: 50px 40px;
-  }
-  .PersonInfo {
-    position: static;
-    width: 54%;
-    margin: 20px 20%;
-  }
-  #qrcose {
-    margin: 5px 50px;
-    width: 20%;
-  }
-  .container1,
-  .recruiters,
-  #flexing {
-    width: 95%;
-  }
-  #logoutbut {
-    position: absolute;
-    top: -500px;
-    right: -120px;
-    padding: 10px 60px;
-    z-index: 999999;
-  }
-  #placemeimg {
-    top: 720px;
-    right: 350px;
-    width: 25%;
-  }
-  #avatarhead {
-    font-size: 23px;
-  }
-  .PlacemeApp {
-    position: static;
-
-    width: 60%;
-    margin: auto 15%;
-    margin-top: 100px;
-    border-radius: 10px;
-  }
-  .JobCard {
-    position: relative;
-    padding: 10px;
-  }
-  .cardimage {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    right: 20px;
-    bottom: 3px;
-  }
-  #flexing > div {
-    width: 35%;
-  }
-  #flexing > div > div {
-    width: 70%;
-    margin: 5px;
-  }
-  .avatarx {
-    font-size: 15px;
-  }
-}
-
 /* -----------------------------------Small Screen Sizes----------------------------------- */
 
 @media all and (min-width: 320px) and (max-width: 809px) {
@@ -234,9 +80,9 @@
   }
   /* ----------------------------------Page Specific Start---------------------------------- */
   #headingJobs {
-    position: absolute;
     font-size: 20px;
     font-weight: bolder;
+    position: static;
     left: 50px;
     top: 900px;
     z-index: 5;
@@ -258,11 +104,15 @@
     width: 90%;
   }
   .searchinput {
-    width: 60%;
+    width: 55%;
   }
   .band {
-    background-image: url("../Images/bg1.jpg");
-    background-size: cover;
+    background-size: contain;
+    height: 179px;
+    padding: 0px;
+  }
+  .searchbox * {
+    font-size: 14px !important;
   }
   .Avatar {
     position: absolute;
@@ -273,7 +123,7 @@
   .insidePI {
     margin-top: 0px;
     margin: 0px 10px;
-    padding: 35px 40px 35px 65px;
+    padding: 40px 12px;
   }
   .PersonInfo {
     position: static;
@@ -292,20 +142,18 @@
     position: relative;
   }
   #logoutbut {
-    position: absolute;
-    top: -580px;
-    right: -180px;
     padding: 5px 17px;
     z-index: 9999;
   }
   #placemeimg {
     top: 650px;
-    width: 60%;
+    align-self: center;
+    width: 100%;
   }
   .PlacemeApp {
     position: static;
-    margin-top: 100px;
     width: 93%;
+
     border-radius: 10px;
   }
   .JobCard {

@@ -1,299 +1,10 @@
-/*---------------------------------- Medium Screen Sizes ----------------------------------*/
-
-@media all and (min-width: 810px) and (max-width: 1280px) {
-  /*--------------------- Universals--------------------- */
-  * {
-    margin: 0px;
-    padding: 0px;
-    font-size: 10px;
-  }
-  .loginslider {
-    display: block;
-  }
-  .flexalign {
-    display: grid;
-  }
-  .problem {
-    height: 24vh;
-    top: 150px;
-    color: black;
-  }
-  .sectionHeads {
-    font-size: 40px;
-    margin: 25px auto;
-  }
-  #loginbut {
-    margin: 1px 3px;
-  }
-  .gradbutton {
-    margin: 1px 3px;
-  }
-  header {
-    display: flex;
-    justify-content: space-around;
-  }
-  header > div:nth-child(2) {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    padding: 0px;
-    margin: 0px;
-  }
-  .home > a > div {
-    margin: 0px 5px;
-    padding: 1px;
-    text-align: center;
-  }
-  .mobile-nav-toggle {
-    display: block;
-    top: 25px;
-    right: 30px;
-  }
-  .primary-navigation {
-    inset: 0 0 0 70%;
-  }
-  .jobsul,
-  .Compsul,
-  .Servsul,
-  .jobsul:hover,
-  .Compsul:hover,
-  .Servsul :hover,
-  #JobsNav:hover .jobsul,
-  #CompNav:hover .Compsul,
-  #ServNav:hover .Servsul {
-    display: none;
-  }
-  /* -------------------------Page Specifc Start------------------------- */
-  #mqx {
-    display: none;
-  }
-  .FirstView {
-    height: fit-content;
-  }
-  #heading {
-    font-size: 10px;
-  }
-  #mainimg {
-    width: 400px;
-  }
-
-  .frontpage {
-    flex-direction: column;
-  }
-  .Firstview > div {
-    height: auto;
-  }
-  #maintextholder {
-    width: 100%;
-    height: auto;
-  }
-  #space {
-    height: 50px;
-  }
-  #maintextholder > div {
-    margin: 2px;
-    padding: 18px;
-    text-align: left;
-  }
-  #mainimgholder {
-    width: 100%;
-    height: fit-content;
-  }
-  #heading {
-    font-size: 40px;
-    margin-left: 2px;
-  }
-  .searchbox {
-    padding: 2px;
-  }
-  #searchbox-inner {
-    padding: 5px 8px;
-    margin: 3px 10px;
-  }
-  .searchinput {
-    width: 40%;
-    padding: 2px;
-  }
-
-  input#xx {
-    display: none;
-  }
-  .job-links {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 2px 5px;
-  }
-  .job-link {
-    font-size: 1px;
-  }
-  #pre-but,
-  #pre-but2,
-  #pre-but3 {
-    top: 22%;
-    border-radius: 0px;
-    padding: 5px 0px;
-  }
-  #nxt-but,
-  #nxt-but2,
-  #nxt-but3 {
-    top: 22%;
-    border-radius: 0px;
-    padding: 5px 0px;
-  }
-  #Slider > div,
-  #Slider2 > div {
-    grid-template-columns: repeat(10, 1fr);
-  }
-  #Slider > div > div,
-  #Slider2 > div > div {
-    width: 140px;
-    height: 150px;
-  }
-  #Slider > div > div > img,
-  #Slider2 > div > div > img {
-    width: 25%;
-    height: 20%;
-  }
-  .compslidtranslateNXT {
-    transform: translateX(-820px);
-  }
-  .compslidtranslatePRE {
-    transform: translateX(0px);
-  }
-  #interview-sec,
-  #interview-sec2,
-  #appsect {
-    margin: 10px 5px;
-    padding: 10px;
-    height: fit-content;
-  }
-  .discover-jobs {
-    flex-direction: column;
-    width: 60%;
-    height: fit-content;
-  }
-  .discover-jobs > div:nth-child(1) {
-    height: 350px;
-    width: 100%;
-    background-position: center;
-  }
-  .discover-jobs > div:nth-child(2) {
-    display: flex;
-  }
-  .discover-jobs button {
-    padding: 5px 7px;
-    margin: 5px 10px;
-    width: 70%;
-    font-size: 8px;
-  }
-  #interview-sec > div {
-    height: fit-content;
-  }
-  .Intergrid {
-    grid-template-columns: repeat(2, 1fr);
-    margin: 5px auto;
-    gap: 10px;
-  }
-  .Intergrid > div {
-    height: 47px;
-  }
-  .Intergrid label {
-    font-size: 7px;
-  }
-  #interviewhead {
-    color: rgb(37, 37, 37);
-    font-size: 25px;
-    margin: 20px 15px;
-  }
-  .Intergrid a {
-    font-size: 18px;
-  }
-  #interview-sec > div > div:nth-child(1) {
-    width: 50%;
-    height: 25vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  #interview-sec > div > div:nth-child(3) {
-    display: none;
-  }
-  #interview-sec > div > div:nth-child(2) {
-    width: 100%;
-  }
-  #interview-sec2 > div {
-    height: fit-content;
-    margin: 7px;
-  }
-  #interview-sec2 > div > div:nth-child(1) {
-    display: none;
-  }
-  #interview-sec2 > div > div:nth-child(2) {
-    width: 100%;
-  }
-  #interview-sec2 > div > div:nth-child(2) > h1 {
-    font-size: 30px;
-  }
-  #interview-sec2 > div > div:nth-child(3) {
-    width: 40%;
-    height: 170px;
-  }
-  #interview-sec2 button {
-    padding: 10px 12px;
-    height: fit-content;
-    max-width: 5px 2px;
-    font-size: 15px;
-  }
-  #appsect > div {
-    height: 312px;
-    margin: 7px;
-  }
-  #appsect > div > div:nth-child(1) {
-    width: 50%;
-  }
-  #appsect > div > div:nth-child(2) {
-    display: block;
-    background-size: contain;
-  }
-  #appHead {
-    font-size: 30px;
-  }
-  #appsect a {
-    margin: 10px 10px;
-    margin-left: 20px;
-    padding: 1px 2px;
-  }
-  #appsect button {
-    padding: 3px;
-    font-size: 10px;
-  }
-  /*? -------------------------Page Specifc End------------------------- */
-}
-
 /*! --------------------------------Small Screen Sizes -------------------------------- */
 
 @media all and (min-width: 320px) and (max-width: 809px) {
   /*todo------------------------------------ Universals------------------------------------ */
-  * {
-    margin: 0px;
-    padding: 0px;
-    font-size: 10px;
-  }
-  #mqx {
-    display: none;
-  }
-  .flexalign {
-    display: grid;
-  }
-  .sectionHeads {
-    font-size: 25px;
-    margin: 10px auto;
-  }
-  #loginbut {
-    margin: 1px 3px;
-  }
-  .gradbutton {
-    margin: 1px 3px;
-  }
+
   header {
+    padding: 2px;
     display: flex;
     justify-content: space-around;
   }
@@ -344,18 +55,26 @@
     color: black;
   }
   /* ----------------------------------Page Specific Start---------------------------------- */
-  .FirstView {
-    height: fit-content;
-  }
+
   #heading {
     font-size: 10px;
+    color: white;
+    text-shadow: 1px 1px black;
   }
   #mainimg {
     width: 220px;
   }
 
   .frontpage {
-    flex-direction: column;
+    min-height: fit-content;
+    padding: 5px;
+  }
+  .FirstView {
+    margin-top: 55px;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: left;
   }
   .Firstview > div {
     height: auto;
@@ -388,7 +107,8 @@
     margin: 3px 10px;
   }
   .searchinput {
-    width: 60%;
+    width: 70%;
+    font-size: 10px;
     padding: 2px;
   }
   select.searchinput,
@@ -403,36 +123,14 @@
     font-size: 1px;
     border-radius: 10px;
   }
-  #pre-but,
-  #pre-but2,
-  #pre-but3,
-  #nxt-but,
-  #nxt-but2,
-  #nxt-but3 {
-    opacity: 0.5;
-    border-radius: 0px;
+
+  .Slidebuttons {
     width: 40px;
-    padding: 5px 0px;
-  }
-  #pre-but {
-    height: 73%;
-    top: 60px;
-  }
-  #nxt-but {
-    height: 73%;
-    top: 60px;
-  }
-  #nxt-but2 {
-    height: 68%;
-  }
-  #pre-but2 {
-    height: 68%;
-  }
-  #pre-but3 {
-    height: 58%;
-  }
-  #nxt-but3 {
-    height: 58%;
+    top: 50% !important;
+    padding: 3px;
+    border-radius: 24px;
+    background-color: rgb(231, 229, 228);
+    height: fit-content !important;
   }
   .compslidtranslateNXT2 {
     transform: translateX(-300px);
@@ -444,21 +142,15 @@
   #Slider2 > div {
     grid-template-columns: repeat(4, 1fr);
   }
-  #Slider > div > div,
-  #Slider2 > div > div {
-    width: 140px;
-    height: 150px;
-  }
-  #Slider > div > div > img,
-  #Slider2 > div > div > img {
-    width: 25%;
-    height: 20%;
-  }
+
   .compslidtranslateNXT {
     transform: translateX(-200px);
   }
   .compslidtranslatePRE {
     transform: translateX(0px);
+  }
+  #appsect input {
+    font-size: 10px;
   }
 
   #interview-sec,
