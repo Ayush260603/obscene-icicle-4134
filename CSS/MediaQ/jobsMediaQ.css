@@ -259,7 +259,7 @@
     height: fit-content;
   }
   .searchinput {
-    width: 75%;
+    width: 65%;
   }
   .HTLswitcher > div {
     padding: 10px;
@@ -312,6 +312,9 @@
     padding: 8px 12px;
     margin: 2px 5px;
     font-size: 10px;
+  }
+  #Jobname {
+    font-size: 17px;
   }
   .HTLswitcher,
   .filterdiv,

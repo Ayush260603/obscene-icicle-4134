@@ -140,11 +140,15 @@
   }
   #Slider > div,
   #Slider2 > div {
+    margin: 2px 30px;
     grid-template-columns: repeat(4, 1fr);
+  }
+  #Slider3 > div {
+    margin: 2px 30px;
   }
 
   .compslidtranslateNXT {
-    transform: translateX(-200px);
+    transform: translateX(-400px);
   }
   .compslidtranslatePRE {
     transform: translateX(0px);
@@ -259,6 +263,10 @@
   }
   .discover-jobs > div:nth-child(2) > button {
     margin: 10px 3px;
+  }
+  .searchbox {
+    margin: 10px;
+    width: 100%;
   }
   /* ---------------------------------Page Specific End--------------------------------- */
 }
