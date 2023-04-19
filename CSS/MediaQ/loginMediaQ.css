@@ -81,6 +81,8 @@
   /* ----------------------------------Page Specific Start---------------------------------- */
   #headingJobs {
     font-size: 20px;
+    width: 100%;
+    text-align: center;
     font-weight: bolder;
     position: static;
   }
@@ -98,10 +100,10 @@
     padding: 15px 5px;
   }
   #searchbox-inner {
-    width: 90%;
+    width: 100%;
   }
   .searchinput {
-    width: 55%;
+    width: 74%;
   }
   .band {
     background-size: contain;
@@ -118,6 +120,7 @@
     top: 210px;
   }
   .insidePI {
+    border-radius: 10px !important;
     margin-top: 0px;
     margin: 0px 10px;
     padding: 40px 12px;
@@ -128,9 +131,15 @@
     top: 50px;
   }
   .container1,
-  .recruiters,
   #flexing {
     width: 95%;
+  }
+  .recruiters {
+    width: 100%;
+  }
+  .recruiters img {
+    width: 30% !important;
+    height: inherit;
   }
   .container1 {
     margin: 10px !important;
@@ -175,6 +184,12 @@
     text-align: center;
     flex-direction: column;
   }
+  #Jobname {
+    font-size: 20px;
+  }
+  section > h1:nth-child(6) {
+    text-align: center;
+  }
   #flexing > div > div {
     margin: 5px;
     height: 50px;
@@ -184,5 +199,12 @@
   }
   div.recruiters > h1 {
     font-size: 17px !important;
+  }
+  .headsters {
+    font-size: 30px;
+  }
+  .PersonInfo #logoutbut {
+    padding: 10px 80px !important;
+    font-size: 20px !important;
   }
 }
