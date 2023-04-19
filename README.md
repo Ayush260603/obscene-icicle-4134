@@ -16,8 +16,22 @@ Masai Unit Two Construct Week Project
 |---|---|---|
 | <img width="75px" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"> | <img width="75px" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"> | <img width="70px" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"> |
 ## Backend :-
-> # Local Storage 
+> ### Local Storage 
+> ### Mock API
 
 
 # 🟢 Features :-
+- Interactive UI/UX for best customer experiene.
+- User can Login/Signup,Search/Filter Jobs
+- Add/Remove Jobs to Favorite
+- Use of localstorage is implemented
+- Transitions & Animations
+
 # 🟢 Routes :-
+```
+//Get All Job Data
+GET https://636a3dd2c07d8f936d97766d.mockapi.io/placeme/JobData
+
+```
+---
+# <p align="center">Thankyou for your time 💝</p>
