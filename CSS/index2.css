@@ -209,6 +209,8 @@
   border-radius: 5px;
   margin: 10px 30px;
   width: 100%;
+  font-size: 20px;
+  font-weight: 500;
   background-color: rgb(23, 129, 250);
   border: 3px solid rgb(252, 252, 252);
   color: rgb(255, 255, 255);
@@ -325,7 +327,7 @@
   font-size: 15px;
   background-color: transparent;
   color: rgb(77, 75, 75);
-  border-radius: 20px;
+  border-radius: 5px;
   border: 1px solid rgb(72, 255, 194);
   transition: all 350ms ease;
 }
@@ -378,12 +380,13 @@
 #appsect a {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: white;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 5px;
+  padding: 5px;
   margin: 7px;
 }
 #appsect input {
   padding: 5px;
+  font-size: 20px;
   outline: none;
   border: 0px;
 }
