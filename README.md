@@ -3,3 +3,6 @@
 
 ## link :- <a href="https://placeme750.netlify.app/">PlaceMe.com</a>
 Masai Unit Two Construct Week Project
+
+# What is PlaceMe.com?
+> PlaceMe.com is an online job hunting platform of job applicants as well as hirers, it is a clone of Naukri.com
