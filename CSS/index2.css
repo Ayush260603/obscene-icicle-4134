@@ -88,8 +88,10 @@
   margin: 6px;
   padding: 5px;
   border: 1px solid rgb(218, 217, 217);
-  width: 35%;
-  height: 25%;
+  width: 57px !important;
+  min-height: 57px !important;
+  object-fit: contain;
+  object-position: center;
 }
 .slidptag {
   color: grey;
@@ -179,6 +181,8 @@
   border-radius: 10px;
   margin: 6px;
   padding: 5px;
+  object-fit: contain;
+  object-position: center;
   width: 80%;
   height: 70px;
 }
