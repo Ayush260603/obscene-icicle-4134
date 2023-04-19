@@ -1,7 +1,7 @@
 /* Section headings */
 .sectionHeads {
   font-size: 40px;
-  color: white;
+
   text-align: center;
   margin-top: 50px;
 }
@@ -163,7 +163,6 @@ header > div:nth-child(2) {
   padding: 8px 30px;
   border: 0px;
   border-radius: 5px;
-  color: white;
   background-color: rgb(215, 23, 23);
 }
 
@@ -214,7 +213,7 @@ header > div:nth-child(2) {
   display: flex;
   justify-content: space-around;
   padding: 10px 25px;
-  color: white;
+
   background-image: url("Images/bgx.jpeg");
   background-position: center;
   background-size: cover;

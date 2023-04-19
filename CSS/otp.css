@@ -67,7 +67,7 @@ body {
 }
 #otpbutton {
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+
   padding: 10px 40px;
   border: 2px solid gold;
   margin: 20px auto;
@@ -122,7 +122,7 @@ div[type="OTP"] {
 #favButton {
   padding: 10px 18px;
   border: 0px;
-  color: white;
+
   background: rgb(255, 0, 228);
   background: linear-gradient(
     90deg,
@@ -158,7 +158,7 @@ div[type="OTP"] {
   border-radius: 30px;
   font-size: 30px;
   border: 0px;
-  color: white;
+
   background: rgb(1, 255, 221);
   background: linear-gradient(
     90deg,
@@ -194,10 +194,8 @@ div[type="OTP"] {
   top: 100px;
   font-size: 40px;
   margin: 5px auto;
-  color: white;
 }
 #heading2 {
   font-size: 80px;
   margin: 5px auto;
-  color: white;
 }

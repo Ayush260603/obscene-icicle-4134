@@ -1,4 +1,4 @@
-const primaryNav = document.querySelector(".primary-navigation");
+
 document.querySelector("#registerbut").addEventListener("click", function () {
   window.location.href = "signup.html";
 });
@@ -14,7 +14,7 @@ function loginslide() {
   document.querySelector("#avataremail").innerText = cred.email;
   document.querySelector("#avatargender").innerText = cred.gender;
   let df = cred.username.trim().split(" ");
-  console.log(df);
+
   document.querySelector("#loginbut").innerText = "👤" + df[0];
   if (cred.gender == "male") {
     document.querySelector("#avatar").src = "CSS/Images/avatar.png";
@@ -24,29 +24,38 @@ function loginslide() {
 }
 loginslide();
 // Login Slider End
-document.querySelector("#yes").addEventListener("click", function () {
-  document.querySelector(".problem").style.display = "none";
-  document.location.href = "index.html";
-});
-document.querySelector("#no").addEventListener("click", function () {
-  document.querySelector(".problem").style.display = "none";
-});
+
+
 let logout = document.querySelectorAll("#logoutbut");
 logout[0].addEventListener("click", LogoutFunc);
 logout[1].addEventListener("click", LogoutFunc);
 function LogoutFunc() {
-  document.querySelector(".problem").style.display = "block";
+  swal({
+    title: "Logout?",
+    text: "You will Be logged out of the Session",
+    icon: "info",
+    buttons: true,
+    dangerMode: true,
+  })
+    .then((willDelete) => {
+      if (willDelete) {
+        localStorage.clear()
+        window.location.href = "index.html"
+      } else {
+        null
+      }
+    });
 }
 // problem function popup start
-document.querySelector("#close1").addEventListener("click", function () {
-  document.querySelector(".applyjob").style.display = "none";
-});
-document.querySelector("#Proceed").addEventListener("click", redirectToOtp);
-function redirectToOtp() {
-  setTimeout(function () {
-    document.location.href = "otp.html";
-  }, 2000);
-}
+// document.querySelector("#close1").addEventListener("click", function () {
+//   document.querySelector(".applyjob").style.display = "none";
+// });
+// document.querySelector("#Proceed").addEventListener("click", redirectToOtp);
+// function redirectToOtp() {
+//   setTimeout(function () {
+//     document.location.href = "otp.html";
+//   }, 2000);
+// }
 
 // problem function popup end
 

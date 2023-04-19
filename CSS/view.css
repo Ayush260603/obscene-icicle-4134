@@ -65,7 +65,7 @@
 #favButton {
   padding: 10px 18px;
   border: 0px;
-  color: white;
+
   background: rgb(255, 0, 228);
   background: linear-gradient(
     90deg,
@@ -101,7 +101,7 @@
   border-radius: 30px;
   font-size: 30px;
   border: 0px;
-  color: white;
+
   background: rgb(1, 255, 221);
   background: linear-gradient(
     90deg,

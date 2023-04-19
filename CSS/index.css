@@ -26,7 +26,6 @@
   width: 50%;
   height: 100% !important;
   height: fit-content;
-  color: white;
 }
 
 #heading {
@@ -96,8 +95,8 @@
 .job-link:hover {
   cursor: pointer;
 
-  background: rgba(205, 202, 202, 0.5);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .job-links {
@@ -112,7 +111,7 @@
 .job-link {
   text-align: center;
   width: auto;
-  color: White;
+
   padding: 10px 14px;
   font-size: 18px;
   margin: 1px;
@@ -120,7 +119,8 @@
   background-color: rgb(172, 182, 191);
   border-radius: 50px;
   background-color: white;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
   transition: all 350ms ease;
 }
 /* job links end  ============================================================================================*/

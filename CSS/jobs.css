@@ -27,6 +27,7 @@ main {
 
 .searchbox {
   width: 100%;
+  border-radius: 5px;
   margin: 0px 0px;
 }
 
@@ -76,13 +77,14 @@ main {
   top: 200px;
   padding: 10px;
   border-radius: 10px;
-  width: 370px;
+  width: 400px;
   margin: 5px;
 }
 .recom-bar {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
   display: flex;
   justify-content: right;
-  /* background: url("Images/qwqw.jpg"); */
   background-size: cover;
   background-position: bottom;
 }
@@ -90,7 +92,7 @@ main {
   margin: 0px 30px;
 }
 #update {
-  background: rgb(123, 113, 231);
+  background: rgb(113, 231, 211);
 }
 .JobScontainer {
   z-index: 1;
@@ -102,7 +104,7 @@ main {
 .JobScontainer > div {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  width: 80%;
+  width: 90%;
   margin: 10px auto;
   padding: 20px;
   height: auto;
@@ -128,13 +130,14 @@ main {
   font-size: 100px;
   left: 110px;
   top: 70px;
-  color: transparent;
+  color: black;
+  text-shadow: 3px 3px var(--themcolor);
 }
 
 #favButton {
   padding: 8px 15px;
   border: 0px;
-  color: white;
+
   border-radius: 10px;
   background-color: rgb(12, 133, 255);
   margin: 5px;
@@ -145,7 +148,7 @@ main {
 #viewButton {
   padding: 8px 15px;
   border: 0px;
-  color: rgb(255, 255, 255);
+
   border-radius: 10px;
   background: rgb(82, 163, 7);
   margin: 5px;
@@ -172,11 +175,11 @@ main {
   background-color: orange;
 }
 #filter {
-  border-radius: 15px;
+  border-radius: 5px;
   font-size: 18px;
   margin: 5px auto;
   width: 100%;
-  padding: 3px;
+  padding: 7px;
   background-color: azure;
 }
 #filter:hover {
@@ -184,7 +187,7 @@ main {
 }
 /* leftpart  */
 #myRange {
-  width: 60%;
+  width: 100%;
   margin: auto;
 }
 #stars {
@@ -194,27 +197,19 @@ main {
   width: 100%;
 }
 .ratingslider > div {
-  text-align: center;
-  padding: 15px 30px;
+  padding: 5px;
   margin: 15px auto;
-  color: rgb(255, 251, 251);
-
-  background: rgb(178, 169, 224);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 .HTLswitcher,
 .filterdiv,
 .ratingslider {
-  text-align: center;
   padding: 3px;
 }
 .HTLswitcher > div {
-  margin: 10px auto;
+  margin: 2px auto;
   background-color: white;
-  border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 5px;
 }
 #bagicon {
   font-size: 50px;

@@ -1,4 +1,3 @@
-const primaryNav = document.querySelector(".primary-navigation");
 document.querySelector("#registerbut").addEventListener("click", function () {
   window.location.href = "signup.html";
 });
@@ -12,16 +11,6 @@ function loginslide() {
     .addEventListener("click", LoginSlider);
   document.querySelector("#loginbut").addEventListener("click", LoginSlider);
 
-  function LoginSlider() {
-    const visibility = primaryNav.getAttribute("data-visible");
-    if (visibility === "false") {
-      primaryNav.setAttribute("data-visible", true);
-      document.querySelector(" .mobile-nav-toggle>span").innerText = "✖️";
-    } else if (visibility === "true") {
-      primaryNav.setAttribute("data-visible", false);
-      document.querySelector(" .mobile-nav-toggle>span").innerText = "💠";
-    }
-  }
   let cred = JSON.parse(localStorage.getItem("sign-creds"));
   document.querySelector("#avatarname").innerText = cred.username;
   document.querySelector("#avataremail").innerText = cred.email;
@@ -206,21 +195,21 @@ slider.addEventListener("input", function () {
 // Higher to lower salary functionality
 let htl = document.querySelector("#HTL");
 let lth = document.querySelector("#LTH");
-lth.style.background = "grey";
-htl.style.background = "grey";
+lth.style.background = "#e9f0e7";
+htl.style.background = "#e9f0e7";
 htl.addEventListener("click", SortHTL);
 lth.addEventListener("click", SortLTH);
 function SortHTL() {
-  lth.style.background = "grey";
-  htl.style.background = "rgb(32,150,242)";
+  lth.style.background = "#e9f0e7";
+  htl.style.background = "var(--themcolor)";
 
   let HTLData = JobData.sort((a, b) => b.salary - a.salary);
   document.querySelector(".JobScontainer").innerHTML = "";
   displayCards(HTLData);
 }
 function SortLTH() {
-  htl.style.background = "grey";
-  lth.style.background = "rgb(32,150,242)";
+  htl.style.background = "#e9f0e7";
+  lth.style.background = "var(--themcolor)";
   let LTHData = JobData.sort((a, b) => a.salary - b.salary);
   document.querySelector(".JobScontainer").innerHTML = "";
   displayCards(LTHData);

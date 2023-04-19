@@ -4,30 +4,12 @@ document.querySelector("#registerbut").addEventListener("click", function () {
 
 // Login Slider Button
 function loginslide() {
-  const primaryNav = document.querySelector(".primary-navigation");
 
-
-  document
-    .querySelector(" .mobile-nav-toggle>span")
-    .addEventListener("click", LoginSlider);
-  document.querySelector("#loginbut").addEventListener("click", LoginSlider);
-
-  function LoginSlider() {
-    const visibility = primaryNav.getAttribute("data-visible");
-    if (visibility === "false") {
-      primaryNav.setAttribute("data-visible", true);
-      document.querySelector(" .mobile-nav-toggle>span").innerText = "✖️";
-    } else if (visibility === "true") {
-      primaryNav.setAttribute("data-visible", false);
-      document.querySelector(" .mobile-nav-toggle>span").innerText = "💠";
-    }
-  }
   let cred = JSON.parse(localStorage.getItem("sign-creds"));
   document.querySelector("#avatarname").innerText = cred.username;
   document.querySelector("#avataremail").innerText = cred.email;
   document.querySelector("#avatargender").innerText = cred.gender;
   let df = cred.username.trim().split(" ");
-  console.log(df);
   document.querySelector("#loginbut").innerText = "👤" + df[0];
   if (cred.gender == "male") {
     document.querySelector("#avatar").src = "CSS/Images/avatar.png";
