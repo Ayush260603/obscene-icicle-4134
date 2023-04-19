@@ -4,7 +4,7 @@ document.querySelector("#registerbut").addEventListener("click", function () {
 let cred = JSON.parse(localStorage.getItem("sign-creds"));
 if (!cred) {
   // "warning","success","error","info"
-  swal("Please Login First", "", "info");
+  swal("Please Login First", "Redirecting..", "info");
   setTimeout(() => {
     window.location.href = "index.html"
   }, 1000);
@@ -53,32 +53,32 @@ function displayCards(array) {
 
     let date = document.createElement("h3");
     date.setAttribute("id", "JobDate");
-    date.innerText = "Date :" + element.date;
+    date.innerHTML = "Date :" + element.date;
 
     let type = document.createElement("p");
     type.setAttribute("id", "Jobcategory");
-    type.innerText = "Job Type :" + element.jobtype;
+    type.innerHTML = "<b>Job Type : :</b>" + element.jobtype;
 
     let phrase = document.createElement("p");
     phrase.setAttribute("id", "JobLine");
-    phrase.innerText = "Tagline :" + element.phrase;
+    phrase.innerHTML = "<b>Tagline :</b>" + element.phrase;
 
     let rating = document.createElement("h3");
     rating.setAttribute("id", "JobRating");
     let y = element.rating / 10;
-    rating.innerText = "Rating:-" + y + "⭐⭐⭐⭐⭐";
+    rating.innerHTML = "<b>Rating :</b>" + y + "⭐⭐⭐⭐⭐";
 
     let salary = document.createElement("h4");
     salary.setAttribute("id", "Salary");
-    salary.innerText = "Salary :" + element.salary;
+    salary.innerHTML = "<b>Salary :</b>" + element.salary;
 
     let button = document.createElement("button");
     button.setAttribute("id", "viewButton");
-    button.innerText = "View Details";
+    button.innerHTML = "View Details";
 
     let view = document.createElement("button");
     view.setAttribute("id", "favButton");
-    view.innerText = "Change Job";
+    view.innerHTML = "Change Job";
     view.addEventListener("click", () => {
       swal({
         title: "Cancel Job Booking?",
@@ -98,22 +98,22 @@ function displayCards(array) {
 
     let desc = document.createElement("h4");
     desc.setAttribute("id", "description");
-    desc.innerText = "Context :" + element.description;
+    desc.innerHTML = "<b>Context :</b>" + element.description;
 
     let city = document.createElement("h4");
-    city.innerText = " City :" + element.city;
+    city.innerHTML = "<b>City :</b>" + element.city;
 
     let department = document.createElement("h4");
-    department.innerText = " Department  :" + element.department;
+    department.innerHTML = " <b>Department :</b>" + element.department;
 
     let jobtype = document.createElement("h4");
-    jobtype.innerText = " Job Type :" + element.title;
+    jobtype.innerHTML = " <b>Job Type :</b>" + element.name;
     // city,country,category,department,jobtype
     let country = document.createElement("h4");
-    country.innerText = " Country :" + element.national;
+    country.innerHTML = "<b>Country :</b>" + element.national;
 
     let category = document.createElement("h4");
-    category.innerText = " Category =>  :" + element.category;
+    category.innerHTML = " <b>Category :</b>" + element.category;
 
     let hr = document.createElement("hr");
 
@@ -128,18 +128,18 @@ function displayCards(array) {
     div1.append(
       name,
       date,
+      hr,
       type,
       phrase,
-      hr,
       rating,
       salary,
-      hr,
       city,
       country,
       category,
       department,
       jobtype,
       desc,
+      hr,
       button,
       view
     );

@@ -57,18 +57,22 @@
   color: rgb(255, 255, 255);
 }
 #favButton {
+  font-size: 18px;
+  font-weight: 500;
   bottom: 10px;
   background-color: rgb(215, 23, 23);
 }
 
 #viewButton {
   padding: 8px 10px;
-
+  font-size: 18px;
+  font-weight: 500;
   background: var(--themcolor);
 }
 .cardimage {
   width: 200px;
   height: 200px;
+  border-radius: 5px;
   text-align: center;
   margin-left: 60px;
 }

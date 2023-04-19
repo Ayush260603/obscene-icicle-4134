@@ -46,10 +46,11 @@ section {
   background-size: contain;
   border: 2px solid white;
   border-radius: 50%;
+  filter: hue-rotate(260deg) brightness(1.1);
   width: 100px;
   height: 100px;
   position: absolute;
-  top: 140px;
+  top: 150px;
   z-index: 1;
   right: 250px;
 }
@@ -179,10 +180,13 @@ section {
 }
 
 #favButton {
-  padding: 10px 15px;
+  margin: 10px auto;
+  padding: 10px 30px;
+  border-radius: 30px;
   border: 0px;
-
-  border-radius: 50px;
+  font-weight: 500 !important;
+  font-size: 17px;
+  cursor: pointer;
   background-color: rgb(201, 253, 146);
 }
 

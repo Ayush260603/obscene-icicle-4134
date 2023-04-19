@@ -31,14 +31,6 @@ main {
 .searchinput:focus {
   outline: none;
 }
-
-#loginbut:hover {
-  background: white;
-  color: black;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
 /* section  */
 .ActualPage {
   height: auto;
@@ -65,6 +57,7 @@ main {
   display: flex;
   justify-content: right;
   background-size: cover;
+  background: azure;
   background-position: bottom;
 }
 .recom-bar > div {
@@ -100,6 +93,11 @@ main {
   justify-content: space-around;
   align-items: center;
 }
+.JobCard button {
+  color: white;
+  margin: 5px;
+  padding: 5px 20px !important;
+}
 .JobcardFirstDiv {
   width: 70%;
   margin: 15px 15pxs;
@@ -114,28 +112,25 @@ main {
 }
 
 #favButton {
-  padding: 10px 15px;
+  border-radius: 30px;
   border: 0px;
-  color: white;
-  font-weight: 500;
-  border-radius: 25px;
+  font-weight: 500 !important;
+  font-size: 17px;
   background-color: rgb(12, 133, 255);
-  margin: 5px;
 }
+
 #favButton:hover {
-  background-color: rgb(32, 3, 122);
+  background-color: rgb(17, 86, 151);
 }
 #viewButton {
-  padding: 10px 15px;
+  border-radius: 30px;
   border: 0px;
-  color: white;
-  font-weight: 500;
-  border-radius: 25px;
+  font-weight: 500 !important;
+  font-size: 17px;
   background: rgb(82, 163, 7);
-  margin: 5px;
 }
 #viewButton:hover {
-  background-color: rgb(41, 233, 182);
+  background-color: rgb(17, 86, 151);
 }
 .cardimage {
   width: 200px;
@@ -145,6 +140,13 @@ main {
   border: 3px solid rgb(170, 168, 168);
   border-radius: 12px;
   text-align: right;
+}
+.loaderDiv {
+  display: flex;
+  min-height: 80vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #Jobname {
   font-size: 25px;

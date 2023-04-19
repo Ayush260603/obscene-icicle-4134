@@ -26,6 +26,7 @@
 }
 
 .otpx > div {
+  min-height: 500px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   border-radius: 10px;
@@ -121,21 +122,25 @@
 }
 
 .cardimage {
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 400px;
   margin-top: 0px;
   object-fit: cover;
-  border-radius: 15px;
-  border: 2px solid greenyellow;
+  border-radius: 5px;
+  border: 2px solid rgb(226, 229, 222);
 }
 #Jobname {
-  font-size: 45px;
+  font-size: 30px;
 }
 #heading1 {
   font-size: 40px;
   background-color: rgb(214, 255, 236);
   text-shadow: 2px 2px var(--themcolor);
   padding: 5px 90px;
+}
+.JobCard h4 {
+  color: rgb(56, 54, 54);
+  font-weight: 500 !important;
 }
 #heading2 {
   text-shadow: 3px 3px rgb(26, 215, 42);
