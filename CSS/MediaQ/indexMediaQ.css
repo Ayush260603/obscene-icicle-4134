@@ -265,19 +265,21 @@
     padding: 3px;
     font-size: 10px;
   }
-  /* -------------------------Page Specifc End------------------------- */
+  /*? -------------------------Page Specifc End------------------------- */
 }
 
-/* --------------------------------Small Screen Sizes -------------------------------- */
+/*! --------------------------------Small Screen Sizes -------------------------------- */
 
 @media all and (min-width: 320px) and (max-width: 809px) {
-  /*------------------------------------ Universals------------------------------------ */
+  /*todo------------------------------------ Universals------------------------------------ */
   * {
     margin: 0px;
     padding: 0px;
     font-size: 10px;
   }
-
+  #mqx {
+    display: none;
+  }
   .flexalign {
     display: grid;
   }
@@ -306,8 +308,7 @@
     padding: 1px;
     text-align: center;
   }
-  .loginslider,
-  #mqx {
+  .loginslider {
     display: block;
   }
   .mobile-nav-toggle {
