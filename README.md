@@ -21,7 +21,6 @@
 - Interactive UI/UX for best customer experiene.
 - User can Login/Signup,Search/Filter Jobs
 - Add/Remove Jobs to Favorite
-- Use of localstorage is implemented
 - Transitions & Animations
 
 # 🟢 Routes :-
