@@ -1,11 +1,10 @@
 # 🟢 PlaceMe.Com
 ![placemeicoo](https://user-images.githubusercontent.com/112753481/233196571-9311f578-8642-4026-8eb1-e840b138af97.png)
 
-## link :- <a href="https://placeme750.netlify.app/">PlaceMe.com</a>
-Masai Unit Two Construct Week Project
+## link :- <a href="https://suvidha-project.vercel.app/">PlaceMe.com</a>
 
 # What is PlaceMe.com?
-- PlaceMe.com is an online job hunting platform of job applicants as well as hirers, it is a clone of Naukri.com
+- PlaceMe.com is an online job hunting platform for job applicants.
 
 
 
@@ -15,9 +14,7 @@ Masai Unit Two Construct Week Project
 | HTML | CSS | JavaScript |
 |---|---|---|
 | <img width="75px" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"> | <img width="75px" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png"> | <img width="70px" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"> |
-## Backend :-
-> ### Local Storage 
-> ### Mock API
+
 
 
 # 🟢 Features :-
@@ -39,4 +36,4 @@ GET https://636a3dd2c07d8f936d97766d.mockapi.io/placeme/JobData
 
 ---
 # <p align="center">Thankyou for your time 💝</p>
-<p align="center">Please Visit : https://placeme750.netlify.app/ 🙌🏼</p>
+<p align="center">Please Visit : https://suvidha-project.vercel.app/ 🙌🏼</p>
